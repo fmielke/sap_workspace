@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset activatehigherpriorityrule="true" aliasname="htwberlin.de.tr119~bpm_beispiel_0~pr~pm" effectivedate="Always" expirationdate="" groupingreason="" guid="E0BE0DF19986ED39879311E5B03500FFC49D1489" isreusable="false" mainflowguid="FL9a06d5db879311e5981600ffc49d1489" mainflowname="MainFlow" name="TR_119_Calc_NumOfMsgs_Ruleset" persistent="false" projectname="htwberlin.de.tr119~bpm_beispiel_0~pr~pm" type="FlowRuleset" varaliasname="TR_119_Calc_NumOfMsgs_Ruleset" version="1">
+  <variable assignable="true" guid="VARe9a3e53c879311e59a4e00ffc49d1489" name="numOfMsgs" type="int">
+    <simpleexp closebracket="0" javatype="int" openbracket="0" operator="">
+      <primitive value="0"/>
+    </simpleexp>
+  </variable>
+  <ruleflow guid="FL9a06d5db879311e5981600ffc49d1489">
+    <name luid="" value="MainFlow"/>
+    <comment luid="" value=""/>
+    <startnode id="NODE9a06d5dc879311e5b86d00ffc49d1489">
+      <connector id="FCON0bec40bf879911e59e7d00ffc49d1489" targetnodeid="NODE086d1b88879911e5881100ffc49d1489"/>
+    </startnode>
+    <endnode id="NODE9a06d5dd879311e5cec800ffc49d1489"/>
+    <activity id="NODE086d1b88879911e5881100ffc49d1489">
+      <entityref guid="DT01edc854879411e5b1d600ffc49d1489" name="" type="decision-table"/>
+      <connector id="FCON0d6f1935879911e5ac4d00ffc49d1489" targetnodeid="NODE9a06d5dd879311e5cec800ffc49d1489"/>
+    </activity>
+    <flowlayout layouttype="0">
+      <elementuidata elementid="FCON0d6f1935879911e5ac4d00ffc49d1489">
+        <connectoruidata>
+          <startpoint x="77" y="123"/>
+          <endpoint x="77" y="211"/>
+        </connectoruidata>
+      </elementuidata>
+      <elementuidata elementid="NODE9a06d5dd879311e5cec800ffc49d1489">
+        <shapeuidata height="31" width="31" x="62" y="186"/>
+      </elementuidata>
+      <elementuidata elementid="NODE9a06d5dc879311e5b86d00ffc49d1489">
+        <shapeuidata height="31" width="31" x="62" y="30"/>
+      </elementuidata>
+      <elementuidata elementid="NODE086d1b88879911e5881100ffc49d1489">
+        <shapeuidata height="55" width="95" x="30" y="96"/>
+      </elementuidata>
+      <elementuidata elementid="FCON0bec40bf879911e59e7d00ffc49d1489">
+        <connectoruidata>
+          <startpoint x="77" y="55"/>
+          <endpoint x="77" y="123"/>
+        </connectoruidata>
+      </elementuidata>
+    </flowlayout>
+  </ruleflow>
+  <decisiontable comments="" guid="DT01edc854879411e5b1d600ffc49d1489" name="CalcNumOfMsgs_DT">
+    <conditionstub comments="" conditionstubtype="regular" id="CS01ed8105879411e5c5c500ffc49d1489" name="" type="java.lang.String">
+      <lvalue>
+        <simpleexp closebracket="0" javatype="java.lang.String" openbracket="0" operator="">
+          <xmlreference elemname="ns42:productId" methodname="getValue" propname="" returntype="java.lang.String" schemaname="productIdSchema" xpath="ns42:productId"/>
+        </simpleexp>
+      </lvalue>
+      <cv id="CV11f31e56879411e5911000ffc49d1489">
+        <sre comparator="Equals">
+          <simpleexp closebracket="0" javatype="java.lang.String" openbracket="0" operator="">
+            <primitive value="*"/>
+          </simpleexp>
+        </sre>
+      </cv>
+      <cv id="CV11f31e57879411e5a99b00ffc49d1489">
+        <sre comparator="Equals">
+          <simpleexp closebracket="0" javatype="java.lang.String" openbracket="0" operator="">
+            <primitive value="bpm-1188"/>
+          </simpleexp>
+        </sre>
+      </cv>
+      <cv id="CV11f31e58879411e5cc7e00ffc49d1489">
+        <sre comparator="Equals">
+          <simpleexp closebracket="0" javatype="java.lang.String" openbracket="0" operator="">
+            <primitive value="bpm-1234"/>
+          </simpleexp>
+        </sre>
+      </cv>
+      <cv id="CV11f31e59879411e5b47f00ffc49d1489">
+        <sre comparator="Equals">
+          <simpleexp closebracket="0" javatype="java.lang.String" openbracket="0" operator="">
+            <primitive value="bpm-4712"/>
+          </simpleexp>
+        </sre>
+      </cv>
+      <cv id="CV11f74560879411e5802700ffc49d1489">
+        <sre comparator="Equals">
+          <simpleexp closebracket="0" javatype="java.lang.String" openbracket="0" operator="">
+            <primitive value="bpm-4711"/>
+          </simpleexp>
+        </sre>
+      </cv>
+    </conditionstub>
+    <actionstub actionstubtype="regular" comments="" id="AS01edc853879411e5881800ffc49d1489" name="">
+      <action addtoreturnlist="false" classname="" methodname="" static="false" type="assign" varname="numOfMsgs"/>
+      <av ce-id-refs="CV11f74560879411e5802700ffc49d1489" id="AV18a32ecf879411e5bd0d00ffc49d1489">
+        <simpleexp closebracket="0" javatype="" openbracket="0" operator="">
+          <primitive value="1"/>
+        </simpleexp>
+      </av>
+      <av ce-id-refs="CV11f31e59879411e5b47f00ffc49d1489" id="AV19a54de3879411e580dd00ffc49d1489">
+        <simpleexp closebracket="0" javatype="" openbracket="0" operator="">
+          <primitive value="2"/>
+        </simpleexp>
+      </av>
+      <av ce-id-refs="CV11f31e58879411e5cc7e00ffc49d1489" id="AV1ad918f6879411e5c7c300ffc49d1489">
+        <simpleexp closebracket="0" javatype="" openbracket="0" operator="">
+          <primitive value="3"/>
+        </simpleexp>
+      </av>
+      <av ce-id-refs="CV11f31e57879411e5a99b00ffc49d1489" id="AV1c24186b879411e5932b00ffc49d1489">
+        <simpleexp closebracket="0" javatype="" openbracket="0" operator="">
+          <primitive value="2"/>
+        </simpleexp>
+      </av>
+      <av ce-id-refs="CV11f31e56879411e5911000ffc49d1489" id="AV1d032e03879411e59dd600ffc49d1489">
+        <simpleexp closebracket="0" javatype="" openbracket="0" operator="">
+          <primitive value="1"/>
+        </simpleexp>
+      </av>
+    </actionstub>
+    <tablelayout>
+      <conditionstub-layout stub-id="CS01ed8105879411e5c5c500ffc49d1489" type="vertical" width="100">
+        <cell ref-id="CV11f74560879411e5802700ffc49d1489" span="1"/>
+        <cell ref-id="CV11f31e59879411e5b47f00ffc49d1489" span="1"/>
+        <cell ref-id="CV11f31e58879411e5cc7e00ffc49d1489" span="1"/>
+        <cell ref-id="CV11f31e57879411e5a99b00ffc49d1489" span="1"/>
+        <cell ref-id="CV11f31e56879411e5911000ffc49d1489" span="1"/>
+      </conditionstub-layout>
+      <actionstub-layout stub-id="AS01edc853879411e5881800ffc49d1489" width="100"/>
+    </tablelayout>
+    <propertyset>
+      <property name="ReturnMultipleMatch" value="false"/>
+      <property name="RowsAreMutuallyExclusive" value="true"/>
+    </propertyset>
+  </decisiontable>
+  <propertyset>
+    <property name="EnableStrictTypeChecking" value="no"/>
+  </propertyset>
+  <rulesetfunctionsignature namespaceuri="htwberlin.de.tr119/bpm_beispiel_0/pr/pm">
+    <parameter javatype="" localname="string" multiple="false" name="productId" namespaceuri="http://www.w3.org/2001/XMLSchema"/>
+    <result inputparametername="" javatype="" localname="int" multiple="false" namespaceuri="http://www.w3.org/2001/XMLSchema">
+      <simpleexp closebracket="0" javatype="int" openbracket="0" operator="">
+        <variablereference method="" varname="numOfMsgs"/>
+      </simpleexp>
+    </result>
+    <propertyset/>
+  </rulesetfunctionsignature>
+  <reusedresources/>
+</ruleset>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:cafpref1="http://www.sap.com/caf/sap.com/caf.core/services" xmlns:cafpref2="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled" xmlns:ex1="http://www.sap.com/caf/sap.com/caf.core/faults" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled/TR_119_Order" name="TR_119_Order" targetNamespace="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled/TR_119_Order">
+  <jaxws:bindings>
+    <jaxws:package name="tr119.de.htwberlin.tr_119_product.bl.caf.modeled.bonode.tr_119_order.tr_119_order"/>
+  </jaxws:bindings>
+  <types>
+    <xsd:schema xmlns:Q1="http://www.sap.com/caf/sap.com/caf.core/services" xmlns:Q2="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled" xmlns:Q3="http://www.sap.com/caf/query_filter" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" jaxb:version="2.0" targetNamespace="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled/TR_119_Order">
+      <xsd:annotation>
+        <xsd:appinfo>
+          <jaxb:schemaBindings>
+            <jaxb:package name="tr119.de.htwberlin.tr_119_product.bl.caf.modeled.bonode.tr_119_order.tr_119_order"/>
+          </jaxb:schemaBindings>
+        </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:import namespace="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled"/>
+      <xsd:import namespace="http://www.sap.com/caf/sap.com/caf.core/services"/>
+      <xsd:element name="create">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="productId" nillable="false" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="quantitiy" nillable="false" type="xsd:int"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="comment" nillable="false" type="Q1:LongText"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="createResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Output" nillable="false" type="Q2:TR_119_Order"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xsd:schema xmlns:cafpref0="http://www.sap.com/caf/sap.com/caf.core/faults" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.sap.com/caf/sap.com/caf.core/faults">
+      <xsd:element name="CAFCreateException" type="cafpref0:FaultInfo"/>
+      <xsd:complexType name="FaultInfo">
+        <xsd:sequence>
+          <xsd:element name="nestedStackTraceString" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.sap.com/caf/sap.com/caf.core/services">
+      <xsd:simpleType name="UserId">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="32"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LongText">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="256"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Id">
+        <xsd:restriction base="xsd:string">
+          <xsd:length value="36"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled">
+      <xsd:import namespace="http://www.sap.com/caf/sap.com/caf.core/services"/>
+      <xsd:complexType name="TR_119_Order">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="key" nillable="false" type="cafpref1:Id"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="createdBy" nillable="false" type="cafpref1:UserId"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="createdAt" nillable="false" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="modifiedAt" nillable="false" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="modifiedBy" nillable="false" type="cafpref1:UserId"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="productId" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="quantitiy" nillable="false" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="comment" nillable="false" type="cafpref1:LongText"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </types>
+  <message name="create">
+    <part element="tns:create" name="create"/>
+  </message>
+  <message name="createResponse">
+    <part element="tns:createResponse" name="createResponse"/>
+  </message>
+  <message name="CAFCreateException">
+    <part element="ex1:CAFCreateException" name="CAFCreateException"/>
+  </message>
+  <portType name="TR_119_Order">
+    <jaxws:bindings>
+      <jaxws:class name="TR_119_OrderSEI"/>
+    </jaxws:bindings>
+    <operation name="create">
+      <input message="tns:create"/>
+      <output message="tns:createResponse"/>
+      <fault message="tns:CAFCreateException" name="CAFCreateException"/>
+    </operation>
+  </portType>
+  <binding name="TR_119_OrderBinding" type="tns:TR_119_Order">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="create">
+      <soap:operation soapAction="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled/TR_119_Order/create"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="CAFCreateException">
+        <soap:fault name="CAFCreateException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="TR_119_Order">
+    <jaxws:bindings>
+      <jaxws:class name="TR_119_OrderClient"/>
+    </jaxws:bindings>
+    <port binding="tns:TR_119_OrderBinding" name="TR_119_OrderBindingPort">
+      <soap:address location="http://www.example.org/"/>
+    </port>
+  </service>
+</definitions>

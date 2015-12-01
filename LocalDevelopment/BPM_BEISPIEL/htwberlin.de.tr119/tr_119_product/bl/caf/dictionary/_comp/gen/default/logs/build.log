@@ -1,0 +1,188 @@
+Development Component Build (2015-11-26 12:12:32 GMT+01:00 (CET))
+  Component name: tr_119_product/bl/caf/dictionary
+  Component vendor: htwberlin.de.tr119
+  SC compartment: BPM_BEISPIEL
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: marcus@CE06863
+  DC root folder: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\tr_119_product\bl\caf\dictionary\_comp\
+  DC type: Dictionary
+  Host: CE06863
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/ddic"
+   validating dependency to  public part "runtime" of DC "sap.com/tc/ddic/runtime/facade"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/ddic
+   starting build plugin from : C:\SAP\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\ddic\_comp\gen\default\public\ddic\
+
+
+
+Build Plugin 'DictionaryPlugin', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:30 +0200, CL166627)
+   development component:  tr_119_product/bl/caf/dictionary (htwberlin.de.tr119)
+      software component:  BPM_BEISPIEL (htwberlin.de.tr119)
+                location:  localDevelopment
+                    type:  Dictionary
+           build variant:  default
+         source location:  marcus@CE06863
+         output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F47F11F90D8792126FB3029CC69F525A\default
+       generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F47F11F90D8792126FB3029CC69F525A
+       plugin start time:  2015-11-26 12:12:32 GMT+01:00 (CET)
+                 Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Source folder "src/content" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0.001 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.026 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F47F11F90D8792126FB3029CC69F525A\default\logs\build.xml
+  Using macro file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\ddic\_comp\gen\default\public\ddic\macros\build.vm
+Build file creation finished in 0.105 seconds
+ 
+Starting Ant..
+  Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F47F11F90D8792126FB3029CC69F525A\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+compile:
+      [echo] Starting dictionary generator
+     [ddgen] 
+     [ddgen] [Info]    Property deployment is true: Deployment information is provided!
+     [ddgen] [Info]    Property sourcepath ...
+     [ddgen] [Info]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\tr_119_product\bl\caf\dictionary\_comp\src\packages
+     [ddgen] [Info]    Property targetpath: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F47F11F90D8792126FB3029CC69F525A\gdd
+     [ddgen] [Info]    Property archivename: htwberlin.de.tr119~tr_119_product~bl~caf~dictionary
+     [ddgen] [Info]    Property vendor: htwberlin.de.tr119
+     [ddgen] [Info]    Property dcname: tr_119_product/bl/caf/dictionary
+     [ddgen] [Info]    Property metadatapath: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F47F11F90D8792126FB3029CC69F525A\gdd_metainf
+     [ddgen] [Info]    Property generates2x is false: S2X files will not be generated
+     [ddgen] [Info]    Property projectlanguage: en
+     [ddgen] [Info]    Property language: Available languages are automatically determined
+     [ddgen] [Info]    Property addpaths ...
+     [ddgen] [Info]       SapMetamodelDictionaryContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       dictionary.rtcontainer.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       dictionary.runtime.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       dictionary.services.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       tc~ddic~runtime~facade.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       SapMetamodelDictionaryContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/SAP_BUILDT/sap.com/tc/bi/extddic/_comp/gen/default/public/def/lib/model
+     [ddgen] [Info]    Optional property i18npath is empty
+     [ddgen] [Info]    Initialize generation templates from configuration jar:file:/C:/SAP/eclipse/workspace.jdi/LocalDevelopment/SAP_BUILDT/sap.com/tc/bi/extddic/_comp/gen/default/public/def/lib/java/dictionary_generation_core_api.jar!/DictionaryGenerationConfigurationCompiled.xml
+     [ddgen] [Info]    Using DocumentBuilder com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl
+     [ddgen] [Info]    Generating datatypes/TMP_TR__MOD_TR_119.gdbtable
+     [ddgen] [Warning]DtDbTable 'TMP_TR__MOD_TR_119': Field OBJECTKEY is NOT NULL, but no default maintained. This can cause problems on the database.
+     [ddgen] [Info]    Generating metainf/S2XFileList.txt
+     [ddgen] [Info]    Generating datatypes/sdmDeployDd.xml
+     [ddgen] [Info]    Generating metainf/PublicPartFileList.xml
+     [ddgen] [Info]    Dictionary generation finished (0 seconds)
+     [ddgen] 
+     [mkdir] Created dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F47F11F90D8792126FB3029CC69F525A\gdd\dbtables
+     [timer] Dictionary generator finished in 0.576 seconds
+ 
+      [echo] Starting Java compiler using the current JVM
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF-8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]   source path: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\tr_119_product\bl\caf\dictionary\_comp\src\packages
+      [echo]    class path:
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip
+      [echo]    output dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F47F11F90D8792126FB3029CC69F525A\classes
+     [timer] Java compilation finished in 0.005 seconds
+ 
+      [echo] Start XLF conversion
+  [xlf2prop] Found 1 XLF file to convert in folder "src\packages"
+     [timer] XLF conversion finished in 0.005 seconds
+ 
+      [echo] Starting Java compiler using the current JVM
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF-8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]   source path: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F47F11F90D8792126FB3029CC69F525A\gdd\datatypes
+      [echo]    class path:
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar
+      [echo]    output dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F47F11F90D8792126FB3029CC69F525A\classes
+     [timer] Java compilation finished in 0.006 seconds
+ 
+      [echo] Start XLF conversion
+  [xlf2prop] Found 0 XLF files to convert in folder "C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F47F11F90D8792126FB3029CC69F525A\gdd\datatypes"
+     [timer] XLF conversion finished in 0.002 seconds
+ 
+ 
+createDeployArchive:
+       [cda] Preparing archive for deploy unit "default"
+       [cda]   deployment type: "JDDSCHEMA"
+ 
+       [cda] Creating Ant build file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F47F11F90D8792126FB3029CC69F525A\default\logs\buildDeployArchive.xml
+ 
+ 
+       [cda] Collecting modules ...
+       [cda] Ant build file creation finished in 0.04 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.035 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F47F11F90D8792126FB3029CC69F525A\default\deploy\htwberlin.de.tr119~tr_119_product~bl~caf~dictionary.sda with compression
+     [timer] JarSAP finished in 0.019 seconds
+ 
+ 
+noCreateDeployArchive:
+ 
+createDBContentArchive:
+      [echo] Starting translation of database content
+      [echo] No *.dcb files found. Skipping translation of database content.
+     [timer] Translation of database content finished in 0 seconds
+ 
+ 
+createStandaloneDBContentArchive:
+ 
+build:
+ 
+Ant runtime 0.793 seconds
+ 
+Ant build finished with WARNINGS
+ 
+Build plugin finished at 2015-11-26 12:12:33 GMT+01:00 (CET)
+Total build plugin runtime: 1.127 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2015-11-26 12:12:33.548 CET
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F47F11F90D8792126FB3029CC69F525A\default\
+  to:   C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\tr_119_product\bl\caf\dictionary\_comp\gen\default\

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>bpm_beispiel_0/ui/vc_impl</name>
+<vendor>demo.050112.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Visual Composer Composition Unit Implementation</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>default</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies/>
+</metadata>
+<source-components/>
+<archives/>
+<entities/>
+</content>

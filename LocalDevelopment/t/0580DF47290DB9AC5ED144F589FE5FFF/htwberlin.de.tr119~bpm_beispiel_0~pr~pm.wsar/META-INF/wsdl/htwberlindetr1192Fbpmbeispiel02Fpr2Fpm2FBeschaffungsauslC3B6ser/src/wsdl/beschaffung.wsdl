@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://htwberlin.de.tr119/beschaffung" name="beschaffung" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://htwberlin.de.tr119/beschaffung" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://htwberlin.de.tr119/beschaffung">
+      <xsd:element name="beschaffungsAuftrag">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="artikelnummer" type="xsd:string"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="beschaffungsAntwort" type="xsd:string"></xsd:element>
+      <xsd:element name="nichtLieferbarFehler">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="nichtLieferbarFehler" type="xsd:string"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="nichtLieferbarFehler">
+    <wsdl:part name="parameter" element="tns:nichtLieferbarFehler"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="beschaffungsAnfrage">
+    <wsdl:part name="parameter" element="tns:beschaffungsAuftrag"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="beschaffungsAntwort">
+    <wsdl:part name="parameter" element="tns:beschaffungsAntwort"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="beschaffungsAuftrag">
+    <wsdl:operation name="artikelBeschaffen">
+      <wsdl:input message="tns:beschaffungsAnfrage"></wsdl:input>
+      <wsdl:output message="tns:beschaffungsAntwort"></wsdl:output>
+      <wsdl:fault name="NichtLieferbar" message="tns:nichtLieferbarFehler"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="beschaffungSOAP" type="tns:beschaffungsAuftrag">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="artikelBeschaffen">
+      <soap:operation soapAction="http://htwberlin.de.tr119/beschaffung/artikelBeschaffen"></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="NichtLieferbar">
+        <soap:fault name="NichtLieferbar" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+    <ns1:PolicyReference xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy" URI="#GLX_POLICY"></ns1:PolicyReference>
+  </wsdl:binding>
+  <wsdl:service name="beschaffung">
+    <wsdl:port name="beschaffungSOAP" binding="tns:beschaffungSOAP">
+      <soap:address location="http://www.example.org/bpm/htwberlindetr119/bpmbeispiel0/pr/pm/BeschaffungsauslC3B6ser"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+  <ns2:Policy xmlns:ns2="http://schemas.xmlsoap.org/ws/2004/09/policy" ns3:Id="GLX_POLICY" xmlns:ns3="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns2:ExactlyOne>
+      <ns2:All>
+        <ns2:ExactlyOne>
+          <ns2:All>
+            <ns4:TransportBinding xmlns:ns4="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+              <ns2:Policy>
+                <ns4:TransportToken>
+                  <ns2:Policy>
+                    <ns4:HttpsToken>
+                      <ns2:Policy>
+                        <ns4:HttpBasicAuthentication></ns4:HttpBasicAuthentication>
+                      </ns2:Policy>
+                    </ns4:HttpsToken>
+                  </ns2:Policy>
+                </ns4:TransportToken>
+                <ns4:AlgorithmSuite>
+                  <ns2:Policy>
+                    <ns4:TripleDesRsa15></ns4:TripleDesRsa15>
+                  </ns2:Policy>
+                </ns4:AlgorithmSuite>
+                <ns4:Layout>
+                  <ns2:Policy>
+                    <ns4:Strict></ns4:Strict>
+                  </ns2:Policy>
+                </ns4:Layout>
+              </ns2:Policy>
+            </ns4:TransportBinding>
+          </ns2:All>
+          <ns2:All>
+            <ns5:TransportBinding xmlns:ns5="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+              <ns2:Policy>
+                <ns5:TransportToken>
+                  <ns2:Policy>
+                    <ns5:HttpsToken>
+                      <ns2:Policy>
+                        <ns6:HTTPSSO2 xmlns:ns6="http://www.sap.com/webas/630/soap/features/security/policy"></ns6:HTTPSSO2>
+                      </ns2:Policy>
+                    </ns5:HttpsToken>
+                  </ns2:Policy>
+                </ns5:TransportToken>
+                <ns5:AlgorithmSuite>
+                  <ns2:Policy>
+                    <ns5:TripleDesRsa15></ns5:TripleDesRsa15>
+                  </ns2:Policy>
+                </ns5:AlgorithmSuite>
+                <ns5:Layout>
+                  <ns2:Policy>
+                    <ns5:Strict></ns5:Strict>
+                  </ns2:Policy>
+                </ns5:Layout>
+              </ns2:Policy>
+            </ns5:TransportBinding>
+          </ns2:All>
+        </ns2:ExactlyOne>
+      </ns2:All>
+    </ns2:ExactlyOne>
+  </ns2:Policy>
+  <ns7:UsingPolicy xmlns:ns7="http://schemas.xmlsoap.org/ws/2004/09/policy"></ns7:UsingPolicy>
+</wsdl:definitions>

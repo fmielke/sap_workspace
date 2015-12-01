@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://katalog.services.com.sap.demo/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://katalog.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ns1:UsingPolicy xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy"></ns1:UsingPolicy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://katalog.services.com.sap.demo/">
+      <xsd:complexType name="istArtikelAufLager">
+        <xsd:sequence>
+          <xsd:element name="artikelnummer" type="xsd:string" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="istArtikelAufLagerResponse">
+        <xsd:sequence>
+          <xsd:element name="return" type="xsd:boolean"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="artikelEntfernen">
+        <xsd:sequence>
+          <xsd:element name="artikelnummer" type="xsd:string" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="artikelEntfernenResponse">
+        <xsd:sequence>
+          <xsd:element name="return" type="xsd:boolean"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="artikelEntfernen" type="tns:artikelEntfernen"></xsd:element>
+      <xsd:element name="artikelEntfernenResponse" type="tns:artikelEntfernenResponse"></xsd:element>
+      <xsd:element name="istArtikelAufLager" type="tns:istArtikelAufLager"></xsd:element>
+      <xsd:element name="istArtikelAufLagerResponse" type="tns:istArtikelAufLagerResponse"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="artikelEntfernenIn">
+    <wsdl:part name="parameters" element="tns:artikelEntfernen"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="istArtikelAufLagerIn">
+    <wsdl:part name="parameters" element="tns:istArtikelAufLager"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="artikelEntfernenOut">
+    <wsdl:part name="artikelEntfernenResponse" element="tns:artikelEntfernenResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="istArtikelAufLagerOut">
+    <wsdl:part name="istArtikelAufLagerResponse" element="tns:istArtikelAufLagerResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="KatalogServiceTR119">
+    <wsdl:operation name="istArtikelAufLager" parameterOrder="parameters">
+      <wsdl:input message="tns:istArtikelAufLagerIn"></wsdl:input>
+      <wsdl:output message="tns:istArtikelAufLagerOut"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="artikelEntfernen" parameterOrder="parameters">
+      <wsdl:input message="tns:artikelEntfernenIn"></wsdl:input>
+      <wsdl:output message="tns:artikelEntfernenOut"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

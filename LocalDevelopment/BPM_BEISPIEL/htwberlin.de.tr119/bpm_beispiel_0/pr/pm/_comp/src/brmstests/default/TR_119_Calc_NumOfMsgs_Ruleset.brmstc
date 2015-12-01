@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:testCase xmlns:ns2="http://www.sap.com/ruletesting/12/2008/model" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:xmlTestCase" name="TR_119_Calc_NumOfMsgs_Ruleset" guid="SIMPTC9b42d732879311e588d600ffc49d1489">
+    <testMapping xsi:type="ns2:xmlTestCaseMapping" mappingGuid="TM9b42d734879311e5c3b700ffc49d1489"/>
+    <testTarget xsi:type="ns2:simpleRulesetTestTarget" rulesetName="TR_119_Calc_NumOfMsgs_Ruleset" projectName="htwberlin.de.tr119~bpm_beispiel_0~pr~pm" guid="TT9b42d733879311e5b90600ffc49d1489"/>
+</ns2:testCase>

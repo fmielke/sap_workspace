@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aliasSet name="LagerErmitteln" guid="ASb64714aa80bb11e5b07400ffc49d1489" projectname="htwberlin.de.tr119~bpm_beispiel_0~pr~pm" languagecode="default">
+  <class name="KundeSchema:ns2:Kunde" visible="true"/>
+  <class name="KundeSchema:ns2:Kunde/anschrift" visible="true"/>
+  <class name="java.lang.String" visible="true">
+    <isassignableto name="java.lang.Object"/>
+    <isassignableto name="java.io.Serializable"/>
+    <isassignableto name="java.lang.Comparable"/>
+    <isassignableto name="java.lang.CharSequence"/>
+  </class>
+  <alias visible="false" guid="ALb7f84e3580bb11e58c5700ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="com.sap.brms.xml.IRulesXMLDataObject::getXmlElement" returntype="com.sap.brms.xml.IRulesXMLDataObject" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde.getXmlElement"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa19c80bb11e5c9b700ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="java.lang.String:vorname:getChildElementValue" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/vorname"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa19d80bb11e5ba9f00ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="void:vorname:setChildElementValue" returntype="void" isField="false" isStatic="false" datatype="" isVarArgs="false">
+      <method-param type="java.lang.String"/>
+    </member>
+    <locale id="default" localealias="Kunde/vorname = {String}"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa19e80bb11e5bd3500ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="java.lang.String:nachname:getChildElementValue" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/nachname"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa19f80bb11e586c100ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="void:nachname:setChildElementValue" returntype="void" isField="false" isStatic="false" datatype="" isVarArgs="false">
+      <method-param type="java.lang.String"/>
+    </member>
+    <locale id="default" localealias="Kunde/nachname = {String}"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa1a080bb11e590a500ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="java.lang.String:telefon:getChildElementValue" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/telefon"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa1a180bb11e5c22300ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="void:telefon:setChildElementValue" returntype="void" isField="false" isStatic="false" datatype="" isVarArgs="false">
+      <method-param type="java.lang.String"/>
+    </member>
+    <locale id="default" localealias="Kunde/telefon = {String}"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa1a280bb11e5c0f000ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="java.lang.String:email:getChildElementValue" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/email"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa1a380bb11e59b1400ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="void:email:setChildElementValue" returntype="void" isField="false" isStatic="false" datatype="" isVarArgs="false">
+      <method-param type="java.lang.String"/>
+    </member>
+    <locale id="default" localealias="Kunde/email = {String}"/>
+  </alias>
+  <alias visible="false" guid="ALb7faa1a480bb11e5c74700ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="com.sap.brms.xml.IRulesXMLDataObject:anschrift:addChildElement" returntype="com.sap.brms.xml.IRulesXMLDataObject" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde.addChildElement(anschrift)"/>
+  </alias>
+  <alias visible="false" guid="ALb7faa1a580bb11e5942400ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde" varname="" membername="int:anschrift:size" returntype="int" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde.size(anschrift)"/>
+  </alias>
+  <alias visible="false" guid="ALb7faa1a680bb11e5b02e00ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="com.sap.brms.xml.IRulesXMLDataObject::getXmlElement" returntype="com.sap.brms.xml.IRulesXMLDataObject" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/anschrift.getXmlElement"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa1a780bb11e5a83200ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="java.lang.String:straße:getChildElementValue" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/anschrift/straße"/>
+  </alias>
+  <alias visible="true" guid="ALb7faa1a880bb11e5813700ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="void:straße:setChildElementValue" returntype="void" isField="false" isStatic="false" datatype="" isVarArgs="false">
+      <method-param type="java.lang.String"/>
+    </member>
+    <locale id="default" localealias="Kunde/anschrift/straße = {String}"/>
+  </alias>
+  <alias visible="true" guid="ALb7fd165f80bb11e5ba9f00ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="int:hausnummer:getChildElementValue" returntype="int" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/anschrift/hausnummer"/>
+  </alias>
+  <alias visible="true" guid="ALb7fd166080bb11e5c68500ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="void:hausnummer:setChildElementValue" returntype="void" isField="false" isStatic="false" datatype="" isVarArgs="false">
+      <method-param type="int"/>
+    </member>
+    <locale id="default" localealias="Kunde/anschrift/hausnummer = {int}"/>
+  </alias>
+  <alias visible="true" guid="ALb7fd166180bb11e5849300ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="int:postleitzahl:getChildElementValue" returntype="int" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/anschrift/postleitzahl"/>
+  </alias>
+  <alias visible="true" guid="ALb7fd166280bb11e5be1d00ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="void:postleitzahl:setChildElementValue" returntype="void" isField="false" isStatic="false" datatype="" isVarArgs="false">
+      <method-param type="int"/>
+    </member>
+    <locale id="default" localealias="Kunde/anschrift/postleitzahl = {int}"/>
+  </alias>
+  <alias visible="true" guid="ALb7fd166380bb11e5c7f000ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="java.lang.String:stadt:getChildElementValue" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="Kunde/anschrift/stadt"/>
+  </alias>
+  <alias visible="true" guid="ALb7fd166480bb11e5a90a00ffc49d1489">
+    <member classname="KundeSchema:ns2:Kunde/anschrift" varname="" membername="void:stadt:setChildElementValue" returntype="void" isField="false" isStatic="false" datatype="" isVarArgs="false">
+      <method-param type="java.lang.String"/>
+    </member>
+    <locale id="default" localealias="Kunde/anschrift/stadt = {String}"/>
+  </alias>
+  <alias visible="true" guid="VARALfde10c8780bc11e5978e00ffc49d1489">
+    <member classname="java.lang.String" varname="LAGER_NORD" membername="" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="LAGER_NORD"/>
+  </alias>
+  <alias visible="true" guid="VARALfde10c8880bc11e5affb00ffc49d1489">
+    <member classname="java.lang.String" varname="LAGER_OST" membername="" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="LAGER_OST"/>
+  </alias>
+  <alias visible="true" guid="VARALfde10c8980bc11e5b26400ffc49d1489">
+    <member classname="java.lang.String" varname="LAGER_SUED" membername="" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="LAGER_SUED"/>
+  </alias>
+  <alias visible="true" guid="VARALfde10c8a80bc11e5c95a00ffc49d1489">
+    <member classname="java.lang.String" varname="LAGER_WEST" membername="" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="LAGER_WEST"/>
+  </alias>
+  <alias visible="true" guid="VARALfde10c8b80bc11e5c48100ffc49d1489">
+    <member classname="java.lang.String" varname="lager" membername="" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="lager"/>
+  </alias>
+  <alias visible="true" guid="VARALfde10c8c80bc11e5b7f600ffc49d1489">
+    <member classname="java.lang.String" varname="postleitzahlAlsString" membername="" returntype="java.lang.String" isField="false" isStatic="false" datatype="" isVarArgs="false"/>
+    <locale id="default" localealias="postleitzahlAlsString"/>
+  </alias>
+</aliasSet>

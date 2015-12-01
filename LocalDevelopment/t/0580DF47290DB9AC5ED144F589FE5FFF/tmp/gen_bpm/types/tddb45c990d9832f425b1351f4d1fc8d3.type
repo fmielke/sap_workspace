@@ -1,0 +1,20 @@
+ROOT_0,TARGET_NAMESPACE=http://katalog.services.com.sap.demo/
+ROOT_0,SCHEMA_LOCATION=http://katalog.services.com.sap.demo/
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://katalog.services.com.sap.demo/" xmlns:tns="http://katalog.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="artikelEntfernen" type="tns:artikelEntfernen" sdox:aliasName="$http://katalog.services.com.sap.demo/:artikelEntfernen" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="artikelEntfernen" sdox:aliasName="#artikelEntfernen" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="artikelnummer" type="xsd:string" minOccurs="0" sdox:aliasName="$artikelnummer"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=http://katalog.services.com.sap.demo/
+ROOT_1,SCHEMA_LOCATION=http://katalog.services.com.sap.demo/
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://katalog.services.com.sap.demo/" xmlns:tns="http://katalog.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="artikelEntfernenResponse" type="tns:artikelEntfernenResponse" sdox:aliasName="$http://katalog.services.com.sap.demo/:artikelEntfernenResponse" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="artikelEntfernenResponse" sdox:aliasName="#artikelEntfernenResponse" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="return" type="xsd:boolean" sdox:aliasName="$return"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_2,TARGET_NAMESPACE=http://katalog.services.com.sap.demo/
+ROOT_2,SCHEMA_LOCATION=http://katalog.services.com.sap.demo/
+ROOT_2,ROOTID=2
+ROOT_2,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://katalog.services.com.sap.demo/" xmlns:tns="http://katalog.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="istArtikelAufLager" type="tns:istArtikelAufLager" sdox:aliasName="$http://katalog.services.com.sap.demo/:istArtikelAufLager" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="istArtikelAufLager" sdox:aliasName="#istArtikelAufLager" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="artikelnummer" type="xsd:string" minOccurs="0" sdox:aliasName="$artikelnummer"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_3,TARGET_NAMESPACE=http://katalog.services.com.sap.demo/
+ROOT_3,SCHEMA_LOCATION=http://katalog.services.com.sap.demo/
+ROOT_3,ROOTID=3
+ROOT_3,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://katalog.services.com.sap.demo/" xmlns:tns="http://katalog.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="istArtikelAufLagerResponse" type="tns:istArtikelAufLagerResponse" sdox:aliasName="$http://katalog.services.com.sap.demo/:istArtikelAufLagerResponse" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="istArtikelAufLagerResponse" sdox:aliasName="#istArtikelAufLagerResponse" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="return" type="xsd:boolean" sdox:aliasName="$return"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

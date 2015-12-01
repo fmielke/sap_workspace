@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+DC-Name: bpm_beispiel
+DC-Type: Software Component Description
+DC-Vendor: htwberlin.de.tr119
+Implementation-Title: bpm_beispiel
+Implementation-Vendor: htwberlin.de.tr119
+Implementation-Version: localDevelopment 20151101185844
+SC-Name: BPM_BEISPIEL
+SC-Vendor: htwberlin.de.tr119
+
+Name: build-information
+Build-Counter: 20151101185844
+Build-Date: 2015-11-01
+Build-Location: localDevelopment
+Build-Time: 19:58:44 GMT+01:00 (CET)
+Created-By: DC BuildTool
+Source-Location: marcus@CE06863
+

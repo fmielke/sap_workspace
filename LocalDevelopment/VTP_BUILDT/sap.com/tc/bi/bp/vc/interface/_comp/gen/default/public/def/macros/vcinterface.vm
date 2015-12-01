@@ -1,0 +1,4 @@
+#macro (BuildVCInterface)
+ ## nothing to do.
+#end
+

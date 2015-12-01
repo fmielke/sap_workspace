@@ -1,0 +1,101 @@
+Development Component Build (2015-11-26 12:12:35 GMT+01:00 (CET))
+  Component name: tr_119_product/bl/caf/metadata
+  Component vendor: htwberlin.de.tr119
+  SC compartment: BPM_BEISPIEL
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: marcus@CE06863
+  DC root folder: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\tr_119_product\bl\caf\metadata\_comp\
+  DC type: Composite Application
+  Host: CE06863
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/javaLib"
+   validating dependency to used DC "htwberlin.de.tr119/tr_119_product/bl/caf/dictionary"
+   validating dependency to used DC "htwberlin.de.tr119/tr_119_product/bl/caf/ear"
+   validating dependency to used DC "htwberlin.de.tr119/tr_119_product/bl/caf/ejbmodule"
+   validating dependency to used DC "htwberlin.de.tr119/tr_119_product/bl/caf/permissions"
+   validating dependency to used DC "sap.com/caf/core/metadata"
+   validating dependency to  public part "compilation" of DC "sap.com/caf/core/metadata"
+   validating dependency to used DC "sap.com/tc/bl/exception/lib"
+   validating dependency to  public part "api" of DC "sap.com/tc/bl/exception/lib"
+   validating dependency to used DC "sap.com/tc/bl/logging/api"
+   validating dependency to  public part "api" of DC "sap.com/tc/bl/logging/api"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/javaLib
+   starting build plugin from : C:\SAP\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\javaLib\_comp\gen\default\public\saplib\
+
+
+
+Build Plugin 'JavaPlugin', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:25 +0200, CL166627)
+   development component:  tr_119_product/bl/caf/metadata (htwberlin.de.tr119)
+      software component:  BPM_BEISPIEL (htwberlin.de.tr119)
+                location:  localDevelopment
+                    type:  Composite Application
+           build variant:  default
+         source location:  marcus@CE06863
+         output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\DDEACDA4027E36BF2165DF19F11EC2B5\default
+       generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\DDEACDA4027E36BF2165DF19F11EC2B5
+       plugin start time:  2015-11-26 12:12:35 GMT+01:00 (CET)
+                 Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0.002 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.015 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\DDEACDA4027E36BF2165DF19F11EC2B5\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildJavaLib
+Target "createPublicParts" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Build file creation finished in 0.054 seconds
+ 
+Starting Ant..
+  Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\DDEACDA4027E36BF2165DF19F11EC2B5\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+createPublicParts:
+  [pppacker] Packing public part 'assembly'
+  [pppacker] Packed   1 file  for entity MMR (Folder Tree)
+  [pppacker] Packed 1 entity for public part 'assembly'
+     [timer] Packing of public part 'assembly' finished in 0.03 seconds
+ 
+  [pppacker] Packing public part 'compilation'
+  [pppacker] Packed   1 file  for entity MMR (Folder Tree)
+  [pppacker] Packed 1 entity for public part 'compilation'
+     [timer] Packing of public part 'compilation' finished in 0.026 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.075 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2015-11-26 12:12:36 GMT+01:00 (CET)
+Total build plugin runtime: 0.266 seconds
+ 
+Build finished OK
+
+==== Post-Processing ====   started at 2015-11-26 12:12:36.090 CET
+Comparison of previous and actual build results took: 0.152 seconds
+
+Copy the build results 
+  from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\DDEACDA4027E36BF2165DF19F11EC2B5\default\
+  to:   C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\tr_119_product\bl\caf\metadata\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  assembly
+  compilation

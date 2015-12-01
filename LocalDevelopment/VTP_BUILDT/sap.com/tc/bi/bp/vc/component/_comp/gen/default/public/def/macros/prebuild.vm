@@ -1,0 +1,5 @@
+## remove all externally assembled pps via prebuild. Workaround for conflict with
+## mass configuration where an internal public part needs to be assembled...
+#foreach($dep in $dc_depend_assemblyPPs) 
+    $dc_util.removeFolderAttribute($dep, "public-part/purpose/assembly")
+#end

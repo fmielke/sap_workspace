@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://tr.demo.sap.com/tr_119" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="TR_119_Order_Async" targetNamespace="http://tr.demo.sap.com/tr_119">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>0909232e832a11e5c1a30000373e5936</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="tr-bwa-119"/>
+      <changed by="tr-bwa-119" on="1446665391118"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:application:esr:client:710"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_low"/>
+    <ifw:interfacePattern p2p="false">L</ifw:interfacePattern>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="a4dbf2d14e543c999aa162ea722bc927"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="TR_119_Order_Async">
+        <ifw:isSynchron>false</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>outbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_async"/>
+        <ifw:lifeCycleInfo>
+          <objectState/>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="TR_119_Order_MT">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">TR_119_Order_MT</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://tr.demo.sap.com/tr_119</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://tr.demo.sap.com/tr_119</ifw:technicalNamespace>
+        <ifw:VersionID>649cc6ec832a11e5a8d70000373e5936</ifw:VersionID>
+        <ifw:xmlNamespace>http://tr.demo.sap.com/tr_119</ifw:xmlNamespace>
+        <ifw:dataType name="TR_119_Order" namespace="http://tr.demo.sap.com/tr_119" swcvId="f32c167065e011e4c765f7aa8d2c261d" uri="name=TR_119_Order~namespace=http://tr.demo.sap.com/tr_119~swcvId=f32c167065e011e4c765f7aa8d2c261d"/>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>f32c167065e011e4c765f7aa8d2c261d</ifw:guid>
+        <ifw:name>TR_SWCV 1.0 of demo.sap.com</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_a4dbf2d14e543c999aa162ea722bc927_ifmmessif</name>
+        <namespace>http://tr.demo.sap.com/tr_119</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_TR_119_Order_Async"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://tr.demo.sap.com/tr_119" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tr.demo.sap.com/tr_119">
+      <xsd:element name="TR_119_Order_MT" type="TR_119_Order"/>
+      <xsd:complexType name="TR_119_Order">
+        <xsd:sequence>
+          <xsd:element name="productID" type="xsd:string"/>
+          <xsd:element name="quantity" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="comment" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TR_119_Order_MT">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:TR_119_Order_MT" name="TR_119_Order_MT"/>
+  </wsdl:message>
+  <wsdl:portType name="TR_119_Order_Async">
+    <wsdl:documentation/>
+    <wsdl:operation name="TR_119_Order_Async">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_TR_119_Order_Async"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:TR_119_Order_MT"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TR_119_Order_AsyncBinding" type="p1:TR_119_Order_Async">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="TR_119_Order_Async">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

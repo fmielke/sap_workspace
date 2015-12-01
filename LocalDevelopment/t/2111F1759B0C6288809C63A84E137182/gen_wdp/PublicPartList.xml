@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<public-parts>
+<public-part>
+<name>comp</name>
+<purpose>compilation</purpose>
+<entities>
+<entity>
+<name>MengeangebenComponent</name>
+<package>com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent</package>
+<entity-type>Web Dynpro Component</entity-type>
+<entity-sub-type>Source</entity-sub-type>
+</entity>
+</entities>
+</public-part>
+</public-parts>

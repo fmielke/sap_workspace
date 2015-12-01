@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://htwberlin.de.tr119/versand" name="versand" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://htwberlin.de.tr119/versand" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://htwberlin.de.tr119/versand">
+      <xsd:complexType name="KundenTyp">
+        <xsd:sequence>
+          <xsd:element name="vorname" type="xsd:string"></xsd:element>
+          <xsd:element name="nachname" type="xsd:string"></xsd:element>
+          <xsd:element name="telefon" type="xsd:string"></xsd:element>
+          <xsd:element name="email" type="xsd:string"></xsd:element>
+          <xsd:element name="anschrift" type="tns:AnschriftTyp"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AnschriftTyp">
+        <xsd:sequence>
+          <xsd:element name="straße" type="xsd:string"></xsd:element>
+          <xsd:element name="hausnummer" type="xsd:int"></xsd:element>
+          <xsd:element name="postleitzahl" type="xsd:int"></xsd:element>
+          <xsd:element name="stadt" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="versandAuftrag">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="artikelnummer" type="xsd:string"></xsd:element>
+            <xsd:element name="menge" type="xsd:int"></xsd:element>
+            <xsd:element name="kunde" type="tns:KundenTyp"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="versandAntwort"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="versandAnfrage">
+    <wsdl:part name="parameter" element="tns:versandAuftrag"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="versandAntwort">
+    <wsdl:part name="parameter" element="tns:versandAntwort"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="versandAuftrag">
+    <wsdl:operation name="artikelVersenden">
+      <wsdl:input message="tns:versandAnfrage"></wsdl:input>
+      <wsdl:output message="tns:versandAntwort"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="versandSOAP" type="tns:versandAuftrag">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="artikelVersenden">
+      <soap:operation soapAction="http://htwberlin.de.tr119/versand/artikelVersenden"></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="versand">
+    <wsdl:port name="versandSOAP" binding="tns:versandSOAP">
+      <soap:address location="http://www.example.org/"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

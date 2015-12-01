@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: bpm_beispiel_0/ui/vc_impl
+                   vendor: demo.050112.com
+                     type: Visual Composer Composition Unit Implementation
+                 sub-type: 
+              type-vendor: sap.com
+
+       software component
+                     name: BPM_BEISPIEL
+                   vendor: demo.050112.com
+
+                 location: localDevelopment
+          source location: marcus@CE06863
+            build variant: default
+
+    building on CE06863, Windows Vista/x86, version 6.1
+    using Java VM 'SAP Java Server VM', version 6.1.007 (SAP AG)
+    build started at 2015-10-18 16:42:39 GMT+02:00 (CEST)
+
+    Build Plugin 'Visual Composer Component', Version 7.10 SP 10 (NW731EXT_10_REL, built on 2013-10-17 19:06:58 +0200, CL166630)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def        7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/bp/vc/component#def 7.10 SP 10 (NW731EXT_10_REL, built on 2013-10-17 19:06:58 +0200, CL166630)
+    sap.com:tc/bi/core#def            7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:45 +0200, CL166627)
+    sap.com:tc/bi/ddictech#def        7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:04 +0200, CL166627)
+    sap.com:tc/bi/exception#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:08 +0200, CL166627)
+    sap.com:tc/bi/extcm#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:12 +0200, CL166627)
+    sap.com:tc/bi/extddic#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:08 +0200, CL166627)
+    sap.com:tc/bi/extddicdb#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:11 +0200, CL166627)
+    sap.com:tc/bi/extgf#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+    sap.com:tc/bi/extmm#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+    sap.com:tc/bi/extsql#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/extvc#def           7.10 SP 10 (NW731EXT_10_REL, built on 2013-10-17 19:06:55 +0200, CL166630)
+    sap.com:tc/bi/extwd#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:11 +0200, CL166627)
+    sap.com:tc/bi/framework#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:28:57 +0200, CL166627)
+    sap.com:tc/bi/i18n#def            7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+    sap.com:tc/bi/javatech#def        7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:12 +0200, CL166627)
+    sap.com:tc/bi/jdoc#def            7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/jdoc/util#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:06 +0200, CL166627)
+    sap.com:tc/bi/jlincbs#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:14 +0200, CL166627)
+    sap.com:tc/bi/settings#version    7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:34 +0200, CL166627)
+    sap.com:tc/bi/tssap#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/util#util           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:01 +0200, CL166627)
+    sap.com:tc/bi/vctech#def          7.10 SP 10 (NW731EXT_10_REL, built on 2013-10-17 19:07:00 +0200, CL166630)
+    sap.com:tc/bi/velocity#def        7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:06 +0200, CL166627)
+    sap.com:tc/bi/wdtech#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:23 +0200, CL166627)
+    sap.com:tc/bi/xml#def             7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="cda" classname="com.sap.tc.buildplugin.deploy.DeployArchiveTask"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="prepda" classname="com.sap.tc.buildplugin.deploy.DeployArchivePrepTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="redirectLog" classname="com.sap.tools.ant.taskdefs.EnableSAPLog"/>
+<taskdef name="sdadd" classname="com.sap.tools.ant.taskdefs.SdaDDTask"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+<taskdef name="vcgen" classname="com.sap.visualcomposer.generic.generationfwk.ant.VCGenerationAntTask"/>
+
+<target name="gen_vc">
+<!-- begin generator id 'sap.com~vcgen', type 'sap.com~vcgen' -->
+<redirectLog taskname="vcgen"/>
+<echo message="Starting VisualComposer model generator"/>
+<timer/>
+<vcgen vendor="demo.050112.com"
+       dcname="bpm_beispiel_0/ui/vc_impl"
+       scvendor="demo.050112.com"
+       scname="BPM_BEISPIEL"
+       masterlanguage="en"
+       sourcepath=""
+       addpath=""
+       modules="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F503C0C6D6264CFBDA898433B937FA25\vcmodules"/>
+<timer message="VisualComposer model generator finished in "/>
+<!-- end generator id 'sap.com~vcgen', type 'sap.com~vcgen' -->
+<!-- begin generator id 'sap.com~vccheck', type 'sap.com~vccheck' -->
+<!-- VisualComposer model check not enabled. -->
+<!-- end generator id 'sap.com~vccheck', type 'sap.com~vccheck' -->
+</target>
+
+<target name="createDeployArchive" depends="gen_vc">
+<prepda unit="default" configuration="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F503C0C6D6264CFBDA898433B937FA25\vcmodules/DeployArchiveConfiguration.xml">
+
+        </prepda>
+
+
+            <sdadd file="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F503C0C6D6264CFBDA898433B937FA25/sda-dd.xml"
+       softwaretype="J2EE"
+       descriptortype="engine">
+<SubstitutionVariable name="com.sap.sld.GatewayHost"/>
+<SubstitutionVariable name="com.sap.sld.GatewayService"/>
+</sdadd>
+
+	    <cda type="sap.com~j2ee.EAR_SDA" deployfile="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default\deploy/demo.050112.com~bpm_beispiel_0~ui~vc_impl.ear">
+<descriptor type="sda-deployment-descriptor" file="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F503C0C6D6264CFBDA898433B937FA25/sda-dd.xml"/>
+
+            <deployoption key="update-descriptors" value="true"/>
+            <descriptor type="application.xml" file="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F503C0C6D6264CFBDA898433B937FA25/gen_wdp/application.xml"/>
+            <descriptor type="application-j2ee-engine.xml" file="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F503C0C6D6264CFBDA898433B937FA25/gen_wdp/application-j2ee-engine.xml"/>
+
+                        </cda>
+</target>
+
+<target name="createPublicParts" depends="gen_vc">
+<timer/>
+<pppacker ppname="default">
+</pppacker>
+<timer message="Packing of public part 'default' finished in "/>
+</target>
+
+<target name="build" depends="gen_vc,createDeployArchive,createPublicParts">
+
+</target>
+</project>

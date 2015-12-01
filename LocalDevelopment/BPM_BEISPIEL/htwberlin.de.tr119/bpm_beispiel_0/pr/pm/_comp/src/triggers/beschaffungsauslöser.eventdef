@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/glx/ide' i='1' v='2.0.0'/>
+<C n='sap.com/tc/moin/textverticalization' i='2' v='2.0.0'/>
+<C n='sap.com/tc/moin/util' i='3' v='1.0.0'/>
+<M c='1' q='Galaxy.Workflow.ErrorEventDefinition' i='47BEE014D666B532E15411DCA87A001321CBD1B1'/>
+<M c='1' q='Galaxy.Workflow.MessageEventDefinition' i='47BEE014D666B539E15411DCB9A7001321CBD1B1'/>
+<M c='1' q='Galaxy.Workflow.ErrorEventDefinitionHasWSDLFault' i='47C2D91202ED4EB2E3B311DCB310001558C33B4F' se='1' ce='-1' oe='-1'/>
+<M c='1' q='Galaxy.Workflow.MessageEventDefinitionHasOperation' i='47C2D91202ED4EB5E3B311DCC463001558C33B4F' se='1' ce='-1' oe='-1'/>
+<M c='1' q='Galaxy.Workflow.MessageEventDefinitionContainsErrorEventDefinitions' i='4933A04214BF54C2BF8211DDB6360019993D0295' se='1' ce='1' oe='-1'/>
+<M c='3' q='properties.PropertyBag' i='493E63563C546320C5EC11DD9396001999375840'/>
+<Galaxy.Workflow.MessageEventDefinition m:c='1' m:i='E0356A04F38CFA947E2111E5890D00FFC49D1489' nameTranslatable='false' documentationTranslatable='true'>
+<name maxWidth='255' originalText='Beschaffungsauslöser' resType='generaltext' translate='false' transUnitId='F38CFA957E2111E5B1C300FFC49D1489'/>
+<documentation maxWidth='16380' originalText='' resType='description' translate='true' transUnitId='F38F7D367E2111E59F2D00FFC49D1489'/>
+</Galaxy.Workflow.MessageEventDefinition>
+<Galaxy.Workflow.ErrorEventDefinition m:c='1' m:i='E0356A04F391F4EE7E2111E5874600FFC49D1489' nameTranslatable='false' documentationTranslatable='true' isCritical='true' isTechnical='false'>
+<name maxWidth='255' originalText='NichtLieferbar' resType='generaltext' translate='false' transUnitId='F391F4EF7E2111E5B32F00FFC49D1489'/>
+<documentation maxWidth='16380' originalText='' resType='description' translate='true' transUnitId='F391F4F07E2111E5A0C700FFC49D1489'/>
+</Galaxy.Workflow.ErrorEventDefinition>
+<properties.PropertyBag m:c='3' m:i='E0F9B5F2F38F7D377E2111E5C28A00FFC49D1489' id='PartitionCreationInfo'>
+<properties key='creatorId' value='com.sap.glx.ide'/>
+<properties key='creatorVersion' value='2.0.0'/>
+</properties.PropertyBag>
+<Galaxy.Workflow.ErrorEventDefinitionHasWSDLFault c='1'>
+<L f='local:E0E1B8C62218301A7D6611E5AF2600FFC49D1489' s='E0356A04F391F4EE7E2111E5874600FFC49D1489'/>
+</Galaxy.Workflow.ErrorEventDefinitionHasWSDLFault>
+<Galaxy.Workflow.MessageEventDefinitionHasOperation c='1'>
+<L f='local:E0E1B8C62215BA627D6611E5A43700FFC49D1489' s='E0356A04F38CFA947E2111E5890D00FFC49D1489'/>
+</Galaxy.Workflow.MessageEventDefinitionHasOperation>
+<Galaxy.Workflow.MessageEventDefinitionContainsErrorEventDefinitions c='1'>
+<L f='E0356A04F391F4EE7E2111E5874600FFC49D1489' s='E0356A04F38CFA947E2111E5890D00FFC49D1489'/>
+</Galaxy.Workflow.MessageEventDefinitionContainsErrorEventDefinitions>
+</Partition>

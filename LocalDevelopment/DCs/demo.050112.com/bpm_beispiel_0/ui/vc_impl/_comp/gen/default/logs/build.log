@@ -1,0 +1,130 @@
+Development Component Build (2015-10-18 16:42:38 GMT+01:00 (CEST))
+  Component name: bpm_beispiel_0/ui/vc_impl
+  Component vendor: demo.050112.com
+  SC compartment: BPM_BEISPIEL
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: marcus@CE06863
+  DC root folder: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\demo.050112.com\bpm_beispiel_0\ui\vc_impl\_comp\
+  DC type: Visual Composer Composition Unit Implementation
+  Host: CE06863
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/vc/component"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/vc/component
+   starting build plugin from : C:\SAP\eclipse\workspace.jdi\LocalDevelopment\VTP_BUILDT\sap.com\tc\bi\bp\vc\component\_comp\gen\default\public\def\
+
+
+
+Build Plugin 'Visual Composer Component', Version 7.10 SP 10 (NW731EXT_10_REL, built on 2013-10-17 19:06:58 +0200, CL166630)
+   development component:  bpm_beispiel_0/ui/vc_impl (demo.050112.com)
+      software component:  BPM_BEISPIEL (demo.050112.com)
+       support component:  Default
+                location:  localDevelopment
+                    type:  Visual Composer Composition Unit Implementation
+           build variant:  default
+         source location:  marcus@CE06863
+         output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default
+       generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F503C0C6D6264CFBDA898433B937FA25
+       plugin start time:  2015-10-18 16:42:38 GMT+02:00 (CEST)
+                 Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Package folder "src/packages" exists but is empty and will be ignored.
+Source folder "def/packages" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.117 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default\logs\prebuild.xml
+  Using macro file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\VTP_BUILDT\sap.com\tc\bi\bp\vc\component\_comp\gen\default\public\def\macros\prebuild.vm
+No build file generated.
+Build file creation finished in 0.141 seconds
+Build file C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default\logs\prebuild.xml does not exist, skipping Ant execution.
+ 
+Creating Ant build file..
+  Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default\logs\build.xml
+  Using macro file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\VTP_BUILDT\sap.com\tc\bi\bp\vc\component\_comp\gen\default\public\def\macros\build.vm
+Build file creation finished in 0.03 seconds
+ 
+Starting Ant..
+  Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+gen_vc:
+      [echo] Starting VisualComposer model generator
+     [vcgen] DC Vendor : demo.050112.com
+     [vcgen] DC Name : bpm_beispiel_0/ui/vc_impl
+     [vcgen] SC Vendor Name : demo.050112.com
+     [vcgen] SC Name : BPM_BEISPIEL
+     [vcgen] Source path : 
+     [vcgen] Public part jars initialized
+     [vcgen] Modules path : C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\F503C0C6D6264CFBDA898433B937FA25\vcmodules
+     [vcgen] Visual Composer ANT Task invoked successfully!
+     [timer] VisualComposer model generator finished in 0.513 seconds
+ 
+ 
+createDeployArchive:
+       [cda] Preparing archive for deploy unit "default"
+       [cda]   deployment type: "J2EE"
+       [cda]   deploy options:
+       [cda]     update-descriptors = true
+ 
+       [cda] Creating Ant build file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default\logs\buildDeployArchive.xml
+ 
+ 
+       [cda] Creating descriptor META-INF/application.xml ...
+ 
+       [cda] Creating descriptor META-INF/application-j2ee-engine.xml ...
+ 
+       [cda] Collecting modules ...
+       [cda] Ant build file creation finished in 0.21 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.077 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default\deploy\demo.050112.com~bpm_beispiel_0~ui~vc_impl.ear with compression
+     [timer] JarSAP finished in 0.036 seconds
+ 
+ 
+createPublicParts:
+  [pppacker] Packing public part 'default'
+  [pppacker] Nothing packed for public part 'default'
+     [timer] Packing of public part 'default' finished in 0.069 seconds
+ 
+ 
+build:
+ 
+Ant runtime 1.293 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2015-10-18 16:42:40 GMT+02:00 (CEST)
+Total build plugin runtime: 1.933 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2015-10-18 16:42:40.745 CEST
+Comparison of previous and actual build results took: 0.005 seconds
+
+Copy the build results 
+  from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\F503C0C6D6264CFBDA898433B937FA25\default\
+  to:   C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\demo.050112.com\bpm_beispiel_0\ui\vc_impl\_comp\gen\default\

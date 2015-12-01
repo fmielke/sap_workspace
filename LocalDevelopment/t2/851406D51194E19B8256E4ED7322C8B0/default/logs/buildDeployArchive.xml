@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: tr_119_product/bl/caf/permissions
+                   vendor: htwberlin.de.tr119
+                     type: Content
+                 sub-type: UME Permissions
+              type-vendor: sap.com
+
+       software component
+                     name: BPM_BEISPIEL
+                   vendor: htwberlin.de.tr119
+
+                 location: localDevelopment
+          source location: marcus@CE06863
+            build variant: default
+
+    building on CE06863, Windows Vista/x86, version 6.1
+    using Java VM 'SAP Java Server VM', version 6.1.007 (SAP AG)
+    build started at 2015-11-05 11:36:41 GMT+01:00 (CET)
+
+    Build Plugin 'ContentPlugin', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:25 +0200, CL166627)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/bp/content#content 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:25 +0200, CL166627)
+    sap.com:tc/bi/core#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:45 +0200, CL166627)
+    sap.com:tc/bi/exception#def      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:08 +0200, CL166627)
+    sap.com:tc/bi/extddicdb#def      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:11 +0200, CL166627)
+    sap.com:tc/bi/extsql#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/framework#def      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:28:57 +0200, CL166627)
+    sap.com:tc/bi/i18n#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+    sap.com:tc/bi/javatech#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:12 +0200, CL166627)
+    sap.com:tc/bi/jdoc#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/jdoc/util#def      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:06 +0200, CL166627)
+    sap.com:tc/bi/jlincbs#def        7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:14 +0200, CL166627)
+    sap.com:tc/bi/settings#version   7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:34 +0200, CL166627)
+    sap.com:tc/bi/util#util          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:01 +0200, CL166627)
+    sap.com:tc/bi/velocity#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:06 +0200, CL166627)
+    sap.com:tc/bi/xml#def            7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+ -->
+<project name="DC Deploy build"
+         default="packDeployArchive"
+         basedir=".">
+<taskdef name="jarsap" classname="com.sap.sdm.ant.JarSAP"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="srcpacker" classname="com.sap.tc.buildplugin.ant.taskdefs.SourceArchiveCreatorTask"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+<property name="dtr-workspace" value="marcus@CE06863"/>
+
+<target name="packDeployArchive">
+<timer/>
+<srcpacker destination="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\851406D51194E19B8256E4ED7322C8B0\sda\src.zip" archiveLocation="srcarchive">
+<usedpublicpart dcname="tr_119_product/bl/caf/permissions"
+                dcvendor="htwberlin.de.tr119"
+                ppname="Internal:Content Archive"/>
+</srcpacker>
+<timer message="Source archive creation finished in "/>
+<timer/>
+<jarsap jarfile="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\851406D51194E19B8256E4ED7322C8B0\default\deploy\htwberlin.de.tr119~tr_119_product~bl~caf~permissions.ear" deployfile="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\851406D51194E19B8256E4ED7322C8B0\sda\META-INF\sda-dd.xml">
+<component vendor="htwberlin.de.tr119"
+           name="tr_119_product/bl/caf/permissions"
+           location="localDevelopment"
+           counter="20151105103641"
+           scvendor="htwberlin.de.tr119"
+           scname="BPM_BEISPIEL"/>
+<fileset dir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\851406D51194E19B8256E4ED7322C8B0\sda">
+<exclude name="**/.cvsignore"/>
+<exclude name="**/.nfs*"/>
+<exclude name="**/SCCS/**"/>
+<exclude name="**/._*"/>
+<exclude name="**/#*#"/>
+<exclude name="**/.#*"/>
+<exclude name="**/.svn/**"/>
+<exclude name="**/vssver.scc"/>
+<exclude name="**/CVS/**"/>
+<exclude name="**/%*%"/>
+<exclude name="**/*~"/>
+</fileset>
+<fileset dir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\851406D51194E19B8256E4ED7322C8B0\.ump">
+<include name="htwberlin.de.tr119~tr_119_product~bl~caf~permissions.ump"/>
+<exclude name="**/.cvsignore"/>
+<exclude name="**/.nfs*"/>
+<exclude name="**/SCCS/**"/>
+<exclude name="**/._*"/>
+<exclude name="**/#*#"/>
+<exclude name="**/.#*"/>
+<exclude name="**/.svn/**"/>
+<exclude name="**/vssver.scc"/>
+<exclude name="**/CVS/**"/>
+<exclude name="**/%*%"/>
+<exclude name="**/*~"/>
+</fileset>
+</jarsap>
+<timer message="JarSAP finished in "/>
+</target>
+</project>

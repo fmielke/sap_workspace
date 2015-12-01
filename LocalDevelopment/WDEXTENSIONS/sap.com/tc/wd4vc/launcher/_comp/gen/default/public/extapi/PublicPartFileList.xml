@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>tc/wd4vc/launcher</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>extapi</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>tc/aii/base/offline/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/aii/base/offline/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/cmi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/cmi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/ddic/runtime/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">runtime</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/ddic/runtime/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">runtime</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<pp-ref purpose="compilation">gci</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">gci</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~tc~wd4vc~launcher~extapi.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="jdoclet" path="doc/java/sap.com~tc~wd4vc~launcher~extapi.jdar" type="zip">
+<property key="attributes">java-documentation-archive,solid</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>ILauncherParameters</name>
+<package>com/sap/tc/wd4vc/launcher/java</package>
+<entity-type>Java Class</entity-type>
+<entity-sub-type>Class</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="gen" source-path="classes/com/sap/tc/wd4vc/launcher/java/">
+<file path="com/sap/tc/wd4vc/launcher/java/ILauncherParameters.class" source-path="ILauncherParameters.class"/>
+</fileset>
+<fileset location="jdoclet" source-location="gen" source-path="javadoc/extapi">
+<file path=".digest"/>
+<file path=".log"/>
+<file path=".symbols"/>
+<file path="class-list"/>
+<file path="com/sap/tc/wd4vc/launcher/java/ILauncherParameters.jdoc"/>
+<file path="com/sap/tc/wd4vc/launcher/java/package-info.jdoc"/>
+<file path="publisher-doc/sapcm.dc/sap.com/tc/wd4vc/launcher/publisher-info.jdoc"/>
+<file path="publisher-doc/sapcm.pp/sap.com/tc/wd4vc/launcher/extapi/publisher-info.jdoc"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src/packages/com/sap/tc/wd4vc/launcher/java/">
+<file path="com/sap/tc/wd4vc/launcher/java/ILauncherParameters.java" source-path="ILauncherParameters.java"/>
+</fileset>
+</entity>
+<entity>
+<name>com.sap.tc.wd4vc.extapi</name>
+<package>com/sap/tc/wd4vc/extapi</package>
+<entity-type>Java Package</entity-type>
+<entity-sub-type>Class</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/tc/wd4vc/extapi/IExternalExecutionListener.class"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalInterpreter.class"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalWD4VCEngine.class"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalXGLComponent.class"/>
+</fileset>
+<fileset location="jdoclet" source-location="gen" source-path="javadoc/extapi">
+<file path=".digest"/>
+<file path=".log"/>
+<file path=".symbols"/>
+<file path="class-list"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalExecutionListener.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalInterpreter.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalWD4VCEngine.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalXGLComponent.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/package-info.jdoc"/>
+<file path="publisher-doc/sapcm.dc/sap.com/tc/wd4vc/launcher/publisher-info.jdoc"/>
+<file path="publisher-doc/sapcm.pp/sap.com/tc/wd4vc/launcher/extapi/publisher-info.jdoc"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src/packages">
+<file path="com/sap/tc/wd4vc/extapi/IExternalExecutionListener.java"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalInterpreter.java"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalWD4VCEngine.java"/>
+<file path="com/sap/tc/wd4vc/extapi/IExternalXGLComponent.java"/>
+<file path="com/sap/tc/wd4vc/extapi/ILauncher.wdcompinterfacedef"/>
+<file path="com/sap/tc/wd4vc/extapi/ILauncher.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/extapi/ILauncherCfg.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/extapi/LauncherInterfaceView.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/extapi/LauncherInterfaceView.wdinterfaceview"/>
+</fileset>
+</entity>
+<entity>
+<name>com.sap.tc.wd4vc.extapi.info</name>
+<package>com/sap/tc/wd4vc/extapi/info</package>
+<entity-type>Java Package</entity-type>
+<entity-sub-type>Class</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalStatusInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLActionInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLExecutableInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLInfosetInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLInfoshapeInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLObjectInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLPortInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLSignalInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLStepInfo.class"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLStructureInfo.class"/>
+</fileset>
+<fileset location="jdoclet" source-location="gen" source-path="javadoc/extapi">
+<file path=".digest"/>
+<file path=".log"/>
+<file path=".symbols"/>
+<file path="class-list"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalStatusInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLActionInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLExecutableInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLInfosetInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLInfoshapeInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLObjectInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLPortInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLSignalInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLStepInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLStructureInfo.jdoc"/>
+<file path="com/sap/tc/wd4vc/extapi/info/package-info.jdoc"/>
+<file path="publisher-doc/sapcm.dc/sap.com/tc/wd4vc/launcher/publisher-info.jdoc"/>
+<file path="publisher-doc/sapcm.pp/sap.com/tc/wd4vc/launcher/extapi/publisher-info.jdoc"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src/packages">
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalStatusInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLActionInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLExecutableInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLInfosetInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLInfoshapeInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLObjectInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLPortInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLSignalInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLStepInfo.java"/>
+<file path="com/sap/tc/wd4vc/extapi/info/IExternalXGLStructureInfo.java"/>
+</fileset>
+</entity>
+<entity>
+<name>Launcher</name>
+<package>com.sap.tc.wd4vc.launcher</package>
+<entity-type>Web Dynpro Component</entity-type>
+<entity-sub-type>Source</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="src/packages">
+<file path="com/sap/tc/wd4vc/launcher/Launcher.wdcomponent"/>
+<file path="com/sap/tc/wd4vc/launcher/LauncherInterface.wdcomponentinterface"/>
+<file path="com/sap/tc/wd4vc/launcher/LauncherInterfaceView.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/launcher/LauncherInterfaceView.wdinterfaceview"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/tc/wd4vc/launcher/wdp/IExternalLauncherInterface.class"/>
+<file path="com/sap/tc/wd4vc/launcher/wdp/IExternalLauncherInterfaceCfg.class"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="gen_wdp">
+<file path="configuration/Components/com.sap.tc.wd4vc.launcher.Launcher/wdrr.xml"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="gen_wdp/packages">
+<file path="com/sap/tc/wd4vc/launcher/LauncherInterface.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/launcher/LauncherInterfaceCfg.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/launcher/wdp/IExternalLauncherInterface.java"/>
+<file path="com/sap/tc/wd4vc/launcher/wdp/IExternalLauncherInterfaceCfg.java"/>
+</fileset>
+</entity>
+<entity>
+<name>ILauncher</name>
+<package>com.sap.tc.wd4vc.extapi</package>
+<entity-type>Web Dynpro Component Interface Definition</entity-type>
+<entity-sub-type>Source</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="src/packages">
+<file path="com/sap/tc/wd4vc/extapi/ILauncher.wdcompinterfacedef"/>
+<file path="com/sap/tc/wd4vc/extapi/ILauncher.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/extapi/ILauncherCfg.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/extapi/LauncherInterfaceView.wdcontroller"/>
+<file path="com/sap/tc/wd4vc/extapi/LauncherInterfaceView.wdinterfaceview"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/tc/wd4vc/extapi/wdp/IExternalILauncher$WD.class"/>
+<file path="com/sap/tc/wd4vc/extapi/wdp/IExternalILauncher.class"/>
+<file path="com/sap/tc/wd4vc/extapi/wdp/IExternalILauncherCfg$WD.class"/>
+<file path="com/sap/tc/wd4vc/extapi/wdp/IExternalILauncherCfg.class"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="gen_wdp">
+<file path="configuration/ComponentInterfaces/com.sap.tc.wd4vc.extapi.ILauncher/wdrr.xml"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="gen_wdp/packages">
+<file path="com/sap/tc/wd4vc/extapi/wdp/IExternalILauncher.java"/>
+<file path="com/sap/tc/wd4vc/extapi/wdp/IExternalILauncherCfg.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><application>
+    <application-config>    
+    </application-config>
+    <components/>
+    <services/>
+    <webdynpro>
+        <!-- applications -->
+        <applications>
+            <part name="tr119.de.htwberlin.bpm_beispiel_0.ui.vc_impl.AusgabegenehmigenComponent" shortName="AusgabegenehmigenComponent">          
+                <!-- application to component -->
+                <alias name="com.sap.tc.wd4vc.launcher.Launcher" objectName="sap.com/tc~wd4vc~launcher" partName="com.sap.tc.wd4vc.launcher.Launcher" partType="Component"/>
+            </part> 
+        </applications>
+        <!-- components -->
+        <components>
+        </components>
+        <!-- interface definitions -->
+        <interfaces>
+        </interfaces>
+        <!-- models -->
+        <models>
+        </models>
+        <runtime-classes>
+        </runtime-classes> 
+        <wdgeninfo>
+            <wdgencomponent name="SapMetamodelCore">7.1000.20060405193334.0000</wdgencomponent>
+            <wdgencomponent name="SapMetamodelCommon">7.1000.20060405193334.0000</wdgencomponent>
+            <wdgencomponent name="SapMetamodelDictionary">7.1000.20060405193334.0000 (release=dev, buildtime=2006-04-05:18:54:50[UTC], changelist=34653, host=pwdfm074)</wdgencomponent>
+            <wdgencomponent name="SapMetamodelWebDynpro">7.1000.20060405193334.0000</wdgencomponent>
+            <wdgencomponent name="SapGenerationFrameworkCore">7.1000.20060405123111.0000</wdgencomponent>
+            <wdgencomponent name="SapDictionaryGenerationCore">7.1000.20060405193334.0000</wdgencomponent>
+            <wdgencomponent name="SapDictionaryGenerationTemplates">(unknown)</wdgencomponent>
+            <wdgencomponent name="SapWebDynproGenerationCore">7.1000.20060405193334.0000</wdgencomponent>
+            <wdgencomponent name="SapWebDynproGenerationTemplates">7.1000.20060405193334.0000</wdgencomponent>
+            <wdgencomponent name="SapIdeWebDynproCheckLayer">7.1000.20060405193334.0000</wdgencomponent>
+        </wdgeninfo>
+    </webdynpro>
+</application>

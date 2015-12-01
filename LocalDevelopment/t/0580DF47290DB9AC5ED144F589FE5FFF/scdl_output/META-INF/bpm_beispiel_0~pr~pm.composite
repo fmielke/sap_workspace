@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="bpm_beispiel_0~pr~pm" targetNamespace="http://www.sap.com">
+<component name="htwberlin.de.tr119~bpm_beispiel_0~pr~pm~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="db7286ff-c2a6-47aa-9591-84e6fd3473cd" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="dummy">
+<interface.wsdl interface="http://htwberlin.de.tr119/versand#wsdl.interface(versandAuftrag)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/versand.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="218d0353-2393-4ae7-8aa9-3cd63ab58549" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="dummy">
+<interface.wsdl interface="http://katalog.services.com.sap.demo/#wsdl.interface(KatalogServiceTR119)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/rootwsdl_importedwsdl_1_KatalogServiceTR119Service_KatalogServiceTR119.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="a0e923b9-51eb-4891-8d8c-b3238141dbcf" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="local">
+<interface.wsdl interface="http://versand.services.com.sap.demo/#wsdl.interface(VersandServiceTR119)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/rootwsdl_importedwsdl_1_VersandServiceTR119Service_VersandServiceTR119.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="4d1bfb2f-9cb9-46ec-89de-1e70dac2e16b" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="local">
+<interface.wsdl interface="http://distanz.services.com.sap.demo/#wsdl.interface(TestCalloutTR119)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/rootwsdl_importedwsdl_1_TestCalloutTR119Service_TestCalloutTR119.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="e932edee-6cea-4655-8014-241a498eeb15" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="dummy">
+<interface.wsdl interface="http://haendler.services.com.sap.demo/#wsdl.interface(HaendlerServiceTR119)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/rootwsdl_importedwsdl_1_HaendlerServiceTR119Service_HaendlerServiceTR119.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="24664c58-7d07-4826-a278-50040aa4e823" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="TR_119_Localhost_Without_LPS">
+<interface.wsdl interface="http://tr.demo.sap.com/tr_119#wsdl.interface(TR_119_Order_Async)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/TR_119_Order_Async.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="e3204b7d-0af2-48d3-9ba7-22ab34a29148" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="r41z">
+<interface.wsdl interface="urn:sap-com:document:sap:soap:functions:mc-style#wsdl.interface(ZMaterialAvailability)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/rootwsdl_MaterialAvailability.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="8bc947a8-8b50-4494-9711-44859cc0f471" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="dummy">
+<interface.wsdl interface="http://htwberlin.de.tr119/beschaffung#wsdl.interface(beschaffungsAuftrag)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/beschaffung.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="fb30f7a7-cd1b-4e45-a56d-61bebca63212" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="dummy">
+<interface.wsdl interface="http://htwberlin.de.tr119/auftragserfuellung/#wsdl.interface(auftragsAnfrage)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/auftragserfuellung.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="6d4073c0-b147-4006-ab60-00516d3d9de6" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="local">
+<interface.wsdl interface="http://katalog.services.com.sap.demo/#wsdl.interface(KatalogServiceTR119)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/rootwsdl_importedwsdl_1_KatalogServiceTR119Service_KatalogServiceTR119.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="f1f4e0d8-cc8a-4f5b-af11-ed4d323b5993" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="TR_119_ESB_SG">
+<interface.wsdl interface="http://tr.demo.sap.com/tr_119#wsdl.interface(TR_119_OrderList_Async_Out)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/TR_119_OrderList_Async_Out.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="TR_119_ICP"/>
+</reference>
+<reference name="e7edbd2a-e515-4801-b36d-4c675ad50d35" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="6f6893b1-f004-428c-90d8-81653bd7b14a" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="dummy">
+<interface.wsdl interface="http://www.sap.com/caf/htwberlin.de.tr119/tr_119_product.bl.caf/modeled/TR_119_Order#wsdl.interface(TR_119_Order)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/tr_119_product_bl_caf_modeled_TR_119_Order.wsdl"/>
+<binding.ws/>
+</reference>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="35106705-fe1f-41de-b072-338789878a69.consgroup" sgName="TR_119_ESB_SG"/>
+<sapconfig:serviceGroup bundle="3cd3d8e1-3896-47ad-8d3f-20512606317a.consgroup" sgName="r41z"/>
+<sapconfig:serviceGroup bundle="87a7cb82-0968-4f0f-bd32-2cd5f47b8b7e.consgroup" sgName="TR_119_Localhost_Without_LPS"/>
+<sapconfig:serviceGroup bundle="c28a1d78-1d84-4476-8ed0-3e55cd6200dd.consgroup" sgName="dummy"/>
+<sapconfig:serviceGroup bundle="e04dbeac-05eb-43d2-af4c-1762b37ac9c2.consgroup" sgName="local"/>
+</sapconfig:serviceGroups>
+<sapconfig:service-group-configuration serviceGroup="dummy">
+<sapconfig:localProvider/>
+</sapconfig:service-group-configuration>
+<sapconfig:service-group-configuration serviceGroup="local">
+<sapconfig:localProvider/>
+</sapconfig:service-group-configuration>
+</composite>

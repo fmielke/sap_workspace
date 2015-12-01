@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application-j2ee-engine>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="application">tc/wd4vc/launcher</reference-target>
+</reference>
+<provider-name>htwberlin.de.tr119</provider-name>
+</application-j2ee-engine>

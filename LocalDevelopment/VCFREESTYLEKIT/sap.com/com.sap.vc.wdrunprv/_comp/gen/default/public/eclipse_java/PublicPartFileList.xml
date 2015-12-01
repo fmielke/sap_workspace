@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>com.sap.vc.wdrunprv</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Visual Composer Plugin</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>eclipse_java</name>
+<purpose>assembly</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>com.sap.base.technology.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>vc_ds_service</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+<at-deploy-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>vc_generation</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">correction_api</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<pp-ref purpose="compilation">check_api</pp-ref>
+<at-build-time/>
+<at-deploy-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>visualcomposer_server_api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+<at-deploy-time/>
+<at-runtime qualifier="strong"/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~com.sap.vc.wdrunprv~eclipse_java.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>PatternDescriptor.xml</name>
+<entity-type>File</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="META-INF">
+<file path="PatternDescriptor.xml"/>
+</fileset>
+</entity>
+<entity>
+<name>com</name>
+<package>com</package>
+<entity-type>Java Package Tree</entity-type>
+<entity-sub-type>Class</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="source">
+<file path="com/sap/visualcomposer/wd4vc/templates/TemplateComponentModel.txt"/>
+<file path="com/sap/visualcomposer/wd4vc/templates/TemplateDependencies.txt"/>
+<file path="com/sap/visualcomposer/wd4vc/templates/TemplateWDApplicationRR.txt"/>
+<file path="com/sap/visualcomposer/wd4vc/templates/TemplateWeb.txt"/>
+<file path="com/sap/visualcomposer/wd4vc/templates/TemplateWebdynpro.txt"/>
+<file path="com/sap/visualcomposer/wd4vc/templates/Template_Manifest.txt"/>
+<file path="com/sap/visualcomposer/wd4vc/templates/TempleteDependencyString.txt"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/tc/wd4vc/Utility.class"/>
+<file path="com/sap/tc/wd4vc/WDDependencyProvider.class"/>
+<file path="com/sap/tc/wd4vc/WDFlexModuleBuilder.class"/>
+<file path="com/sap/tc/wd4vc/WDFlexRuntimeProvider.class"/>
+<file path="com/sap/tc/wd4vc/WDModuleBuilder.class"/>
+<file path="com/sap/tc/wd4vc/WDRuntimeProvider.class"/>
+<file path="com/sap/tc/wd4vc/archive/test/ArchiveTester.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/exception/WDArchiveException.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/IWDArchiveHandler.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/WDArchiveBuilder.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/WDArchiveBuilderFactory.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/WDArchiveHandlerFactory.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/WDArchivehandler.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/impl/WDArchiveBuilderFactoryImpl.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/impl/WDArchiveBuilderImpl.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/impl/WDArchiveHandlerImpl.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/GUIDGenerator.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/JARBuilder.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/Logger.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/TranslationUnit.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/Utils.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/WDAppURLGenerator.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/WDArchiveEntities.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/XGLDocument.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/XGLParser.class"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/XLFGenerator.class"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="source">
+<file path="com/sap/tc/wd4vc/Utility.java"/>
+<file path="com/sap/tc/wd4vc/WDDependencyProvider.java"/>
+<file path="com/sap/tc/wd4vc/WDFlexModuleBuilder.java"/>
+<file path="com/sap/tc/wd4vc/WDFlexRuntimeProvider.java"/>
+<file path="com/sap/tc/wd4vc/WDModuleBuilder.java"/>
+<file path="com/sap/tc/wd4vc/WDRuntimeProvider.java"/>
+<file path="com/sap/tc/wd4vc/archive/test/ArchiveTester.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/exception/WDArchiveException.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/IWDArchiveHandler.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/WDArchiveBuilder.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/WDArchiveBuilderFactory.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/WDArchiveHandlerFactory.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/extapi/WDArchivehandler.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/impl/WDArchiveBuilderFactoryImpl.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/impl/WDArchiveBuilderImpl.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/impl/WDArchiveHandlerImpl.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/GUIDGenerator.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/JARBuilder.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/Logger.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/TranslationUnit.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/Utils.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/WDAppURLGenerator.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/WDArchiveEntities.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/XGLDocument.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/XGLParser.java"/>
+<file path="com/sap/visualcomposer/wd4vc/archive/utils/XLFGenerator.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

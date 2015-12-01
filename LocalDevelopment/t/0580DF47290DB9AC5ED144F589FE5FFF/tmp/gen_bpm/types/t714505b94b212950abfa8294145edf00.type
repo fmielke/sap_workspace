@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=http://versand.services.com.sap.demo/
+ROOT_0,SCHEMA_LOCATION=http://versand.services.com.sap.demo/
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://versand.services.com.sap.demo/" xmlns:tns="http://versand.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="versandStarten" type="tns:versandStarten" sdox:aliasName="$http://versand.services.com.sap.demo/:versandStarten" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="versandStarten" sdox:aliasName="#versandStarten" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="lagerId" type="xsd:string" minOccurs="0" sdox:aliasName="$lagerId"></xsd:element>       <xsd:element name="details" type="xsd:string" minOccurs="0" sdox:aliasName="$details"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=http://versand.services.com.sap.demo/
+ROOT_1,SCHEMA_LOCATION=http://versand.services.com.sap.demo/
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://versand.services.com.sap.demo/" xmlns:tns="http://versand.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="versandStartenResponse" type="tns:versandStartenResponse" sdox:aliasName="$http://versand.services.com.sap.demo/:versandStartenResponse" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="versandStartenResponse" sdox:aliasName="#versandStartenResponse" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="return" type="xsd:string" minOccurs="0" sdox:aliasName="$return"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

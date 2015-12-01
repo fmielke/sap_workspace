@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>com.sap.vc.wdrunprv</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Visual Composer Plugin</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>eclipse_resource</name>
+<purpose>assembly</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>com.sap.base.technology.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>vc_ds_service</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+<at-deploy-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>vc_generation</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">correction_api</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<pp-ref purpose="compilation">check_api</pp-ref>
+<at-build-time/>
+<at-deploy-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>visualcomposer_server_api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+<at-deploy-time/>
+<at-runtime qualifier="strong"/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~com.sap.vc.wdrunprv~eclipse_resource.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+</archives>
+<entities>
+<entity>
+<name>package.xml</name>
+<entity-type>File</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="webContent">
+<file path="package.xml"/>
+</fileset>
+</entity>
+<entity>
+<name>services/developmentservices.xml</name>
+<entity-type>File</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="webContent">
+<file path="services/developmentservices.xml"/>
+</fileset>
+</entity>
+<entity>
+<name>res</name>
+<entity-type>Folder Tree</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="webContent">
+<file path="res/langs/dictionary.info"/>
+<file path="res/langs/dictionary.properties"/>
+<file path="res/langs/dictionary_de.properties"/>
+<file path="res/langs/dictionary_en.properties"/>
+<file path="res/langs/dictionary_fr.properties"/>
+<file path="res/langs/dictionary_ja.properties"/>
+<file path="res/langs/dictionary_pt.properties"/>
+<file path="res/langs/dictionary_ru.properties"/>
+<file path="res/langs/dictionary_zh_CN.properties"/>
+</fileset>
+</entity>
+<entity>
+<name>src</name>
+<entity-type>Folder Tree</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="webContent">
+<file path="src/rules/runtime/defineWDRuntimeCategories.xml"/>
+<file path="src/rules/runtime/defineWDRuntimeDisplayName.xml"/>
+<file path="src/rules/runtimeRules.xml"/>
+<file path="src/rules/~contents.xml"/>
+<file path="src/wdrtprovider.kit"/>
+</fileset>
+</entity>
+</entities>
+</content>

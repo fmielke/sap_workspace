@@ -1,0 +1,5 @@
+ROOT_0,TARGET_NAMESPACE=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Auftragserfuellung/Auftragserfuellung
+ROOT_0,SCHEMA_LOCATION=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Auftragserfuellung/Auftragserfuellung
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Auftragserfuellung/Auftragserfuellung" xmlns:tns="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Auftragserfuellung/Auftragserfuellung" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="ArtikelVerfuegbar" type="xsd:boolean" sdox:aliasName="$htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Auftragserfuellung/Auftragserfuellung:ArtikelVerfuegbar" xmlns:sdox="commonj.sdo/xml"></xsd:element> </xsd:schema> 
+

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>tr_119_product/bl/caf/ejbmodule</name>
+<vendor>htwberlin.de.tr119</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</development-component>
+<public-part>
+<name>client</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>caf/core/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">client</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">gen_client</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">gen_api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/jra/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/usermanagement/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/webservices/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/htwberlin.de.tr119~tr_119_product~bl~caf~ejbmodule~client.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>tr119</name>
+<package>tr119</package>
+<entity-type>Java Package Tree</entity-type>
+<entity-sub-type>Class</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/ObjectFactory.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/TR_119_Order.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Create.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateMultiple$TR_119_OrdercreateMultipleInput.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateMultiple.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateMultipleResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Delete.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteMultiple.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteMultipleResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindAll.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindAllResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindByMultipleParameters.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindByMultipleParametersResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/ObjectFactory.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Read.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/ReadResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderBO.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderSEI.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderService.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderServiceLocal.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Update.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateMultiple.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateMultipleResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateResponse.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/package-info.class"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/package-info.class"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src">
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/ObjectFactory.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/TR_119_Order.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Create.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateMultiple.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateMultipleResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Delete.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteMultiple.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteMultipleResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindAll.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindAllResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindByMultipleParameters.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindByMultipleParametersResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/ObjectFactory.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Read.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/ReadResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderBO.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderSEI.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderService.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderServiceLocal.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Update.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateMultiple.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateMultipleResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/package-info.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/package-info.java"/>
+</fileset>
+</entity>
+<entity>
+<name>tr119</name>
+<package>tr119</package>
+<entity-type>Java Package Tree</entity-type>
+<entity-sub-type>Source</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="srcarchive" source-location="DC" source-path="src">
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/ObjectFactory.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/TR_119_Order.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Create.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateMultiple.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateMultipleResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/CreateResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Delete.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteMultiple.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteMultipleResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/DeleteResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindAll.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindAllResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindByMultipleParameters.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/FindByMultipleParametersResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/ObjectFactory.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Read.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/ReadResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderBO.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderSEI.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderService.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/TR_119_OrderServiceLocal.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/Update.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateMultiple.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateMultipleResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/UpdateResponse.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/bonode/tr_119_order/tr_119_order/package-info.java"/>
+<file path="tr119/de/htwberlin/tr_119_product/bl/caf/modeled/package-info.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

@@ -1,0 +1,117 @@
+Development Component Build (2015-10-19 10:13:41 GMT+01:00 (CEST))
+  Component name: bpm_beispiel_0/bl/ejb
+  Component vendor: demo.050112.com
+  SC compartment: BPM_BEISPIEL
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: marcus@CE06863
+  DC root folder: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\demo.050112.com\bpm_beispiel_0\bl\ejb\_comp\
+  DC type: J2EE
+  DC subtype: EJBModule
+  Host: CE06863
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/ejbmodule"
+   validating dependency to  public part "api" of DC "sap.com/engine.jee5.facade"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/ejbmodule
+   starting build plugin from : C:\SAP\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\ejbmodule\_comp\gen\default\public\ejb\
+
+
+
+Build Plugin 'EJBModulePlugin', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:37 +0200, CL166627)
+   development component:  bpm_beispiel_0/bl/ejb (demo.050112.com)
+      software component:  BPM_BEISPIEL (demo.050112.com)
+       support component:  Default
+                location:  localDevelopment
+                    type:  J2EE, subtype EJBModule
+           build variant:  default
+         source location:  marcus@CE06863
+         output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\4CD1655327366C84B5981DB16424D875\default
+       generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\4CD1655327366C84B5981DB16424D875
+       plugin start time:  2015-10-19 10:13:45 GMT+02:00 (CEST)
+                 Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Package folder ".apt_generated" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0.015 seconds
+ 
+Preparing data context..
+Using custom manifest file "ejbModule/META-INF/MANIFEST.MF"
+Data context preparation finished in 0.237 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\4CD1655327366C84B5981DB16424D875\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEJBModule
+Build file creation finished in 0.78 seconds
+ 
+Starting Ant..
+  Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\4CD1655327366C84B5981DB16424D875\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+compile:
+      [echo] Starting Java compiler using the current JVM
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF-8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]   source path: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\demo.050112.com\bpm_beispiel_0\bl\ejb\_comp\ejbModule
+      [echo]    class path:
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\engine.jee5.facade.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\jee5.facade.jar
+      [echo]    output dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\4CD1655327366C84B5981DB16424D875\classes
+     [javac] Compiling 3 source files to C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\4CD1655327366C84B5981DB16424D875\classes
+     [timer] Java compilation finished in 4.491 seconds
+ 
+      [echo] Start XLF conversion
+  [xlf2prop] Found 0 XLF files to convert in folder "ejbModule"
+     [timer] XLF conversion finished in 0 seconds
+ 
+ 
+createPublicParts:
+  [pppacker] Packing public part 'client'
+  [pppacker] Nothing packed for public part 'client'
+     [timer] Packing of public part 'client' finished in 0.156 seconds
+ 
+  [pppacker] Packing public part 'ejbjar'
+  [pppacker] Packed   8 files for entity demo.050112.com~bpm_beispiel_0~bl~ejb (EJB-JAR)
+  [pppacker] Packed 1 entity for public part 'ejbjar'
+     [timer] Packing of public part 'ejbjar' finished in 0.203 seconds
+ 
+ 
+build:
+ 
+Ant runtime 5.291 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2015-10-19 10:13:54 GMT+02:00 (CEST)
+Total build plugin runtime: 8.149 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2015-10-19 10:13:54.151 CEST
+Comparison of previous and actual build results took: 0.094 seconds
+
+Copy the build results 
+  from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\4CD1655327366C84B5981DB16424D875\default\
+  to:   C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\demo.050112.com\bpm_beispiel_0\bl\ejb\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  ejbjar
+  client

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Specification-Vendor: SAP AG
+Implementation-Vendor-Id: htwberlin.de.tr119
+Implementation-Vendor: htwberlin.de.tr119
+Implementation-Version: 0
+Implementation-Title: bpm_beispiel_0~ui~vc_impl

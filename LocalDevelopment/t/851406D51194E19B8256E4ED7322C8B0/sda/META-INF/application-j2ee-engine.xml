@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application-j2ee-engine>
+<provider-name>htwberlin.de.tr119</provider-name>
+<modules-additional>
+<module>
+<entry-name>htwberlin.de.tr119~tr_119_product~bl~caf~permissions.ump</entry-name>
+<container-type>com.sap.security.ume</container-type>
+</module>
+</modules-additional>
+</application-j2ee-engine>

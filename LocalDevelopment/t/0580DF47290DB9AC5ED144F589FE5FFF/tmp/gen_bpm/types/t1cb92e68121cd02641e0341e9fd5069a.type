@@ -1,0 +1,5 @@
+ROOT_0,TARGET_NAMESPACE=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben
+ROOT_0,SCHEMA_LOCATION=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben" xmlns:tns="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="CustomAttributes" type="tns:CustomAttributes" sdox:aliasName="$htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben:CustomAttributes" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="CustomAttributes" ns1:hiddenInTree="" xmlns:ns1="http://sap.com/esm/ui/ext" sdox:aliasName="#CustomAttributes" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence></xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

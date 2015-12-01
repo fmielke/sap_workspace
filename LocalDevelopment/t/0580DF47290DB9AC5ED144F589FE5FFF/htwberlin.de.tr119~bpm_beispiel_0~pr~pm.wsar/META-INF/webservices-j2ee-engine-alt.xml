@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webservices xmlns="http://www.sap.com/webas/710/ws/webservices-j2ee-engine-alt-descriptor">
+  <webservice-description>
+    <webservice-name>versandAuftrag_htwberlindetr1192Fbpmbeispiel02Fpr2Fpm2FVersandauslC3B6ser</webservice-name>
+    <wsdl-file>META-INF/wsdl/htwberlindetr1192Fbpmbeispiel02Fpr2Fpm2FVersandauslC3B6ser/src/wsdl/versand.wsdl</wsdl-file>
+    <wsdl-service namespace="http://htwberlin.de.tr119/versand">versand</wsdl-service>
+    <port-component>
+      <port-name>versandAuftrag</port-name>
+      <wsdl-port namespace="http://htwberlin.de.tr119/versand">versandSOAP</wsdl-port>
+      <url>/bpm/htwberlindetr119/bpmbeispiel0/pr/pm/VersandauslC3B6ser</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Versandauslöser</property>
+      </implementation-link>
+      <meta-data/>
+    </port-component>
+  </webservice-description>
+  <webservice-description>
+    <webservice-name>TR_119_Order_Async_htwberlindetr1192Fbpmbeispiel02Fpr2Fpm2FTR119ICPTRG</webservice-name>
+    <wsdl-file>META-INF/wsdl/htwberlindetr1192Fbpmbeispiel02Fpr2Fpm2FTR119ICPTRG/src/wsdl/TR_119_Order_Async.wsdl</wsdl-file>
+    <wsdl-service namespace="http://tr.demo.sap.com/tr_119">TR_119_Order_AsyncService</wsdl-service>
+    <port-component>
+      <port-name>TR_119_Order_Async</port-name>
+      <wsdl-port namespace="http://tr.demo.sap.com/tr_119">TR_119_Order_AsyncPort</wsdl-port>
+      <url>/bpm/htwberlindetr119/bpmbeispiel0/pr/pm/TR119ICPTRG</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">htwberlin.de.tr119/bpm_beispiel_0/pr/pm/TR_119_ICP_TRG</property>
+      </implementation-link>
+      <meta-data/>
+    </port-component>
+  </webservice-description>
+  <webservice-description>
+    <webservice-name>beschaffungsAuftrag_htwberlindetr1192Fbpmbeispiel02Fpr2Fpm2FBeschaffungsauslC3B6ser</webservice-name>
+    <wsdl-file>META-INF/wsdl/htwberlindetr1192Fbpmbeispiel02Fpr2Fpm2FBeschaffungsauslC3B6ser/src/wsdl/beschaffung.wsdl</wsdl-file>
+    <wsdl-service namespace="http://htwberlin.de.tr119/beschaffung">beschaffung</wsdl-service>
+    <port-component>
+      <port-name>beschaffungsAuftrag</port-name>
+      <wsdl-port namespace="http://htwberlin.de.tr119/beschaffung">beschaffungSOAP</wsdl-port>
+      <url>/bpm/htwberlindetr119/bpmbeispiel0/pr/pm/BeschaffungsauslC3B6ser</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser</property>
+      </implementation-link>
+      <meta-data/>
+    </port-component>
+  </webservice-description>
+  <webservice-description>
+    <webservice-name>auftragsAnfrage_htwberlindetr1192Fbpmbeispiel02Fpr2Fpm2FBestellauslC3B6ser</webservice-name>
+    <wsdl-file>META-INF/wsdl/htwberlindetr1192Fbpmbeispiel02Fpr2Fpm2FBestellauslC3B6ser/src/wsdl/auftragserfuellung.wsdl</wsdl-file>
+    <wsdl-service namespace="http://htwberlin.de.tr119/auftragserfuellung/">auftragserfuellung</wsdl-service>
+    <port-component>
+      <port-name>auftragsAnfrage</port-name>
+      <wsdl-port namespace="http://htwberlin.de.tr119/auftragserfuellung/">auftragserfuellungSOAP</wsdl-port>
+      <url>/bpm/htwberlindetr119/bpmbeispiel0/pr/pm/BestellauslC3B6ser</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Bestellauslöser</property>
+      </implementation-link>
+      <meta-data/>
+    </port-component>
+  </webservice-description>
+</webservices>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>bpm_beispiel_0/ui/wd</name>
+<vendor>htwberlin.de.tr119</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>WebDynpro Application</name>
+<purpose>assembly</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>tc/aii/base/offline/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/aii/base/offline/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/cmi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/cmi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/ddic/runtime/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">runtime</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/ddic/runtime/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">runtime</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<pp-ref purpose="compilation">gci</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">gci</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="WebDynpro Archive" path="deploy/webdynpro/htwberlin.de.tr119~bpm_beispiel_0~ui~wd.war" type="jar">
+<property key="attributes">J2EE-Module[module-type[web]],jar</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>WebDynpro Archive</name>
+<entity-type>WebDynpro Archive</entity-type>
+<entity-sub-type>Archive</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="WebDynpro Archive" source-location="DC" source-path="WEB-INF">
+<file path="WEB-INF/web.xml" source-path="web.xml"/>
+</fileset>
+<fileset location="WebDynpro Archive" source-location="gen" source-path="gen_wdp">
+<file path="WEB-INF/webdynpro.xml" source-path="webdynpro.xml"/>
+</fileset>
+<fileset location="WebDynpro Archive" source-location="gen" source-path="gen_wdp/configuration">
+<file path="WEB-INF/webdynpro/Components/com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent.MengeangebenComponent/wdrr.xml" source-path="Components/com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent.MengeangebenComponent/wdrr.xml"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src/packages">
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponent.wdcomponent"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponent.wdcontroller"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterface.wdcontroller"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterface.wdlocalcompintfdef"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterfaceView.wdcontroller"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterfaceView.wdinterfaceview"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentMessagePool.wdmessagepool"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.wdcontroller"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.wdcontroller.xlf"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.wdview"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.wdview.xlf"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.wdcontroller"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.wdnavigation"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.wdwindow"/>
+</fileset>
+<fileset location="srcarchive" source-location="gen" source-path="gen_wdp/packages">
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterface.wdcontroller"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IConstantMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IExternalMengeangebenComponentInterface.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IMessageMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponentView.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponentWindow.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPublicMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPublicMengeangebenComponentWindow.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponentView.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponentWindow.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/ResourceMengeangebenComponent.properties"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/ResourceMengeangebenComponent_en.properties"/>
+</fileset>
+</entity>
+</entities>
+<modules>
+<module>
+<location>WebDynpro Archive</location>
+<path>WEB-INF/lib/htwberlin.de.tr119~bpm_beispiel_0~ui~wd.jar</path>
+<property key="attributes">jar,java-library</property>
+<fileset location="WebDynpro Archive">
+<file path="WEB-INF/lib/htwberlin.de.tr119~bpm_beispiel_0~ui~wd.jar"/>
+</fileset>
+<fileset location="srcarchive" source-location="gen" source-path="gen_wdp/packages">
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IConstantMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IExternalMengeangebenComponentInterface.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IMessageMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponentView.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponentWindow.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPublicMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPublicMengeangebenComponentWindow.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponent.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponentView.java"/>
+<file path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponentWindow.java"/>
+</fileset>
+</module>
+</modules>
+</content>

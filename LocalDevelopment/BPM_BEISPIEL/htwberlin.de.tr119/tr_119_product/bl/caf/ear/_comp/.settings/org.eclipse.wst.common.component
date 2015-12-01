@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="LocalDevelopment~tr_119_product~bl~caf~ear~htwberlin.de.tr119">
+        <wb-resource deploy-path="/" source-path="/"/>
+        <dependent-module archiveName="LocalDevelopment~tr_119_product~bl~caf~ejbmodule~htwberlin.de.tr119.jar" deploy-path="/" handle="module:/resource/LocalDevelopment~tr_119_product~bl~caf~ejbmodule~htwberlin.de.tr119/LocalDevelopment~tr_119_product~bl~caf~ejbmodule~htwberlin.de.tr119">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

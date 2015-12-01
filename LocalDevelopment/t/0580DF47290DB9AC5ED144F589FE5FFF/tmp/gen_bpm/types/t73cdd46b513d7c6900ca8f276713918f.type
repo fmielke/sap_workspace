@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben
+ROOT_0,SCHEMA_LOCATION=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben" xmlns:tns="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben" xmlns:ns1="sap.com/glx/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:import namespace="sap.com/glx/" schemaLocation="sap.com/glx/"></xsd:import>   <xsd:element name="TaskStatus" type="ns1:TaskStatus" sdox:aliasName="$htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Menge_angeben:TaskStatus" xmlns:sdox="commonj.sdo/xml"></xsd:element> </xsd:schema> 
+
+CHILD_0,TARGET_NAMESPACE=sap.com/glx/
+CHILD_0,SCHEMA_LOCATION=sap.com/glx/
+CHILD_0,ROOTID=0
+CHILD_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="sap.com/glx/" xmlns:tns="sap.com/glx/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:complexType name="TaskStatus" sdox:aliasName="#TaskStatus" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="lifecycle" type="xsd:int" sdox:aliasName="$lifecycle"></xsd:element>       <xsd:element name="error" type="xsd:boolean" sdox:aliasName="$error"></xsd:element>       <xsd:element name="assigned" type="xsd:boolean" sdox:aliasName="$assigned"></xsd:element>       <xsd:element name="escalation" type="xsd:boolean" sdox:aliasName="$escalation"></xsd:element>       <xsd:element name="suspended" type="xsd:boolean" sdox:aliasName="$suspended"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

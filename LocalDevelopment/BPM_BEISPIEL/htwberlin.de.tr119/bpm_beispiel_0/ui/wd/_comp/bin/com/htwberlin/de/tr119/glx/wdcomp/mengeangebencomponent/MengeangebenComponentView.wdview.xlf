@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xliff version="1.1">
+<file original="self" source-language="en" product-name="@@d96896fa6b6041cd2beed77dce6b023dView:MengeangebenComponentView[com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent] of Component:MengeangebenComponent[com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent]" datatype="s2x">
+<header>
+<skl>
+</skl>
+<phase-group>
+</phase-group>
+<s2x xmlns="http://www.sap.com">
+<dtr>
+<sc></sc>
+</dtr>
+<giltDirectives>
+<develContact>marcus</develContact><domain></domain>
+<originalLocale xml:lang="en"/>
+<maxLength>255</maxLength>
+</giltDirectives>
+<state phase-name="" process-name="">started</state>
+</s2x>
+</header>
+<body>
+<group restype="label">
+<trans-unit id="7c164fde6e7b46013dd1a872a2106ae1" resname="RootUIElementContainer/Child:Group/Child:TransContainer_0/Child:Menge_label@text" maxwidth="255" translate="yes"><source>Menge</source><s2x xmlns="http://www.sap.com"><textState>new</textState><recommendedLength chars="-1"/></s2x></trans-unit>
+<trans-unit id="ee60a3e408e849c62d72c90526cd07e6" resname="RootUIElementContainer/Child:Group/Child:TransContainer_0/Child:artikelnummer_label@text" maxwidth="255" translate="yes"><source>artikelnummer</source><s2x xmlns="http://www.sap.com"><textState>new</textState><recommendedLength chars="-1"/></s2x></trans-unit>
+<trans-unit id="88a5f50b2c8943cb06fcfe63484e09a5" resname="RootUIElementContainer/Child:Group/Child:TransContainer_0/Child:lieferzeitInTagen_label@text" maxwidth="255" translate="yes"><source>lieferzeitInTagen</source><s2x xmlns="http://www.sap.com"><textState>new</textState><recommendedLength chars="-1"/></s2x></trans-unit>
+<trans-unit id="49c78e7e3cd747973738ec9836d18d37" resname="RootUIElementContainer/Child:Group/Child:TransContainer_0/Child:preis_label@text" maxwidth="255" translate="yes"><source>preis</source><s2x xmlns="http://www.sap.com"><textState>new</textState><recommendedLength chars="-1"/></s2x></trans-unit>
+<trans-unit id="a8589233e38449ba18aef14c0898cf8a" resname="RootUIElementContainer/Child:Group/Child:TransContainer_0/Child:waehrung_label@text" maxwidth="255" translate="yes"><source>waehrung</source><s2x xmlns="http://www.sap.com"><textState>new</textState><recommendedLength chars="-1"/></s2x></trans-unit>
+</group>
+<group restype="caption">
+<trans-unit id="c8aed4de58af4f890d38f2da3e61e5b8" resname="RootUIElementContainer/Child:Group/Header@text" maxwidth="255" translate="yes"><source>Context</source><s2x xmlns="http://www.sap.com"><textState>new</textState><recommendedLength chars="-1"/></s2x></trans-unit>
+</group>
+<group restype="button">
+<trans-unit id="2f2044c18b81496c16db99811b37de2f" resname="RootUIElementContainer/Child:TransparentContainer/Child:MengeangebenCompleteEvent@text" maxwidth="255" translate="yes"><source>Senden</source><s2x xmlns="http://www.sap.com"><textState>new</textState><recommendedLength chars="-1"/></s2x></trans-unit>
+<trans-unit id="27035053501a4d5c2d67d4683dc3c705" resname="RootUIElementContainer/Child:TransparentContainer/Child:MengeangebenErrorEvent@text" maxwidth="255" translate="yes"><source>Abbrechen</source><s2x xmlns="http://www.sap.com"><textState>new</textState><recommendedLength chars="-1"/></s2x></trans-unit>
+</group>
+</body>
+</file>
+</xliff>

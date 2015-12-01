@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--This file gets updated with the validation errors in rules content.--><!--The validation errors are grouped by the resource name.--><!--You are encouraged to get familiar with the contents and format of this file.--><!--You are expected to manually merge this file in a team development environment.--><!--See Rules Composer Help for additional documentation on managing this resource.--><problems>
+<resource name="LagerErmitteln.ruleset">
+<warning entityName="postleitzahlAlsString" entityType="Definition" message="The definition value will be only evaluated once even though the dynamic initializer in the value may change"/>
+<warning entityName="postleitzahlAlsString" entityType="Definition" message="The definition value will be only evaluated once even though the dynamic initializer in the value may change"/>
+</resource>
+
+
+
+
+</problems>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: bpm_beispiel_0/bl/rules
+                   vendor: htwberlin.de.tr119
+                     type: com.sap.brmside.rulesdctype
+                 sub-type: 
+              type-vendor: sap.com
+
+       software component
+                     name: BPM_BEISPIEL
+                   vendor: htwberlin.de.tr119
+
+                 location: localDevelopment
+          source location: marcus@CE06863
+            build variant: default
+
+    building on CE06863, Windows Vista/x86, version 6.1
+    using Java VM 'SAP Java Server VM', version 6.1.007 (SAP AG)
+    build started at 2015-11-26 12:11:33 GMT+01:00 (CET)
+
+    Build Plugin 'buildpluginbrms', Version 0.1b
+    detailed versions:
+    sap.com:tc/bi/anttasks#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/core#def              7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:45 +0200, CL166627)
+    sap.com:tc/bi/exception#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:08 +0200, CL166627)
+    sap.com:tc/bi/extddicdb#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:11 +0200, CL166627)
+    sap.com:tc/bi/extsql#def            7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/framework#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:28:57 +0200, CL166627)
+    sap.com:tc/bi/i18n#def              7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+    sap.com:tc/bi/javatech#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:12 +0200, CL166627)
+    sap.com:tc/bi/jdoc#def              7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/jdoc/util#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:06 +0200, CL166627)
+    sap.com:tc/bi/jlincbs#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:14 +0200, CL166627)
+    sap.com:tc/bi/settings#version      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:34 +0200, CL166627)
+    sap.com:tc/bi/util#util             7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:01 +0200, CL166627)
+    sap.com:tc/bi/velocity#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:06 +0200, CL166627)
+    sap.com:tc/bi/xml#def               7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+    sap.com:tc/brms/bi/bp/buildtool#def 1.0 SP 10 (NW731EXT_10_REL, built on 2013-10-17 18:27:13 +0200, CL398692)
+    sap.com:tc/moin/bi/moinext#def      7.10 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:34:10 +0200, CL397813)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="BpemTask" classname="com.sap.tc.glx.BpemTask"/>
+<taskdef name="MOINInit" classname="com.sap.tc.moin.ant.task.MoinInitTask"/>
+<taskdef name="MOINInitWithMetaModels" classname="com.sap.tc.moin.ant.task.MoinInitWithMetaModelsTask"/>
+<taskdef name="MOINShutdown" classname="com.sap.tc.moin.ant.task.MoinShutdownTask"/>
+<taskdef name="MoinDcConfigurationProviderProxyTask" classname="com.sap.tc.moin.bi.moinext.tasks.MoinDcConfigurationProviderProxyTask"/>
+<taskdef name="MoinShutdownHookInstallerTask" classname="com.sap.tc.moin.bi.moinext.tasks.MoinShutdownHookInstallerTask"/>
+<taskdef name="gen_scdl" classname="com.sap.bie.sca.scdl.gen.ScdlGenerator"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="prepda" classname="com.sap.tc.buildplugin.deploy.DeployArchivePrepTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+
+<target name="createPublicParts" depends="Bpem">
+<timer/>
+<pppacker ppname="def_cmp">
+</pppacker>
+<timer message="Packing of public part 'def_cmp' finished in "/>
+</target>
+
+<target name="Bpem" depends="ScdlBase">
+<!-- begin generator chain id 'sap.com~bpem_chain', type 'sap.com~bpem_chain' -->
+<!-- begin generator id 'sap.com~bpem_chain/moininit', type 'sap.com~moininit' -->
+<MoinDcConfigurationProviderProxyTask/>
+<MOINInit>
+<metaModelsPath>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip"/>
+</metaModelsPath>
+</MOINInit>
+<MoinShutdownHookInstallerTask/>
+<!-- end generator id 'sap.com~bpem_chain/moininit', type 'sap.com~moininit' -->
+<!-- begin generator id 'sap.com~bpem_chain/bpem', type 'sap.com~bpem' -->
+<BpemTask/>
+<!-- end generator id 'sap.com~bpem_chain/bpem', type 'sap.com~bpem' -->
+<!-- begin generator id 'sap.com~bpem_chain/shutdown', type 'sap.com~moinshutdown' -->
+<MOINShutdown/>
+<!-- end generator id 'sap.com~bpem_chain/shutdown', type 'sap.com~moinshutdown' -->
+<!-- end generator chain id 'sap.com~bpem_chain', type 'sap.com~bpem_chain' -->
+<delete dir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\A986E4DFEB7EFE50A5C11A2286827271\default\deploy\ctx"/>
+<delete file="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\A986E4DFEB7EFE50A5C11A2286827271\default\deploy\sda-dd.xml"/>
+</target>
+
+<target name="ScdlBase">
+<!-- begin generator chain id 'sap.com~scdl_gen_chain', type 'sap.com~scdl_gen_chain' -->
+<!-- begin generator id 'sap.com~scdl_gen_chain/moininit', type 'sap.com~moininit' -->
+<MoinDcConfigurationProviderProxyTask/>
+<MOINInit>
+<metaModelsPath>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip"/>
+<pathelement location="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip"/>
+</metaModelsPath>
+</MOINInit>
+<echo message="Registering folder: gensrc/extcfg for path: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\A986E4DFEB7EFE50A5C11A2286827271\gensrc\extcfg/"/>
+<MoinShutdownHookInstallerTask/>
+<!-- end generator id 'sap.com~scdl_gen_chain/moininit', type 'sap.com~moininit' -->
+<!-- begin generator id 'sap.com~scdl_gen_chain/gen_scdl', type 'sap.com~gen_scdl' -->
+<echo message="Starting Extension Configuration generator..."/>
+<timer/>
+<gen_scdl/>
+<timer message="Extension Configuration generator finished in "/>
+<!-- end generator id 'sap.com~scdl_gen_chain/gen_scdl', type 'sap.com~gen_scdl' -->
+<!-- begin generator id 'sap.com~scdl_gen_chain/shutdown', type 'sap.com~moinshutdown' -->
+<MOINShutdown/>
+<!-- end generator id 'sap.com~scdl_gen_chain/shutdown', type 'sap.com~moinshutdown' -->
+<!-- end generator chain id 'sap.com~scdl_gen_chain', type 'sap.com~scdl_gen_chain' -->
+<prepda>
+<fileset dir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\A986E4DFEB7EFE50A5C11A2286827271/scdl_output">
+<include name="META-INF/**"/>
+</fileset>
+</prepda>
+</target>
+
+<target name="build" depends="ScdlBase,Bpem,createPublicParts">
+
+</target>
+</project>

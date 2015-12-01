@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow id="E00EA3B7B8001F5D789F11E5B41000FFC49D1489" label="e7b0fe805f563bcb8aeb88dfeab9b941" orientation="horizontal" language="en" activePoolId="E00EA3B7B73D5883789F11E5CE5500FFC49D1489" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" procvisVersion="1" >
+<Pool id="E00EA3B7B73D5883789F11E5CE5500FFC49D1489" label="5d7732297c14380ea8f42d24852ca1b9" subject="5ac67ae9d70f323abe1a481d64f03fd1" hasDeadlines="false" boundaryVisible="false">
+<Lane id="E00EA3B7B7B4A603789F11E593D200FFC49D1489" label="9d4d3d6369a134cb9df2c79a830ba608">
+<Node type="StartEvent" id="E00EA3B7B8120314789F11E5A87500FFC49D1489" label="ad47d76e67a83903a930054450017aba">
+<Connector  id="E0A5ADB5DCC8E600789F11E5CED800FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E0A5ADB5DBE14D1A789F11E5C18900FFC49D1489" type="SequenceConnector">
+<Point x="200" y="100" />
+<Point x="387" y="100" />
+</Connector>
+<Connector  id="E016575C33E757CD7E2911E587DE00FFC49D1489" label="f00c8c87706b34bd96de7ba6ab6368d2" target="E016575C33E757CD7E2911E587DE00FFC49D1489" type="DirectedAssociation">
+<Point x="200" y="100" />
+<Point x="200" y="31" />
+</Connector>
+<Connector  id="E016575C4FE0A9687E2911E58D5500FFC49D1489" label="ed366cce5cc03258a528d692e3942101" target="E016575C4FE0A9687E2911E58D5500FFC49D1489" type="DirectedAssociation">
+<Point x="200" y="100" />
+<Point x="165" y="194" />
+</Connector>
+<Connector  id="E016575C59C215237E2911E59B7C00FFC49D1489" label="dd9aa5bd48883cea9265885b3062a676" target="E016575C59C215237E2911E59B7C00FFC49D1489" type="DirectedAssociation">
+<Point x="200" y="100" />
+<Point x="245" y="194" />
+</Connector>
+<Position x="185" y="85" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="AutomatedActivity" id="E012BF1EFE3DA7B0942611E5B18E00FFC49D1489" label="fa0fb3f0677b30fe9add1a04bdda1237">
+<Connector  id="E012BF1E03912345942711E585C700FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E0A5ADB5EDDADDD2789F11E5B19500FFC49D1489" type="SequenceConnector">
+<Point x="527" y="100" />
+<Point x="629" y="100" />
+</Connector>
+<Connector  id="E012BF1EFFEFDC5B942811E5B46A00FFC49D1489" label="7be32dfa0dea3254bb31245c333ce176" target="E012BF1EFFEFDC5B942811E5B46A00FFC49D1489" type="DirectedAssociation">
+<Point x="527" y="100" />
+<Point x="525" y="194" />
+</Connector>
+<Position x="480" y="73" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://distanz.services.com.sap.demo/" name="TestCalloutTR119"/>
+<Operation>sendTestData</Operation>
+<ServiceGroup>local</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="DataObject" id="E012BF1EFFEFDC5B942811E5B46A00FFC49D1489" label="7be32dfa0dea3254bb31245c333ce176">
+<Position x="510" y="173" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="DataObject" id="E016575C33E757CD7E2911E587DE00FFC49D1489" label="f00c8c87706b34bd96de7ba6ab6368d2">
+<Position x="185" y="10" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="DataObject" id="E016575C4FE0A9687E2911E58D5500FFC49D1489" label="ed366cce5cc03258a528d692e3942101">
+<Position x="150" y="173" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="DataObject" id="E016575C59C215237E2911E59B7C00FFC49D1489" label="dd9aa5bd48883cea9265885b3062a676">
+<Position x="230" y="173" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="DataObject" id="E016575C5A424F8C7E2A11E59BBD00FFC49D1489" label="64d10aca92813f708e58afabd1202d58">
+<Position x="372" y="173" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="EmbeddedSubWorkflow" id="E02C978B62DA8B8178A111E5C72C00FFC49D1489" label="3e070f083acf395686a58a4c3ef1e741">
+<Node type="AbstractStartEvent" id="E02C978B62EC472E78A111E5B97F00FFC49D1489" label="a804108aa3cb3a3fa05459f68e03232f">
+<Connector  id="E02C978B6CC7C31578A411E5CF8C00FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978B6CC34F7478A411E58CA100FFC49D1489" type="SequenceConnector">
+<Point x="52" y="54" />
+<Point x="177" y="54" />
+</Connector>
+<Position x="37" y="39" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="AbstractEndEvent" id="E02C978B62EED17778A111E5935800FFC49D1489" label="90f88564f3b63fd180b2b45d47fba751">
+<Position x="280" y="39" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="ReportingActivity" id="E02C978B6CC34F7478A411E58CA100FFC49D1489" label="cd7e7f295313380bbb7b67741c234b9b">
+<Connector  id="E02C978B74F1915778A411E5A08200FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978B62EED17778A111E5935800FFC49D1489" type="SequenceConnector">
+<Point x="177" y="54" />
+<Point x="295" y="54" />
+</Connector>
+<Position x="130" y="27" />
+<Size x="95" y="55" />
+
+</Node>
+<Connector  id="E02C978B788CA37178A111E5B2CF00FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978B7887B8B978A111E5A27800FFC49D1489" type="SequenceConnector">
+<Point x="1003" y="99" />
+<Point x="1335" y="100" />
+</Connector>
+<Position x="930" y="46" />
+<Size x="147" y="107" /><ExpandedSize x="393" y="161" />
+</Node>
+<Node type="AbstractEndEvent" id="E02C978B7887B8B978A111E5A27800FFC49D1489" label="84964c593b12348da1fe1bae82ccf343">
+<Position x="1320" y="85" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="SubWorkflow" id="E02C978B97A8DFAA78A111E5A90500FFC49D1489" label="d64dd0b67b8b3a9aabd38dde3f13daaf" subflowId="E007956AE641A6EE78A111E5855200FFC49D1489">
+<BoundaryEvent type="IntermediateEscalationEvent" id="E016575C139CE5417E2F11E5B6F400FFC49D1489" label="dff0db105e6e3e3d9be70d882ae8d49f">
+<Connector  id="E016575C92AA2DE87E2F11E5862300FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978BABD4015F78A311E5BFD700FFC49D1489" type="SequenceConnector">
+<Point x="652" y="252" />
+<Point x="652" y="297" />
+<Point x="827" y="297" />
+</Connector>
+<Position x="640" y="240" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575C1E11E41B7E2F11E5930C00FFC49D1489" label="842d9953baeb3d4a9764fc1a320a020d">
+<Connector  id="E016575C962F26577E2F11E58AFB00FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978BB590020478A311E5BC8200FFC49D1489" type="SequenceConnector">
+<Point x="612" y="252" />
+<Point x="612" y="397" />
+<Point x="827" y="397" />
+</Connector>
+<Position x="600" y="240" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E02C978BABB2B8F378A111E58F3E00FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E0A5ADB504DE696378A011E5BD9500FFC49D1489" type="SequenceConnector">
+<Point x="629" y="227" />
+<Point x="685" y="227" />
+<Point x="827" y="227" />
+<Point x="827" y="100" />
+</Connector>
+<Position x="582" y="200" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E02C978BABB3E6C578A111E5B12E00FFC49D1489" label="f5471a6ea6953c3d8f189d418ead1c2c">
+<Connector  id="E02C978BABB3B74378A111E5C47D00FFC49D1489" label="3895c86d6282368cb6d47c0ff2b32bc5" target="E0A5ADB504DE696378A011E5BD9500FFC49D1489" type="SequenceConnector">
+</Connector>
+<Position x="780" y="73" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="NotificationActivity" id="E02C978BABD4015F78A311E5BFD700FFC49D1489" label="e8253e48ddd93ebeab35cad54a1628b2">
+<Connector  id="E02C978BDA4193B078A311E5AF4000FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978BDA3D83C078A311E5C6FE00FFC49D1489" type="SequenceConnector">
+<Point x="827" y="297" />
+<Point x="1335" y="297" />
+</Connector>
+<Position x="780" y="270" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="NotificationActivity" id="E02C978BB590020478A311E5BC8200FFC49D1489" label="22a9389d627a3dae9b5b971dcd7c0805">
+<Connector  id="E02C978BDFD1214978A311E5A0C500FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978BDFCA443178A311E5902800FFC49D1489" type="SequenceConnector">
+<Point x="827" y="397" />
+<Point x="1059" y="397" />
+</Connector>
+<Position x="780" y="370" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="AbstractEndEvent" id="E02C978BDA3D83C078A311E5C6FE00FFC49D1489" label="5926d740e3c63de5867c758ac6b5f8cc">
+<Position x="1320" y="282" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="AutomatedActivity" id="E02C978BDFCA443178A311E5902800FFC49D1489" label="82605131f5a23fb49265297301036aa9">
+<Connector  id="E02C978BE54EC92378A311E5AA8100FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978BE54B3F4678A311E5A0D100FFC49D1489" type="SequenceConnector">
+<Point x="1059" y="397" />
+<Point x="1335" y="397" />
+</Connector>
+<Position x="1012" y="370" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://katalog.services.com.sap.demo/" name="KatalogServiceTR119"/>
+<Operation>artikelEntfernen</Operation>
+<ServiceGroup>dummy</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="AbstractEndEvent" id="E02C978BE54B3F4678A311E5A0D100FFC49D1489" label="cda1fbdc3c243eada7095fb3b7418f34">
+<Position x="1320" y="382" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="SubWorkflow" id="E0A5ADB504DE696378A011E5BD9500FFC49D1489" label="902959b5e8523616ac567751c26d565f" subflowId="E0677A9A3561247178A411E5C66D00FFC49D1489">
+<Connector  id="E02C978B6301EEBB78A111E5A61D00FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E02C978B62DA8B8178A111E5C72C00FFC49D1489" type="SequenceConnector">
+<Point x="827" y="100" />
+<Point x="1003" y="99" />
+</Connector>
+<Position x="780" y="73" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="AutomatedActivity" id="E0A5ADB5DBE14D1A789F11E5C18900FFC49D1489" label="fd874d43292233cfa4798249b7cf9877">
+<Connector  id="E012BF1EFE9BFD08942611E58A5800FFC49D1489" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1EFE3DA7B0942611E5B18E00FFC49D1489" type="SequenceConnector">
+<Point x="387" y="100" />
+<Point x="527" y="100" />
+</Connector>
+<Connector  id="E016575C5A424F8C7E2A11E59BBD00FFC49D1489" label="64d10aca92813f708e58afabd1202d58" target="E016575C5A424F8C7E2A11E59BBD00FFC49D1489" type="DirectedAssociation">
+<Point x="387" y="100" />
+<Point x="387" y="194" />
+</Connector>
+<Position x="340" y="73" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="urn:sap-com:document:sap:soap:functions:mc-style" name="ZMaterialAvailability"/>
+<Operation>MaterialAvailability</Operation>
+<ServiceGroup>r41z</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="ExclusiveChoice" id="E0A5ADB5EDDADDD2789F11E5B19500FFC49D1489" label="a1e3fb5f1a6035f987d02ab6a6c80025">
+<Connector  id="E0A5ADB504E5FB2078A011E58C4D00FFC49D1489" label="dc3c3e5ae2e83568862821327e981089" target="E0A5ADB504DE696378A011E5BD9500FFC49D1489" type="SequenceConnector" isDefault="false">
+<Point x="629" y="100" />
+<Point x="827" y="100" />
+<LabelPosition x="697" y="98"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E02C978B97AF716678A111E583CB00FFC49D1489" label="b8e3bdf0b94b33d8a98c0a4e2ae1e996" target="E02C978B97A8DFAA78A111E5A90500FFC49D1489" type="SequenceConnector" isDefault="true">
+<Point x="629" y="100" />
+<Point x="629" y="160" />
+<Point x="629" y="160" />
+<Point x="629" y="227" />
+<LabelPosition x="659" y="173"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="609" y="80" />
+<Size x="40" y="40" />
+
+</Node>
+
+<Position x="0" y="0" />
+<Size x="1371" y="1000" />
+</Lane>
+<Position x="0" y="0" />
+<Size x="1351" y="425" />
+<description>b603cd47c595310d8728d8fe2f1ad184</description></Pool>
+</Workflow>

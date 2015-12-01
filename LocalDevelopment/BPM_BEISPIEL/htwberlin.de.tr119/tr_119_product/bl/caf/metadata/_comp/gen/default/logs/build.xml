@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: tr_119_product/bl/caf/metadata
+                   vendor: htwberlin.de.tr119
+                     type: Composite Application
+                 sub-type: 
+              type-vendor: sap.com
+
+       software component
+                     name: BPM_BEISPIEL
+                   vendor: htwberlin.de.tr119
+
+                 location: localDevelopment
+          source location: marcus@CE06863
+            build variant: default
+
+    building on CE06863, Windows Vista/x86, version 6.1
+    using Java VM 'SAP Java Server VM', version 6.1.007 (SAP AG)
+    build started at 2015-11-26 12:12:35 GMT+01:00 (CET)
+
+    Build Plugin 'JavaPlugin', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:25 +0200, CL166627)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/bp/javaLib#saplib 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:25 +0200, CL166627)
+    sap.com:tc/bi/core#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:45 +0200, CL166627)
+    sap.com:tc/bi/exception#def     7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:08 +0200, CL166627)
+    sap.com:tc/bi/extddicdb#def     7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:11 +0200, CL166627)
+    sap.com:tc/bi/extsql#def        7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/framework#def     7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:28:57 +0200, CL166627)
+    sap.com:tc/bi/i18n#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+    sap.com:tc/bi/javatech#def      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:12 +0200, CL166627)
+    sap.com:tc/bi/jdoc#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/jdoc/util#def     7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:06 +0200, CL166627)
+    sap.com:tc/bi/jlincbs#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:14 +0200, CL166627)
+    sap.com:tc/bi/settings#version  7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:34 +0200, CL166627)
+    sap.com:tc/bi/util#util         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:01 +0200, CL166627)
+    sap.com:tc/bi/velocity#def      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:06 +0200, CL166627)
+    sap.com:tc/bi/xml#def           7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="jlinppcheck" classname="com.sap.tc.buildplugin.pp.ant.JLinEECheckTask"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+<!-- Java compilation skipped because no package directories are available. -->
+
+<target name="createPublicParts">
+<timer/>
+<pppacker ppname="assembly">
+</pppacker>
+<timer message="Packing of public part 'assembly' finished in "/>
+<timer/>
+<pppacker ppname="compilation">
+</pppacker>
+<timer message="Packing of public part 'compilation' finished in "/>
+<jlinppcheck/>
+</target>
+
+<target name="build" depends="createPublicParts">
+
+</target>
+</project>

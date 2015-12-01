@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/com/sap/ide/es/config/mc/model' i='1' v='2.0.0'/>
+<M c='1' q='mc.logicalsystem.QName' i='471DAFAC55EC9E6C814111DCA447003005C6B92C'/>
+<M c='1' q='mc.servicereferences.ServiceReference' i='471DAFAC55EE250E814111DC8ECA003005C6B92C'/>
+<M c='1' q='mc.servicereferences.serviceref_logicalSystem' i='471DAFAC55EFABA2814111DCC1B9003005C6B92C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='mc.servicereferences.serviceref_authenticationProfile' i='471DAFAC55EFABA5814111DCA3E1003005C6B92C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='mc.servicereferences.serviceref_qname' i='471DAFAC55F13240814111DCC062003005C6B92C' se='1' ce='1' oe='-1'/>
+<mc.logicalsystem.QName m:c='1' m:i='E012BF1E25706C2F75A211E597BA00FFC49D1489' name='auftragsAnfrage' namespace='http://htwberlin.de.tr119/auftragserfuellung/'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E012BF1E257775BE75A211E5C20500FFC49D1489' id='a73f3656-8a14-4736-b4a5-653b24fdf4a2' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E012BF1E85D4FBDF758211E5C5CD00FFC49D1489' name='SampleTimer' namespace='http://sap.com/glx/sampletimer/'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E012BF1E85D4FBE0758211E5974900FFC49D1489' id='f5f9f91b-c68d-46fa-9c20-7e5276e00417' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E012BF1E915FB44075B011E5C7EC00FFC49D1489' name='beschaffungsAuftrag' namespace='http://htwberlin.de.tr119/beschaffung'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E012BF1E915FB44175B011E5BDE400FFC49D1489' id='14ed0749-a5bb-4068-9475-355a5261e51a' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E012BF1EB777440675B011E5A5E900FFC49D1489' name='versandAuftrag' namespace='http://htwberlin.de.tr119/versand'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E012BF1EB777440775B011E5BC6800FFC49D1489' id='9d3b6de6-2371-45a8-b494-37cd0a968237' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.servicereferences.serviceref_logicalSystem c='1'>
+<L f='local:E012BF1E25290C1675A211E5C61300FFC49D1489' s='E012BF1E257775BE75A211E5C20500FFC49D1489'/>
+<L f='local:4925559F5D230461B6FD11DD82620018717335EB' s='E012BF1E85D4FBE0758211E5974900FFC49D1489'/>
+<L f='local:E012BF1E25290C1675A211E5C61300FFC49D1489' s='E012BF1E915FB44175B011E5BDE400FFC49D1489'/>
+<L f='local:E012BF1E25290C1675A211E5C61300FFC49D1489' s='E012BF1EB777440775B011E5BC6800FFC49D1489'/>
+</mc.servicereferences.serviceref_logicalSystem>
+<mc.servicereferences.serviceref_authenticationProfile c='1'>
+<L f='local:E012BF1E85D27EE4758211E5CAF800FFC49D1489' s='E012BF1E257775BE75A211E5C20500FFC49D1489'/>
+<L f='local:E012BF1E85D27EE4758211E5CAF800FFC49D1489' s='E012BF1E85D4FBE0758211E5974900FFC49D1489'/>
+<L f='local:E012BF1E85D27EE4758211E5CAF800FFC49D1489' s='E012BF1E915FB44175B011E5BDE400FFC49D1489'/>
+<L f='local:E012BF1E85D27EE4758211E5CAF800FFC49D1489' s='E012BF1EB777440775B011E5BC6800FFC49D1489'/>
+</mc.servicereferences.serviceref_authenticationProfile>
+<mc.servicereferences.serviceref_qname c='1'>
+<L f='E012BF1E25706C2F75A211E597BA00FFC49D1489' s='E012BF1E257775BE75A211E5C20500FFC49D1489'/>
+<L f='E012BF1E85D4FBDF758211E5C5CD00FFC49D1489' s='E012BF1E85D4FBE0758211E5974900FFC49D1489'/>
+<L f='E012BF1E915FB44075B011E5C7EC00FFC49D1489' s='E012BF1E915FB44175B011E5BDE400FFC49D1489'/>
+<L f='E012BF1EB777440675B011E5A5E900FFC49D1489' s='E012BF1EB777440775B011E5BC6800FFC49D1489'/>
+</mc.servicereferences.serviceref_qname>
+</Partition>

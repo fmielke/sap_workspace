@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Class-Path: 
+DC-Name: bpm_beispiel_0/bl/ejb
+DC-SubType: EJBModule
+DC-Type: J2EE
+DC-Vendor: htwberlin.de.tr119
+Implementation-Title: bpm_beispiel_0/bl/ejb
+Implementation-Vendor: htwberlin.de.tr119
+Implementation-Version: localDevelopment 20151201114317
+SC-Name: BPM_BEISPIEL
+SC-Vendor: htwberlin.de.tr119
+
+Name: build-information
+Build-Counter: 20151201114317
+Build-Date: 2015-12-01
+Build-Location: localDevelopment
+Build-Time: 12:43:17 GMT+01:00 (CET)
+Created-By: DC BuildTool
+Source-Location: marcus@CE06863
+

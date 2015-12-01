@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://htwberlin.de.tr119/beschaffung" name="beschaffung" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://htwberlin.de.tr119/beschaffung" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://htwberlin.de.tr119/beschaffung">
+      <xsd:element name="beschaffungsAuftrag">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="artikelnummer" type="xsd:string"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="beschaffungsAntwort" type="xsd:string"></xsd:element>
+      <xsd:element name="nichtLieferbarFehler">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="nichtLieferbarFehler" type="xsd:string"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="nichtLieferbarFehler">
+    <wsdl:part name="parameter" element="tns:nichtLieferbarFehler"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="beschaffungsAnfrage">
+    <wsdl:part name="parameter" element="tns:beschaffungsAuftrag"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="beschaffungsAntwort">
+    <wsdl:part name="parameter" element="tns:beschaffungsAntwort"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="beschaffungsAuftrag">
+    <wsdl:operation name="artikelBeschaffen">
+      <wsdl:input message="tns:beschaffungsAnfrage"></wsdl:input>
+      <wsdl:output message="tns:beschaffungsAntwort"></wsdl:output>
+      <wsdl:fault name="NichtLieferbar" message="tns:nichtLieferbarFehler"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="beschaffungSOAP" type="tns:beschaffungsAuftrag">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="artikelBeschaffen">
+      <soap:operation soapAction="http://htwberlin.de.tr119/beschaffung/artikelBeschaffen"></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="NichtLieferbar">
+        <soap:fault name="NichtLieferbar" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="beschaffung">
+    <wsdl:port name="beschaffungSOAP" binding="tns:beschaffungSOAP">
+      <soap:address location="http://www.example.org/"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

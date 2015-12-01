@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MetaDataAPI generated on: Thursday, October 17, 2013 3:18:53 PM CEST -->
+<Controller xmlns="http://xml.sap.com/2002/10/metamodel/webdynpro" xmlns:IDX="urn:sap.com:WebDynpro.Controller:3.0" mmRelease="7.00" mmVersion="3.0" mmTimestamp="1382015933067" version="10" name="MengeangebenComponentInterface" type="component_interface" package="com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent" masterLanguage="en">
+	<AppClass.Events>
+		<CustomEvent name="MengeangebenCompleteEvent">
+		</CustomEvent>
+		<CustomEvent name="MengeangebenErrorEvent">
+		</CustomEvent>
+	</AppClass.Events>
+	<Controller.Parent>
+		<Core.Reference package="com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent" name="MengeangebenComponentInterface" type="LocalComponentInterface"/>
+	</Controller.Parent>
+	<Controller.Context>
+		<ContextNode cardinality="_1_1" name="Context" selection="_1_1">
+			<ContextNode.Attributes>
+				<ContextAttribute name="preis">
+					<ContextAttribute.Type>
+						<Core.ForeignReference modelName="DtDictionary" package="com.sap.dictionary" name="integer" type="DtSimpleType"/>
+					</ContextAttribute.Type>
+				</ContextAttribute>
+				<ContextAttribute name="Menge">
+					<ContextAttribute.Type>
+						<Core.ForeignReference modelName="DtDictionary" package="com.sap.dictionary" name="integer" type="DtSimpleType"/>
+					</ContextAttribute.Type>
+				</ContextAttribute>
+				<ContextAttribute name="lieferzeitInTagen">
+					<ContextAttribute.Type>
+						<Core.ForeignReference modelName="DtDictionary" package="com.sap.dictionary" name="integer" type="DtSimpleType"/>
+					</ContextAttribute.Type>
+				</ContextAttribute>
+				<ContextAttribute name="artikelnummer">
+					<ContextAttribute.Type>
+						<Core.ForeignReference modelName="DtDictionary" package="com.sap.dictionary" name="string" type="DtSimpleType"/>
+					</ContextAttribute.Type>
+				</ContextAttribute>
+				<ContextAttribute name="waehrung">
+					<ContextAttribute.Type>
+						<Core.ForeignReference modelName="DtDictionary" package="com.sap.dictionary" name="string" type="DtSimpleType"/>
+					</ContextAttribute.Type>
+				</ContextAttribute>
+			</ContextNode.Attributes>
+		</ContextNode>
+	</Controller.Context>
+</Controller>

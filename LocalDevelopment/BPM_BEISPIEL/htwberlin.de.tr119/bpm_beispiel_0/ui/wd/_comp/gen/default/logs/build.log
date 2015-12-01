@@ -1,0 +1,340 @@
+Development Component Build (2015-11-26 12:11:41 GMT+01:00 (CET))
+  Component name: bpm_beispiel_0/ui/wd
+  Component vendor: htwberlin.de.tr119
+  SC compartment: BPM_BEISPIEL
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: marcus@CE06863
+  DC root folder: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel_0\ui\wd\_comp\
+  DC type: Web Dynpro
+  Host: CE06863
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/webDynpro"
+   validating dependency to used DC "sap.com/tc/aii/base/offline/facade"
+   validating dependency to  public part "api" of DC "sap.com/tc/aii/base/offline/facade"
+   validating dependency to used DC "sap.com/tc/bl/exception/lib"
+   validating dependency to  public part "api" of DC "sap.com/tc/bl/exception/lib"
+   validating dependency to used DC "sap.com/tc/bl/logging/api"
+   validating dependency to  public part "api" of DC "sap.com/tc/bl/logging/api"
+   validating dependency to used DC "sap.com/tc/cmi"
+   validating dependency to  public part "default" of DC "sap.com/tc/cmi"
+   validating dependency to used DC "sap.com/tc/ddic/runtime/facade"
+   validating dependency to  public part "runtime" of DC "sap.com/tc/ddic/runtime/facade"
+   validating dependency to used DC "sap.com/tc/wd/api"
+   validating dependency to  public part "default" of DC "sap.com/tc/wd/api"
+   validating dependency to  public part "gci" of DC "sap.com/tc/wd/api"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/webDynpro
+   starting build plugin from : C:\SAP\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\webDynpro\_comp\gen\default\public\webDynpro\
+
+
+
+Build Plugin 'WebdynproPlugin', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:40 +0200, CL166627)
+   development component:  bpm_beispiel_0/ui/wd (htwberlin.de.tr119)
+      software component:  BPM_BEISPIEL (htwberlin.de.tr119)
+       support component:  Default
+                location:  localDevelopment
+                    type:  Web Dynpro
+           build variant:  default
+         source location:  marcus@CE06863
+         output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\2111F1759B0C6288809C63A84E137182\default
+       generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182
+       plugin start time:  2015-11-26 12:11:42 GMT+01:00 (CET)
+                 Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Source folder "META-INF" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0.007 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.037 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\2111F1759B0C6288809C63A84E137182\default\logs\build.xml
+  Using macro file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\webDynpro\_comp\gen\default\public\webDynpro\macros\build.vm
+  Web Dynpro project version: 1
+Build file creation finished in 0.135 seconds
+ 
+Starting Ant..
+  Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\2111F1759B0C6288809C63A84E137182\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+compile:
+      [echo] Starting dictionary generator
+     [ddgen] 
+     [ddgen] [Info]    Property deployment is true: Deployment information is provided!
+     [ddgen] [Info]    Property sourcepath ...
+     [ddgen] [Info]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel_0\ui\wd\_comp\src\packages
+     [ddgen] [Info]    Property targetpath: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_ddic
+     [ddgen] [Info]    Property archivename: htwberlin.de.tr119~bpm_beispiel_0~ui~wd
+     [ddgen] [Info]    Property vendor: htwberlin.de.tr119
+     [ddgen] [Info]    Property dcname: bpm_beispiel_0/ui/wd
+     [ddgen] [Info]    Property metadatapath: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182
+     [ddgen] [Info]    Property generates2x is false: S2X files will not be generated
+     [ddgen] [Info]    Property projectlanguage: en
+     [ddgen] [Info]    Property language: Available languages are automatically determined
+     [ddgen] [Info]    Property addpaths ...
+     [ddgen] [Info]       core.exception.lib.api.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/ENGFACADE/sap.com/tc/bl/exception/lib/_comp/gen/default/public/api/lib/java
+     [ddgen] [Info]       tc~bl~logging~api~defaultttt.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/ENGFACADE/sap.com/tc/bl/logging/api/_comp/gen/default/public/api/lib/java
+     [ddgen] [Info]       tc~aii~base~offline~facade.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/aii/base/offline/facade/_comp/gen/default/public/api/lib/java
+     [ddgen] [Info]       com.sap.tc.cmi.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/cmi/_comp/gen/default/public/default/lib/java
+     [ddgen] [Info]       tc~cmi.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/cmi/_comp/gen/default/public/default/lib/java
+     [ddgen] [Info]       SapMetamodelDictionaryContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       dictionary.rtcontainer.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       dictionary.runtime.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       dictionary.services.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       tc~ddic~runtime~facade.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [ddgen] [Info]       SapMetamodelDictionaryContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/SAP_BUILDT/sap.com/tc/bi/extddic/_comp/gen/default/public/def/lib/model
+     [ddgen] [Info]       SapMetamodelWebdynproContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [ddgen] [Info]       SapMetamodelWebdynproResources.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [ddgen] [Info]       sap.com~tc~wd~api~default.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [ddgen] [Info]       sap.com~tc~wd~api~gci.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/gci/lib/java
+     [ddgen] [Info]    Optional property i18npath is empty
+     [ddgen] [Info]    Initialize generation templates from configuration jar:file:/C:/SAP/eclipse/workspace.jdi/LocalDevelopment/SAP_BUILDT/sap.com/tc/bi/extddic/_comp/gen/default/public/def/lib/java/dictionary_generation_core_api.jar!/DictionaryGenerationConfigurationCompiled.xml
+     [ddgen] [Info]    Using DocumentBuilder com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl
+     [ddgen] [Info]    Generating C:/SAP/eclipse/workspace.jdi/LocalDevelopment/t/2111F1759B0C6288809C63A84E137182/S2XFileList.txt
+     [ddgen] [Info]    Generating C:/SAP/eclipse/workspace.jdi/LocalDevelopment/t/2111F1759B0C6288809C63A84E137182/PublicPartFileList.xml
+     [ddgen] [Info]    Dictionary generation finished (1 seconds)
+     [ddgen] 
+     [mkdir] Created dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_ddic\datatypes
+     [mkdir] Created dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_ddic\dbtables
+     [timer] Dictionary generator finished in 1.127 seconds
+ 
+      [echo] Starting common model generator
+     [cmgen] 
+     [cmgen] [Info]    Property deployment is true: Deployment information is provided!
+     [cmgen] [Info]    Property sourcepath ...
+     [cmgen] [Info]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel_0\ui\wd\_comp\src\packages
+     [cmgen] [Info]    Property targetpath: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_cmi
+     [cmgen] [Info]    Property archivename: htwberlin.de.tr119~bpm_beispiel_0~ui~wd
+     [cmgen] [Info]    Property vendor: htwberlin.de.tr119
+     [cmgen] [Info]    Property dcname: bpm_beispiel_0/ui/wd
+     [cmgen] [Info]    Property metadatapath: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182
+     [cmgen] [Info]    Property generates2x is false: S2X files will not be generated
+     [cmgen] [Info]    Property projectlanguage: en
+     [cmgen] [Info]    Property language: Available languages are automatically determined
+     [cmgen] [Info]    Property addpaths ...
+     [cmgen] [Info]       core.exception.lib.api.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/ENGFACADE/sap.com/tc/bl/exception/lib/_comp/gen/default/public/api/lib/java
+     [cmgen] [Info]       tc~bl~logging~api~defaultttt.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/ENGFACADE/sap.com/tc/bl/logging/api/_comp/gen/default/public/api/lib/java
+     [cmgen] [Info]       tc~aii~base~offline~facade.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/aii/base/offline/facade/_comp/gen/default/public/api/lib/java
+     [cmgen] [Info]       com.sap.tc.cmi.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/cmi/_comp/gen/default/public/default/lib/java
+     [cmgen] [Info]       tc~cmi.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/cmi/_comp/gen/default/public/default/lib/java
+     [cmgen] [Info]       SapMetamodelDictionaryContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [cmgen] [Info]       dictionary.rtcontainer.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [cmgen] [Info]       dictionary.runtime.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [cmgen] [Info]       dictionary.services.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [cmgen] [Info]       tc~ddic~runtime~facade.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [cmgen] [Info]       SapMetamodelDictionaryContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/SAP_BUILDT/sap.com/tc/bi/extddic/_comp/gen/default/public/def/lib/model
+     [cmgen] [Info]       SapMetamodelWebdynproContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [cmgen] [Info]       SapMetamodelWebdynproResources.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [cmgen] [Info]       sap.com~tc~wd~api~default.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [cmgen] [Info]       sap.com~tc~wd~api~gci.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/gci/lib/java
+     [cmgen] [Info]    Optional property i18npath is empty
+     [cmgen] [Info]    Initialize generation templates from configuration jar:file:/C:/SAP/eclipse/workspace.jdi/LocalDevelopment/SAP_BUILDT/sap.com/tc/bi/extcm/_comp/gen/default/public/def/lib/java/common_model_generation_core_api.jar!/CommonModelGenerationConfigurationCompiled.xml
+     [cmgen] [Info]    Using DocumentBuilder com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl
+     [cmgen] [Info]    Generating C:/SAP/eclipse/workspace.jdi/LocalDevelopment/t/2111F1759B0C6288809C63A84E137182/S2XFileList.txt
+     [cmgen] [Info]    Generating C:/SAP/eclipse/workspace.jdi/LocalDevelopment/t/2111F1759B0C6288809C63A84E137182/PublicPartFileList.xml
+     [cmgen] [Info]    Common model generation finished (0 seconds)
+     [cmgen] 
+     [mkdir] Created dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_cmi\packages
+     [timer] Common model generator finished in 0.61 seconds
+ 
+      [echo] Starting WebDynpro generator
+     [wdgen] 
+     [wdgen] [Info]    Property deployment is true: Deployment information is provided!
+     [wdgen] [Info]    Property sourcepath ...
+     [wdgen] [Info]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel_0\ui\wd\_comp\src\packages
+     [wdgen] [Info]    Property targetpath: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_wdp
+     [wdgen] [Info]    Property archivename: htwberlin.de.tr119~bpm_beispiel_0~ui~wd
+     [wdgen] [Info]    Property vendor: htwberlin.de.tr119
+     [wdgen] [Info]    Property dcname: bpm_beispiel_0/ui/wd
+     [wdgen] [Info]    Property metadatapath: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182
+     [wdgen] [Info]    Property generates2x is false: S2X files will not be generated
+     [wdgen] [Info]    Property projectlanguage: en
+     [wdgen] [Info]    Property language: Available languages are automatically determined!
+     [wdgen] [Info]    Property addpaths ...
+     [wdgen] [Info]       core.exception.lib.api.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/ENGFACADE/sap.com/tc/bl/exception/lib/_comp/gen/default/public/api/lib/java
+     [wdgen] [Info]       tc~bl~logging~api~defaultttt.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/ENGFACADE/sap.com/tc/bl/logging/api/_comp/gen/default/public/api/lib/java
+     [wdgen] [Info]       tc~aii~base~offline~facade.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/aii/base/offline/facade/_comp/gen/default/public/api/lib/java
+     [wdgen] [Info]       com.sap.tc.cmi.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/cmi/_comp/gen/default/public/default/lib/java
+     [wdgen] [Info]       tc~cmi.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/cmi/_comp/gen/default/public/default/lib/java
+     [wdgen] [Info]       SapMetamodelDictionaryContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [wdgen] [Info]       dictionary.rtcontainer.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [wdgen] [Info]       dictionary.runtime.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [wdgen] [Info]       dictionary.services.facade.filter.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [wdgen] [Info]       tc~ddic~runtime~facade.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/FRAMEWORK/sap.com/tc/ddic/runtime/facade/_comp/gen/default/public/runtime/lib/java
+     [wdgen] [Info]       SapMetamodelDictionaryContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/SAP_BUILDT/sap.com/tc/bi/extddic/_comp/gen/default/public/def/lib/model
+     [wdgen] [Info]       SapMetamodelWebdynproContent.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [wdgen] [Info]       SapMetamodelWebdynproResources.zip - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [wdgen] [Info]       sap.com~tc~wd~api~default.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/default/lib/java
+     [wdgen] [Info]       sap.com~tc~wd~api~gci.jar - C:/SAP/eclipse/workspace.jdi/LocalDevelopment/WD-RUNTIME/sap.com/tc/wd/api/_comp/gen/default/public/gci/lib/java
+     [wdgen] [Info]    Optional property i18npath is empty
+     [wdgen] [Info]    Initialize generation templates from configuration jar:file:/C:/SAP/eclipse/workspace.jdi/LocalDevelopment/SAP_BUILDT/sap.com/tc/bi/extwd/_comp/gen/default/public/def/lib/java/webdynpro_generation_core_api.jar!/WebDynproGenerationConfigurationCompiled.xml
+     [wdgen] [Info]    Using DocumentBuilder com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPublicMengeangebenComponent.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponent.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponent.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponent.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponentView.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponentView.java
+     [wdgen] [Info]    Searching view element definition for GridLayout RootElement_layout
+     [wdgen] [Info]    Searching view element definition for FlowLayout TransparentContainer_layout
+     [wdgen] [Info]    Searching view element definition for FlowData MengeangebenCompleteEvent_layoutdata
+     [wdgen] [Info]    Searching view element definition for TransparentContainer TransContainer_0
+     [wdgen] [Info]    Searching view element definition for GridData TransContainer_0_layoutdata
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPublicMengeangebenComponentWindow.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponentWindow.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponentWindow.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IExternalMengeangebenComponentInterface.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterface.wdcontroller
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IMessageMengeangebenComponent.java
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IConstantMengeangebenComponent.java
+     [wdgen] [Info]    Generation of all components: 1482 ms
+     [wdgen] [Info]    Generation of all component interface definitions: 4 ms
+     [wdgen] [Info]    Generating configuration/Components/com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent.MengeangebenComponent/wdrr.xml
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/ResourceMengeangebenComponent.properties
+     [wdgen] [Info]    Generating configuration/Components/com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent.MengeangebenComponent/wdrr.properties
+     [wdgen] [Info]    Creating file configuration/Components/com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent.MengeangebenComponent/wdrr.properties not necesseary
+     [wdgen] [Info]    Generating packages/com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/ResourceMengeangebenComponent_en.properties
+     [wdgen] [Info]    Generating configuration/Components/com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent.MengeangebenComponent/wdrr_en.properties
+     [wdgen] [Info]    Creating file configuration/Components/com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent.MengeangebenComponent/wdrr_en.properties not necesseary
+     [wdgen] [Info]    Generating C:/SAP/eclipse/workspace.jdi/LocalDevelopment/t/2111F1759B0C6288809C63A84E137182/S2XFileList.txt
+     [wdgen] [Info]    projectVersion = 1
+     [wdgen] [Info]    Generating webdynpro.xml
+     [wdgen] [Info]    Generating wd.xml
+     [wdgen] [Info]    Generating application.xml
+     [wdgen] [Info]    Generating application-j2ee-engine.xml
+     [wdgen] [Info]    Generating C:/SAP/eclipse/workspace.jdi/LocalDevelopment/t/2111F1759B0C6288809C63A84E137182/PublicPartFileList.xml
+     [wdgen] [Info]    WebDynpro generation finished (3 seconds)
+     [wdgen] 
+     [timer] WebDynpro generator finished in 3.549 seconds
+ 
+      [echo] Starting Java compiler using the current JVM
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF-8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]  source paths: 
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel_0\ui\wd\_comp\src\packages
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_ddic/datatypes
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_cmi/packages
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_wdp/packages
+      [echo]    class path:
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\sap.com~tc~wd~api~default.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproContent.zip
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproResources.zip
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\aii\base\offline\facade\_comp\gen\default\public\api\lib\java\tc~aii~base~offline~facade.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\gci\lib\java\sap.com~tc~wd~api~gci.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\com.sap.tc.cmi.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\tc~cmi.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\exception\lib\_comp\gen\default\public\api\lib\java\core.exception.lib.api.jar
+      [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java\tc~bl~logging~api~defaultttt.jar
+      [echo]    output dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\classes
+     [javac] Compiling 14 source files to C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\classes
+     [timer] Java compilation finished in 3.64 seconds
+ 
+      [echo] Start XLF conversion
+  [xlf2prop] Found 0 XLF files to convert in folder "src\packages"
+  [xlf2prop] Found 0 XLF files to convert in folder "C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_ddic\datatypes"
+  [xlf2prop] Found 0 XLF files to convert in folder "C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_cmi\packages"
+  [xlf2prop] Found 0 XLF files to convert in folder "C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_wdp\packages"
+     [timer] XLF conversion finished in 0.009 seconds
+ 
+      [echo] Starting WebDynpro class minimizer (mode 'auto')
+     [wdmin] mode is 'no', skip minimizer
+     [timer] WebDynpro class minimizer finished in 0.007 seconds
+ 
+ 
+createWDA:
+  [pppacker] Packed  40 files for entity  (Java Package Tree/Class)
+     [timer] WebDynpro Application Jar packaging finished in 0.171 seconds
+ 
+  [pppacker] Including "htwberlin.de.tr119~bpm_beispiel_0~ui~wd.jar" from component "bpm_beispiel_0/ui/wd" (vendor "htwberlin.de.tr119"), public part "WebDynpro Application Jar".
+  [pppacker] Packed  34 files for entity WebDynpro Archive (WebDynpro Archive/Archive)
+     [timer] WebDynpro Application packaging finished in 0.128 seconds
+ 
+ 
+createDeployArchive:
+      [echo] Create deploy file htwberlin.de.tr119~bpm_beispiel_0~ui~wd
+     [mkdir] Created dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\2111F1759B0C6288809C63A84E137182\default\deploy
+       [cda] Preparing archive for deploy unit "default"
+       [cda]   deployment type: "J2EE"
+       [cda]   assembly roots: 
+       [cda]     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\wda-pp
+       [cda]     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\wda-pp
+       [cda]   deploy options:
+       [cda]     update-descriptors = true
+ 
+       [cda] Creating Ant build file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\2111F1759B0C6288809C63A84E137182\default\logs\buildDeployArchive.xml
+ 
+ 
+       [cda] Validating descriptor C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_wdp\application.xml
+       [cda] Display name "bpm_beispiel_0~ui~wd" in application.xml does not match DC name "bpm_beispiel_0/ui/wd".
+ 
+       [cda] Validating descriptor C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\2111F1759B0C6288809C63A84E137182\gen_wdp\application-j2ee-engine.xml
+ 
+       [cda] Collecting modules ...
+       [cda] Adding module 'htwberlin.de.tr119~bpm_beispiel_0~ui~wd.war' from current development component
+       [cda] Ant build file creation finished in 0.179 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] Adding source archive from htwberlin.de.tr119~bpm_beispiel_0/ui/wd
+     [timer] Source archive creation finished in 0.055 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\2111F1759B0C6288809C63A84E137182\default\deploy\htwberlin.de.tr119~bpm_beispiel_0~ui~wd.ear with compression
+     [timer] JarSAP finished in 0.027 seconds
+ 
+ 
+createPublicParts:
+  [pppacker] Packing public part 'comp'
+  [pppacker] Packed   9 files for entity MengeangebenComponent (Web Dynpro Component/Source, com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent/)
+  [pppacker] Packed 1 entity for public part 'comp'
+     [timer] Packing of public part 'comp' finished in 0.1 seconds
+ 
+ 
+build:
+ 
+Ant runtime 9.884 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2015-11-26 12:11:52 GMT+01:00 (CET)
+Total build plugin runtime: 10.473 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2015-11-26 12:11:52.576 CET
+Comparison of previous and actual build results took: 0.082 seconds
+
+Copy the build results 
+  from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\2111F1759B0C6288809C63A84E137182\default\
+  to:   C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel_0\ui\wd\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  comp

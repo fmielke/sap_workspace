@@ -1,0 +1,14 @@
+# Message event definition Beschaffungsauslöser (MOFId: E0356A04F38CFA947E2111E5890D00FFC49D1489)
+NETWORK,c0a06333e0e536d38f191d2ea06cc786,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser
+REVISIONID,4,4,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,SCOPE=DFED14DEEB916F625D2F7CD6120F887A
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,ELEMENT,NAME=$http://htwberlin.de.tr119/beschaffung:beschaffungsAuftrag
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,ELEMENT,NAMESPACE=http://htwberlin.de.tr119/beschaffung
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,TYPE,NAME=E0E1B8C6221103837D6611E5944700FFC49D1489
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,TYPE,NAMESPACE=http://htwberlin.de.tr119/beschaffung
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Response,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,SCOPE=DFED14DEEB916F625D2F7CD6120F887A
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Response,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,ELEMENT,NAME=$http://htwberlin.de.tr119/beschaffung:beschaffungsAntwort
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Response,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,ELEMENT,NAMESPACE=http://htwberlin.de.tr119/beschaffung
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Response,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,TYPE,NAME=string
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Response,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Beschaffungsauslöser,artikelBeschaffen,TYPE,NAMESPACE=http://www.w3.org/2001/XMLSchema

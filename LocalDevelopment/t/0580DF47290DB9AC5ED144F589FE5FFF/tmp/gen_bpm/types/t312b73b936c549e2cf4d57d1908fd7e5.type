@@ -1,0 +1,15 @@
+ROOT_0,TARGET_NAMESPACE=http://distanz.services.com.sap.demo/
+ROOT_0,SCHEMA_LOCATION=http://distanz.services.com.sap.demo/
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://distanz.services.com.sap.demo/" xmlns:tns="http://distanz.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="IOException" type="tns:IOException" sdox:aliasName="$http://distanz.services.com.sap.demo/:IOException" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="IOException" sdox:aliasName="#IOException" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="message" type="xsd:string" minOccurs="0" sdox:aliasName="$message"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=http://distanz.services.com.sap.demo/
+ROOT_1,SCHEMA_LOCATION=http://distanz.services.com.sap.demo/
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://distanz.services.com.sap.demo/" xmlns:tns="http://distanz.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="sendTestData" type="tns:sendTestData" sdox:aliasName="$http://distanz.services.com.sap.demo/:sendTestData" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="sendTestData" sdox:aliasName="#sendTestData" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence></xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_2,TARGET_NAMESPACE=http://distanz.services.com.sap.demo/
+ROOT_2,SCHEMA_LOCATION=http://distanz.services.com.sap.demo/
+ROOT_2,ROOTID=2
+ROOT_2,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://distanz.services.com.sap.demo/" xmlns:tns="http://distanz.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="sendTestDataResponse" type="tns:sendTestDataResponse" sdox:aliasName="$http://distanz.services.com.sap.demo/:sendTestDataResponse" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="sendTestDataResponse" sdox:aliasName="#sendTestDataResponse" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="jsonResponse" type="xsd:string" minOccurs="0" sdox:aliasName="$jsonResponse"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

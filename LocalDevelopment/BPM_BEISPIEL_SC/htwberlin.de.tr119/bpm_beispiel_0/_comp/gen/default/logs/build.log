@@ -1,0 +1,124 @@
+Development Component Build (2015-11-01 20:20:49 GMT+01:00 (CET))
+  Component name: bpm_beispiel_0
+  Component vendor: htwberlin.de.tr119
+  SC compartment: BPM_BEISPIEL_SC
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: marcus@CE06863
+  DC root folder: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_0\_comp\
+  DC type: Product Description
+  Host: CE06863
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/pdef"
+   validating dependency to  public part "default" of DC "htwberlin.de.tr119/bpm_beispiel"
+   validating dependency to  public part "default" of DC "htwberlin.de.tr119/bpm_beispiel_sc"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/pdef
+   starting build plugin from : C:\SAP\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\pdef\_comp\gen\default\public\def\
+
+
+
+Build Plugin 'sap.com/tc/bi/bp/pdef', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:45 +0200, CL166627)
+   development component:  bpm_beispiel_0 (htwberlin.de.tr119)
+      software component:  BPM_BEISPIEL_SC (htwberlin.de.tr119)
+       support component:  Default
+                location:  localDevelopment
+                    type:  Product Description
+           build variant:  default
+         source location:  marcus@CE06863
+         output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\309A156491C0B34FF1625C8F467A130B\default
+       generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B
+       plugin start time:  2015-11-01 20:20:49 GMT+01:00 (CET)
+                 Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.015 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\309A156491C0B34FF1625C8F467A130B\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.pdef.PdefBuildFileCreator
+  +++ com.sap.tc.buildplugin.pdef.PdefBuildFileCreator: chainName: sap.com~sl.pdef_chain
+  +++ forcing SDA creation, DC does not contain complete product model
+Build file creation finished in 0.047 seconds
+ 
+Starting Ant..
+  Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\309A156491C0B34FF1625C8F467A130B\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+translate:
+      [echo] +++ com.sap.tc.buildplugin.pdef.PdefTaskGenerator: taskName: PdefGeneratorTask
+      [echo] localContext: com.sap.tc.buildplugin.util.DataContext@10bd82b
+      [echo] inputPaths: {compile_pp=[C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel\_comp\gen\default\public\default, C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_sc\_comp\gen\default\public\default], source=[C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_0\_comp\src]}
+      [echo] outputPaths: {default=C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\testoutput, packdir=C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_pack01, tempdir=C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_temp01}
+      [echo] usedPaths: {}
+      [echo] parameters: {outputFolderName=testoutput}
+      [echo] File(source): C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_0\_comp\src
+      [echo] File(compile_pp): C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel\_comp\gen\default\public\default
+      [echo] File(compile_pp): C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_sc\_comp\gen\default\public\default
+[PdefGeneratorTask] Executing inside of com.sap.tc.buildplugin.pdef.PdefValidator...
+[PdefGeneratorTask] packDir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_pack01
+[PdefGeneratorTask] tempDir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_temp01
+ 
+createPublicParts:
+  [pppacker] Packing public part 'default'
+  [pppacker] Packed   1 file  for entity / (Folder)
+  [pppacker] Packed 1 entity for public part 'default'
+     [timer] Packing of public part 'default' finished in 0.047 seconds
+ 
+ 
+createDeployArchive:
+       [cda] Preparing archive for deploy unit "default"
+       [cda]   deployment type: "CONTENT" / "SL-SDA"
+       [cda]   deploy options:
+       [cda]     software-type = CONTENT
+       [cda]     software-subtype = SL-SDA
+ 
+       [cda] Creating Ant build file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\309A156491C0B34FF1625C8F467A130B\default\logs\buildDeployArchive.xml
+ 
+ 
+       [cda] Collecting modules ...
+       [cda] Ant build file creation finished in 0.031 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.031 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\309A156491C0B34FF1625C8F467A130B\default\deploy\htwberlin.de.tr119~bpm_beispiel_0.sda with compression
+     [timer] JarSAP finished in 0.016 seconds
+ 
+ 
+build:
+ 
+Ant runtime 1.942 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2015-11-01 20:20:52 GMT+01:00 (CET)
+Total build plugin runtime: 2.256 seconds
+ 
+Build finished OK
+
+==== Post-Processing ====   started at 2015-11-01 20:20:52.157 CET
+Comparison of previous and actual build results took: 0.031 seconds
+
+Copy the build results 
+  from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\309A156491C0B34FF1625C8F467A130B\default\
+  to:   C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_0\_comp\gen\default\

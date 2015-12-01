@@ -1,0 +1,10 @@
+# Critical error event definition CompletionDeadlineIsCriticalException (MOFId: 48EA291D263E372093B811DDBA87001742235CDE)
+NETWORK,5E7B4597FF370AFEF3EF6D78715F1405,CompletionDeadlineIsCriticalException
+REVISIONID,4,4,Galaxy exception compiler as of NetWeaver CE 7.31 SP 10 (Build Time: 2013-10-16 09:57:48)
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,5E7B4597FF370AFEF3EF6D78715F1405,SCOPE=8DF51A394BF8B6C9248E6ED2C0CF1FA8
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,5E7B4597FF370AFEF3EF6D78715F1405,ROOT,NAME=CompletionDeadlineIsCriticalException
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,5E7B4597FF370AFEF3EF6D78715F1405,ROOT,NAMESPACE=sap_com_tc_bpem_content_predefs_default_StandaloneTask_DefaultTask
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,5E7B4597FF370AFEF3EF6D78715F1405,ROOT,TYPE=#TaskException
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,5E7B4597FF370AFEF3EF6D78715F1405,ROOT,TYPENAMESPACE=sap.com/glx/
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,5E7B4597FF370AFEF3EF6D78715F1405,ROOT,EXCEPTION_COMPILER_VERSION=2

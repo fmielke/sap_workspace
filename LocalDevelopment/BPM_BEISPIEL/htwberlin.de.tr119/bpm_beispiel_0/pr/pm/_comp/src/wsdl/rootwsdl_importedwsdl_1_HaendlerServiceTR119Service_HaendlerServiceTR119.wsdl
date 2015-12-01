@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:tns="http://haendler.services.com.sap.demo/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://haendler.services.com.sap.demo/">
+  <UsingPolicy xmlns="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+<wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://haendler.services.com.sap.demo/" version="1.0">
+<xs:element name="artikelBestellen" type="tns:artikelBestellen"/>
+<xs:element name="artikelBestellenResponse" type="tns:artikelBestellenResponse"/>
+<xs:element name="artikelVerfuegbarkeit" type="tns:artikelVerfuegbarkeitTR119"/>
+<xs:element name="artikelVerfuegbarkeitPruefen" type="tns:artikelVerfuegbarkeitPruefen"/>
+<xs:element name="artikelVerfuegbarkeitPruefenResponse" type="tns:artikelVerfuegbarkeitPruefenResponse"/>
+<xs:complexType name="artikelVerfuegbarkeitPruefen">
+<xs:sequence>
+<xs:element minOccurs="0" name="artikelnummer" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="artikelVerfuegbarkeitPruefenResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="artikelVerfuegbarkeit" type="tns:artikelVerfuegbarkeitTR119"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="artikelVerfuegbarkeitTR119">
+<xs:sequence>
+<xs:element minOccurs="0" name="artikelnummer" type="xs:string"/>
+<xs:element name="preis" type="xs:int"/>
+<xs:element minOccurs="0" name="waehrung" type="xs:string"/>
+<xs:element name="lieferbar" type="xs:boolean"/>
+<xs:element name="lieferzeitInTagen" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="artikelBestellen">
+<xs:sequence>
+<xs:element minOccurs="0" name="artikelnummer" type="xs:string"/>
+<xs:element name="menge" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="artikelBestellenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</wsdl:types>
+<wsdl:message name="artikelVerfuegbarkeitPruefenIn">
+<wsdl:part element="tns:artikelVerfuegbarkeitPruefen" name="parameters"/>
+</wsdl:message>
+<wsdl:message name="artikelVerfuegbarkeitPruefenOut">
+<wsdl:part element="tns:artikelVerfuegbarkeitPruefenResponse" name="artikelVerfuegbarkeitPruefenResponse"/>
+</wsdl:message>
+<wsdl:message name="artikelBestellenIn">
+<wsdl:part element="tns:artikelBestellen" name="parameters"/>
+</wsdl:message>
+<wsdl:message name="artikelBestellenOut">
+<wsdl:part element="tns:artikelBestellenResponse" name="artikelBestellenResponse"/>
+</wsdl:message>
+<wsdl:portType name="HaendlerServiceTR119">
+<wsdl:operation name="artikelVerfuegbarkeitPruefen" parameterOrder="parameters">
+<wsdl:input message="tns:artikelVerfuegbarkeitPruefenIn"/>
+<wsdl:output message="tns:artikelVerfuegbarkeitPruefenOut"/>
+</wsdl:operation>
+<wsdl:operation name="artikelBestellen" parameterOrder="parameters">
+<wsdl:input message="tns:artikelBestellenIn"/>
+<wsdl:output message="tns:artikelBestellenOut"/>
+</wsdl:operation>
+</wsdl:portType>
+
+
+</wsdl:definitions>

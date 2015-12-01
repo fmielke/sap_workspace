@@ -1,0 +1,75 @@
+<development-component xmlns="http://xml.sap.com/2002/11/DevelopmentComponent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xml.sap.com/2002/11/DevelopmentComponent dcdef.xsd" version="1.0.4" xmlns:IDX="urn:sap.com:DevelopmentComponent:1.0">
+	<name>com.sap.vc.wdrunprv</name>
+	<vendor>sap.com</vendor>
+	<caption/>
+	<component-type>
+		<vendor>sap.com</vendor>
+		<type>Visual Composer Plugin</type>
+	</component-type>
+	<properties>
+		<ns0:localization xmlns:ns0="http://xml.sap.com/2003/06/Localization">
+			<ns0:domain>BC</ns0:domain>
+			<ns0:originalLocale>en</ns0:originalLocale>
+		</ns0:localization>
+		<pns1:visual-composer xmlns:pns1="http://xml.sap.com/2005/10/VisualComposer">
+			<include-compilation-jars>true</include-compilation-jars>
+		</pns1:visual-composer>
+	</properties>
+	<build-plugin>
+		<dc-ref>
+			<name>tc/bi/bp/vc</name>
+			<vendor>sap.com</vendor>
+		</dc-ref>
+		<pp-ref>vc</pp-ref>
+	</build-plugin>
+	<dependencies>
+		<dependency>
+			<dc-ref>
+				<name>visualcomposer_server_api</name>
+				<vendor>sap.com</vendor>
+			</dc-ref>
+			<at-build-time/>
+			<at-deploy-time/>
+			<at-runtime qualifier="strong"/>
+		</dependency>
+		<dependency>
+			<dc-ref>
+				<name>vc_ds_service</name>
+				<vendor>sap.com</vendor>
+			</dc-ref>
+			<pp-ref>api</pp-ref>
+			<at-build-time/>
+			<at-deploy-time/>
+		</dependency>
+		<dependency>
+			<dc-ref>
+				<name>com.sap.base.technology.facade</name>
+				<vendor>sap.com</vendor>
+			</dc-ref>
+			<at-build-time/>
+			<at-deploy-time/>
+			<at-run-time/>
+		</dependency>
+		<dependency>
+			<dc-ref>
+				<name>vc_generation</name>
+				<vendor>sap.com</vendor>
+			</dc-ref>
+			<at-build-time/>
+			<at-deploy-time/>
+		</dependency>
+	</dependencies>
+	<folders>
+		<source-folder>WEB-INF</source-folder>
+		<source-folder>webContent</source-folder>
+		<source-folder>META-INF</source-folder>
+		<package-folder>source</package-folder>
+	</folders>
+	   	<attributes>
+		   	<attribute>
+				<attribute-type>ACHAssignment</attribute-type>
+				<attribute-vendor>sap.com</attribute-vendor>
+				<attribute-value>BC-WD-XGL</attribute-value>
+	   		</attribute>
+ 	</attributes>
+</development-component>

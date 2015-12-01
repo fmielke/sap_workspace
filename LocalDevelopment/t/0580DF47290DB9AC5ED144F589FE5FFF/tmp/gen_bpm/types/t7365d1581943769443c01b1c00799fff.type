@@ -1,0 +1,5 @@
+ROOT_0,TARGET_NAMESPACE=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Ausgabe_genehmigen
+ROOT_0,SCHEMA_LOCATION=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Ausgabe_genehmigen
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Ausgabe_genehmigen" xmlns:tns="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Ausgabe_genehmigen" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="CustomActions" type="tns:CustomActions" sdox:aliasName="$htwberlin.de.tr119/bpm_beispiel_0/pr/pm/StandaloneTask/Ausgabe_genehmigen:CustomActions" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="CustomActions" ns1:hiddenInTree="" xmlns:ns1="http://sap.com/esm/ui/ext" sdox:aliasName="#CustomActions" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence></xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/com/sap/mi/gfw/mm' i='1' v='1.0'/>
+<M c='1' q='pictograms.RoundedRectangle' i='45E806E30B111639635B45AD24A896FDC10DD7D2' ova='renderingStyle'/>
+<M c='1' q='datatypes.Color' i='45E806E31BEE0BFC06414C9B3C40BD0ABFB5FC54'/>
+<M c='1' q='pictograms.Shape' i='45E806E31FD033AD65384259299DEBAA310F446D'/>
+<M c='1' q='pictograms.GraphicsAlgorithmHasForegroundColor' i='45E806E339C380ACB9D54742385FA5A67110FC14' se='1' ce='-1' oe='-1'/>
+<M c='1' q='pictograms.DiagramContainsColors' i='45E806E346B62DC200B947272E8FDE657EE11680' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.ContainershapeContainsShapes' i='45E806E34DAA68EC93FA462426FBB19CF45B7D2E' se='1' ce='1' oe='0'/>
+<M c='1' q='pictograms.Image' i='45E806E353FEC7AFE8BF4ED114A7CEA6587A9600' ova='renderingStyle'/>
+<M c='1' q='pictograms.Font' i='45E806E35856AAF1B14B4F923905D5D6147B02C7'/>
+<M c='1' q='pictograms.RenderingStyle' i='45E806E35FC54737B8C242AB002CC014A8DEA9DF'/>
+<M c='1' q='pictograms.GraphicsAlgorithmContainsGraphicsAlgorithms' i='45E806E369D37BBE0A1A4E2E3EEFCF9F8305FE0A' se='0' ce='0' oe='1'/>
+<M c='1' q='pictograms.Rectangle' i='45E806E37120AD4D7CC74AC23483FCA2046A785F' ova='renderingStyle'/>
+<M c='1' q='pictograms.ContainerShape' i='45E806E37581995B8D82418E1867F74ADBD2C64E'/>
+<M c='1' q='pictograms.ChopboxAnchor' i='45E806E3940A148E39184EB42774A56C14F847CD'/>
+<M c='1' q='pictograms.GraphicsAlgorithmHasBackgroundColor' i='45E806E39B5A5621D3A049D41BDCF825E4F1DFCD' se='0' ce='-1' oe='-1'/>
+<M c='1' q='pictograms.Text' i='45E806E3A3CF4A417DA2471C338590FC98B94E68' ova='renderingStyle,font'/>
+<M c='1' q='pictograms.Diagram' i='45E806E3B28EF07AFA0A4F2C342AC45B58528277'/>
+<M c='1' q='pictograms.AnchorcontainerAggregatesAnchors' i='45E806E3C1BD2143396B4C431D6F8DCA605AD011' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.Polyline' i='45E806E3D229789CCBAB417F1E1AD3B2356BC7B0' ova='renderingStyle'/>
+<M c='1' q='pictograms.PictogramelementContainsGraphicsalgorithm' i='45E806E3FAA2BB1CBA6D4FD32BB3E5E85E90D191' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.Style' i='46973F2C80BDECBB311F11DCC8D8001125D59A18' ova='renderingStyle,font'/>
+<M c='1' q='pictograms.StyleContainerContainsStyles' i='46973F2C80C28091311F11DCAD2F001125D59A18' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.GraphicsAlgorithmReferencesStyle' i='46973F2C80C28094311F11DCB45C001125D59A18' se='1' ce='-1' oe='-1'/>
+<pictograms.Font m:c='1' m:i='E0356A04622FECA583A411E5B82600FFC49D1489' name='Tahoma' size='8' italic='false' bold='false'/>
+<pictograms.ContainerShape m:c='1' m:i='E05DE481622FEC9D83A411E5B1B700FFC49D1489' visible='true' active='true'>
+<properties key='independentObject' value='ded0fc50-832e-11e5-b5b9-00ffc49d1489@4295750c-83a4-11e5-abf7-00ffc49d1489'/>
+<properties key='attributes.collapsed' value='false'/>
+</pictograms.ContainerShape>
+<pictograms.RoundedRectangle m:c='1' m:i='E05DE481622FEC9E83A411E5909700FFC49D1489' renderingStyle='E05DE481622FEC9F83A411E5B95900FFC49D1489' width='150' height='114' x='50' y='50' cornerHeight='20' cornerWidth='20'/>
+<pictograms.RenderingStyle m:c='1' m:i='E05DE481622FEC9F83A411E5B95900FFC49D1489' predefinedStyleId='blue-white-gloss'/>
+<pictograms.Style m:c='1' m:i='E05DE481622FECA083A411E594ED00FFC49D1489' lineWidth='2' lineStyle='SOLID' filled='true' transparency='0.0' id='caf.service.style'/>
+<datatypes.Color m:c='1' m:i='E05DE481622FECA183A411E5ADE500FFC49D1489' red='211' green='231' blue='248'/>
+<datatypes.Color m:c='1' m:i='E05DE481622FECA283A411E59F5200FFC49D1489' red='98' green='131' blue='167'/>
+<pictograms.Style m:c='1' m:i='E05DE481622FECA383A411E5AEBB00FFC49D1489' id='caf.service.text.style' font='E0356A04622FECA583A411E5B82600FFC49D1489' horizontalAlignment='ALIGNMENT_LEFT' verticalAlignment='ALIGNMENT_CENTER'/>
+<datatypes.Color m:c='1' m:i='E05DE481622FECA483A411E5CEA900FFC49D1489' red='0' green='0' blue='0'/>
+<pictograms.Shape m:c='1' m:i='E05DE481622FECA683A411E5B94800FFC49D1489' visible='true' active='false'>
+<properties key='independentObject' value='ded0fc50-832e-11e5-b5b9-00ffc49d1489@4295750c-83a4-11e5-abf7-00ffc49d1489'/>
+</pictograms.Shape>
+<pictograms.Rectangle m:c='1' m:i='E05DE48162324BF083A411E5CB7800FFC49D1489' filled='false' lineVisible='false' width='140' height='25' x='5' y='2'/>
+<pictograms.Image m:c='1' m:i='E05DE48162324BF183A411E5BA4100FFC49D1489' width='25' height='25' x='0' y='0' id='IBusinessObject' stretchH='false' stretchV='false' proportional='false'/>
+<pictograms.Text m:c='1' m:i='E05DE48162324BF283A411E5C72E00FFC49D1489' width='115' height='25' x='25' y='0' font='E05DE48162324BF383A411E5ABD800FFC49D1489' value='TR_119_Order'/>
+<pictograms.Font m:c='1' m:i='E05DE48162324BF383A411E5ABD800FFC49D1489' name='Tahoma' size='8' italic='false' bold='false'/>
+<pictograms.Shape m:c='1' m:i='E05DE48162324BF483A411E5B9F000FFC49D1489' visible='true' active='false'/>
+<pictograms.Polyline m:c='1' m:i='E05DE48162324BF583A411E5CED200FFC49D1489' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'>
+<points x='0' y='27' before='0' after='0'/>
+<points x='150' y='27' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.ContainerShape m:c='1' m:i='E05DE48162324BF683A411E5C38600FFC49D1489' visible='true' active='false'/>
+<pictograms.Rectangle m:c='1' m:i='E05DE48162324BF783A411E58BC700FFC49D1489' filled='false' lineVisible='false' width='140' height='75' x='5' y='27'/>
+<pictograms.Shape m:c='1' m:i='E05DE48162324BF883A411E5928A00FFC49D1489' visible='true' active='false'/>
+<pictograms.Polyline m:c='1' m:i='E05DE48162324BF983A411E5B8AA00FFC49D1489' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'>
+<points x='0' y='102' before='0' after='0'/>
+<points x='150' y='102' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.ContainerShape m:c='1' m:i='E05DE48162324BFA83A411E5C73500FFC49D1489' visible='true' active='false'/>
+<pictograms.Rectangle m:c='1' m:i='E05DE48162324BFB83A411E585C300FFC49D1489' filled='false' lineVisible='false' width='140' height='10' x='5' y='102'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E05DE48162324BFC83A411E5B06500FFC49D1489' visible='false' active='false'/>
+<pictograms.Shape m:c='1' m:i='E05DE481B18BE31783A411E5961F00FFC49D1489' visible='true' active='false'>
+<properties key='independentObject' value='ded0fc50-832e-11e5-b5b9-00ffc49d1489@936c6aac-83a4-11e5-aff4-00ffc49d1489'/>
+</pictograms.Shape>
+<pictograms.Rectangle m:c='1' m:i='E05DE481B18BE31883A411E5C32B00FFC49D1489' filled='false' lineVisible='false' width='140' height='25' x='0' y='0'/>
+<pictograms.Image m:c='1' m:i='E05DE481B18BE31983A411E59E5700FFC49D1489' width='25' height='25' x='0' y='0' id='ISimpleType' stretchH='false' stretchV='false' proportional='false'/>
+<pictograms.Text m:c='1' m:i='E05DE481B18BE31A83A411E59FB500FFC49D1489' width='115' height='25' x='25' y='0' font='E05DE481B18BE31B83A411E5894500FFC49D1489' value='productId : STRING'/>
+<pictograms.Font m:c='1' m:i='E05DE481B18BE31B83A411E5894500FFC49D1489' name='Tahoma' size='8' italic='false' bold='false'/>
+<pictograms.Shape m:c='1' m:i='E05DE481B18BE31C83A411E5B67200FFC49D1489' visible='true' active='false'>
+<properties key='independentObject' value='ded0fc50-832e-11e5-b5b9-00ffc49d1489@a2041c60-83a4-11e5-c714-00ffc49d1489'/>
+</pictograms.Shape>
+<pictograms.Rectangle m:c='1' m:i='E05DE481B18BE31D83A411E58F9B00FFC49D1489' filled='false' lineVisible='false' width='140' height='25' x='0' y='25'/>
+<pictograms.Image m:c='1' m:i='E05DE481B18BE31E83A411E5C1C500FFC49D1489' width='25' height='25' x='0' y='0' id='ISimpleType' stretchH='false' stretchV='false' proportional='false'/>
+<pictograms.Text m:c='1' m:i='E05DE481B18BE31F83A411E5AC0D00FFC49D1489' width='115' height='25' x='25' y='0' font='E05DE481B18BE32083A411E5AA0500FFC49D1489' value='quantitiy : INT'/>
+<pictograms.Font m:c='1' m:i='E05DE481B18BE32083A411E5AA0500FFC49D1489' name='Tahoma' size='8' italic='false' bold='false'/>
+<pictograms.Shape m:c='1' m:i='E05DE481B18BE32183A411E5B7F900FFC49D1489' visible='true' active='false'>
+<properties key='independentObject' value='ded0fc50-832e-11e5-b5b9-00ffc49d1489@a8d26311-83a4-11e5-a850-00ffc49d1489'/>
+</pictograms.Shape>
+<pictograms.Rectangle m:c='1' m:i='E05DE481B18BE32283A411E5860300FFC49D1489' filled='false' lineVisible='false' width='140' height='25' x='0' y='50'/>
+<pictograms.Image m:c='1' m:i='E05DE481B18E532783A411E585FB00FFC49D1489' width='25' height='25' x='0' y='0' id='ISimpleType' stretchH='false' stretchV='false' proportional='false'/>
+<pictograms.Text m:c='1' m:i='E05DE481B18E532883A411E5A3DC00FFC49D1489' width='115' height='25' x='25' y='0' font='E05DE481B18E532983A411E5932400FFC49D1489' value='comment : LongText'/>
+<pictograms.Font m:c='1' m:i='E05DE481B18E532983A411E5932400FFC49D1489' name='Tahoma' size='8' italic='false' bold='false'/>
+<pictograms.Diagram m:c='1' m:i='E0E14F8661C0312283A411E5BD1B00FFC49D1489' visible='true' active='false' gridUnit='10' diagramTypeId='CAF.model.diagram' name='tr_119_product.bl.caf.diagram' snapToGrid='true' showGuides='true'/>
+<pictograms.Rectangle m:c='1' m:i='E0E14F8661C0312383A411E5932E00FFC49D1489' width='1000' height='1000' x='0' y='0'/>
+<datatypes.Color m:c='1' m:i='E0E14F8661C0312483A411E5CE2A00FFC49D1489' red='227' green='238' blue='249'/>
+<datatypes.Color m:c='1' m:i='E0E14F8661C0312583A411E5A83400FFC49D1489' red='255' green='255' blue='255'/>
+<pictograms.GraphicsAlgorithmHasForegroundColor c='1'>
+<L f='E05DE481622FECA283A411E59F5200FFC49D1489' s='E05DE481622FECA083A411E594ED00FFC49D1489'/>
+<L f='E05DE481622FECA483A411E5CEA900FFC49D1489' s='E05DE481622FECA383A411E5AEBB00FFC49D1489'/>
+<L f='E05DE481622FECA283A411E59F5200FFC49D1489' s='E05DE48162324BF583A411E5CED200FFC49D1489'/>
+<L f='E05DE481622FECA283A411E59F5200FFC49D1489' s='E05DE48162324BF983A411E5B8AA00FFC49D1489'/>
+<L f='E0E14F8661C0312483A411E5CE2A00FFC49D1489' s='E0E14F8661C0312383A411E5932E00FFC49D1489'/>
+</pictograms.GraphicsAlgorithmHasForegroundColor>
+<pictograms.DiagramContainsColors c='1'>
+<L f='E05DE481622FECA183A411E5ADE500FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+<L f='E05DE481622FECA283A411E59F5200FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+<L f='E05DE481622FECA483A411E5CEA900FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+<L f='E0E14F8661C0312483A411E5CE2A00FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+<L f='E0E14F8661C0312583A411E5A83400FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+</pictograms.DiagramContainsColors>
+<pictograms.ContainershapeContainsShapes c='1'>
+<L f='E05DE481622FECA683A411E5B94800FFC49D1489' s='E05DE481622FEC9D83A411E5B1B700FFC49D1489'/>
+<L f='E05DE48162324BF483A411E5B9F000FFC49D1489' s='E05DE481622FEC9D83A411E5B1B700FFC49D1489'/>
+<L f='E05DE48162324BF683A411E5C38600FFC49D1489' s='E05DE481622FEC9D83A411E5B1B700FFC49D1489'/>
+<L f='E05DE48162324BF883A411E5928A00FFC49D1489' s='E05DE481622FEC9D83A411E5B1B700FFC49D1489'/>
+<L f='E05DE48162324BFA83A411E5C73500FFC49D1489' s='E05DE481622FEC9D83A411E5B1B700FFC49D1489'/>
+<L f='E05DE481B18BE31783A411E5961F00FFC49D1489' s='E05DE48162324BF683A411E5C38600FFC49D1489'/>
+<L f='E05DE481B18BE31C83A411E5B67200FFC49D1489' s='E05DE48162324BF683A411E5C38600FFC49D1489'/>
+<L f='E05DE481B18BE32183A411E5B7F900FFC49D1489' s='E05DE48162324BF683A411E5C38600FFC49D1489'/>
+<L f='E05DE481622FEC9D83A411E5B1B700FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+</pictograms.ContainershapeContainsShapes>
+<pictograms.GraphicsAlgorithmContainsGraphicsAlgorithms c='1'>
+<L f='E05DE48162324BF083A411E5CB7800FFC49D1489' s='E05DE48162324BF183A411E5BA4100FFC49D1489'/>
+<L f='E05DE48162324BF083A411E5CB7800FFC49D1489' s='E05DE48162324BF283A411E5C72E00FFC49D1489'/>
+<L f='E05DE481B18BE31883A411E5C32B00FFC49D1489' s='E05DE481B18BE31983A411E59E5700FFC49D1489'/>
+<L f='E05DE481B18BE31883A411E5C32B00FFC49D1489' s='E05DE481B18BE31A83A411E59FB500FFC49D1489'/>
+<L f='E05DE481B18BE31D83A411E58F9B00FFC49D1489' s='E05DE481B18BE31E83A411E5C1C500FFC49D1489'/>
+<L f='E05DE481B18BE31D83A411E58F9B00FFC49D1489' s='E05DE481B18BE31F83A411E5AC0D00FFC49D1489'/>
+<L f='E05DE481B18BE32283A411E5860300FFC49D1489' s='E05DE481B18E532783A411E585FB00FFC49D1489'/>
+<L f='E05DE481B18BE32283A411E5860300FFC49D1489' s='E05DE481B18E532883A411E5A3DC00FFC49D1489'/>
+</pictograms.GraphicsAlgorithmContainsGraphicsAlgorithms>
+<pictograms.GraphicsAlgorithmHasBackgroundColor c='1'>
+<L f='E05DE481622FECA083A411E594ED00FFC49D1489' s='E05DE481622FECA183A411E5ADE500FFC49D1489'/>
+<L f='E0E14F8661C0312383A411E5932E00FFC49D1489' s='E0E14F8661C0312583A411E5A83400FFC49D1489'/>
+</pictograms.GraphicsAlgorithmHasBackgroundColor>
+<pictograms.AnchorcontainerAggregatesAnchors c='1'>
+<L f='E05DE48162324BFC83A411E5B06500FFC49D1489' s='E05DE481622FEC9D83A411E5B1B700FFC49D1489'/>
+</pictograms.AnchorcontainerAggregatesAnchors>
+<pictograms.PictogramelementContainsGraphicsalgorithm c='1'>
+<L f='E05DE481622FEC9E83A411E5909700FFC49D1489' s='E05DE481622FEC9D83A411E5B1B700FFC49D1489'/>
+<L f='E05DE48162324BF083A411E5CB7800FFC49D1489' s='E05DE481622FECA683A411E5B94800FFC49D1489'/>
+<L f='E05DE48162324BF583A411E5CED200FFC49D1489' s='E05DE48162324BF483A411E5B9F000FFC49D1489'/>
+<L f='E05DE48162324BF783A411E58BC700FFC49D1489' s='E05DE48162324BF683A411E5C38600FFC49D1489'/>
+<L f='E05DE48162324BF983A411E5B8AA00FFC49D1489' s='E05DE48162324BF883A411E5928A00FFC49D1489'/>
+<L f='E05DE48162324BFB83A411E585C300FFC49D1489' s='E05DE48162324BFA83A411E5C73500FFC49D1489'/>
+<L f='E05DE481B18BE31883A411E5C32B00FFC49D1489' s='E05DE481B18BE31783A411E5961F00FFC49D1489'/>
+<L f='E05DE481B18BE31D83A411E58F9B00FFC49D1489' s='E05DE481B18BE31C83A411E5B67200FFC49D1489'/>
+<L f='E05DE481B18BE32283A411E5860300FFC49D1489' s='E05DE481B18BE32183A411E5B7F900FFC49D1489'/>
+<L f='E0E14F8661C0312383A411E5932E00FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+</pictograms.PictogramelementContainsGraphicsalgorithm>
+<pictograms.StyleContainerContainsStyles c='1'>
+<L f='E05DE481622FECA083A411E594ED00FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+<L f='E05DE481622FECA383A411E5AEBB00FFC49D1489' s='E0E14F8661C0312283A411E5BD1B00FFC49D1489'/>
+</pictograms.StyleContainerContainsStyles>
+<pictograms.GraphicsAlgorithmReferencesStyle c='1'>
+<L f='E05DE481622FECA083A411E594ED00FFC49D1489' s='E05DE481622FEC9E83A411E5909700FFC49D1489'/>
+<L f='E05DE481622FECA383A411E5AEBB00FFC49D1489' s='E05DE48162324BF283A411E5C72E00FFC49D1489'/>
+<L f='E05DE481622FECA383A411E5AEBB00FFC49D1489' s='E05DE481B18BE31A83A411E59FB500FFC49D1489'/>
+<L f='E05DE481622FECA383A411E5AEBB00FFC49D1489' s='E05DE481B18BE31F83A411E5AC0D00FFC49D1489'/>
+<L f='E05DE481622FECA383A411E5AEBB00FFC49D1489' s='E05DE481B18E532883A411E5A3DC00FFC49D1489'/>
+</pictograms.GraphicsAlgorithmReferencesStyle>
+</Partition>

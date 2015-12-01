@@ -1,0 +1,56 @@
+Development Component Build (2015-10-18 16:42:35 GMT+01:00 (CEST))
+  Component name: bpm_beispiel_0/ui/vc
+  Component vendor: demo.050112.com
+  SC compartment: BPM_BEISPIEL
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: marcus@CE06863
+  DC root folder: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\demo.050112.com\bpm_beispiel_0\ui\vc\_comp\
+  DC type: Visual Composer Composition Unit Interface
+  Host: CE06863
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/vc/interface"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/vc/interface
+   starting build plugin from : C:\SAP\eclipse\workspace.jdi\LocalDevelopment\VTP_BUILDT\sap.com\tc\bi\bp\vc\interface\_comp\gen\default\public\def\
+
+
+
+Build Plugin 'Visual Composer Interface', Version 7.10 SP 10 (NW731EXT_10_REL, built on 2013-10-17 19:06:54 +0200, CL166630)
+   development component:  bpm_beispiel_0/ui/vc (demo.050112.com)
+      software component:  BPM_BEISPIEL (demo.050112.com)
+       support component:  Default
+                location:  localDevelopment
+                    type:  Visual Composer Composition Unit Interface
+           build variant:  default
+         source location:  marcus@CE06863
+         output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\8838749FD2F1DFE1BFE60086FA35EBCA\default
+       generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\8838749FD2F1DFE1BFE60086FA35EBCA
+       plugin start time:  2015-10-18 16:42:38 GMT+02:00 (CEST)
+                 Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Package folder "src/packages" exists but is empty and will be ignored.
+Source folder "def/packages" exists but is empty and will be ignored.
+ 
+Build plugin finished at 2015-10-18 16:42:38 GMT+02:00 (CEST)
+Total build plugin runtime: 0.474 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2015-10-18 16:42:38.517 CEST
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\8838749FD2F1DFE1BFE60086FA35EBCA\default\
+  to:   C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\demo.050112.com\bpm_beispiel_0\ui\vc\_comp\gen\default\

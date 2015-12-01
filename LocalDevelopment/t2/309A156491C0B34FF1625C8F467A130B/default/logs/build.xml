@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: bpm_beispiel_0
+                   vendor: htwberlin.de.tr119
+                     type: Product Description
+                 sub-type: 
+              type-vendor: sap.com
+
+       software component
+                     name: BPM_BEISPIEL_SC
+                   vendor: htwberlin.de.tr119
+
+                 location: localDevelopment
+          source location: marcus@CE06863
+            build variant: default
+
+    building on CE06863, Windows Vista/x86, version 6.1
+    using Java VM 'SAP Java Server VM', version 6.1.007 (SAP AG)
+    build started at 2015-11-01 20:20:50 GMT+01:00 (CET)
+
+    Build Plugin 'sap.com/tc/bi/bp/pdef', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:45 +0200, CL166627)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def     7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/core#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:45 +0200, CL166627)
+    sap.com:tc/bi/exception#def    7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:08 +0200, CL166627)
+    sap.com:tc/bi/extddicdb#def    7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:11 +0200, CL166627)
+    sap.com:tc/bi/extsld#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:10 +0200, CL166627)
+    sap.com:tc/bi/extsql#def       7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/framework#def    7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:28:57 +0200, CL166627)
+    sap.com:tc/bi/i18n#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+    sap.com:tc/bi/javatech#def     7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:12 +0200, CL166627)
+    sap.com:tc/bi/jdoc#def         7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:09 +0200, CL166627)
+    sap.com:tc/bi/jdoc/util#def    7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:06 +0200, CL166627)
+    sap.com:tc/bi/jlincbs#def      7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:14 +0200, CL166627)
+    sap.com:tc/bi/settings#version 7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:34 +0200, CL166627)
+    sap.com:tc/bi/util#util        7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:29:01 +0200, CL166627)
+    sap.com:tc/bi/velocity#def     7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:06 +0200, CL166627)
+    sap.com:tc/bi/xml#def          7.30 SP 10 (NW731CORE_10_REL, built on 2013-10-17 15:30:07 +0200, CL166627)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="PdefGeneratorTask" classname="com.sap.tc.buildplugin.pdef.PdefGeneratorTask"/>
+<taskdef name="cda" classname="com.sap.tc.buildplugin.deploy.DeployArchiveTask"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+
+<target name="translate">
+<!-- begin generator chain id 'sap.com~sl.pdef_chain', type 'sap.com~sl.pdef_chain' -->
+<!-- begin generator id 'sap.com~sl.pdef_chain/pdef', type 'sap.com~sl.pdef.task.generator' -->
+<echo message="+++ com.sap.tc.buildplugin.pdef.PdefTaskGenerator: taskName: PdefGeneratorTask"/>
+<echo message="localContext: com.sap.tc.buildplugin.util.DataContext@10bd82b"/>
+<echo message="inputPaths: {compile_pp=[C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel\_comp\gen\default\public\default, C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_sc\_comp\gen\default\public\default], source=[C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_0\_comp\src]}"/>
+<echo message="outputPaths: {default=C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\testoutput, packdir=C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_pack01, tempdir=C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_temp01}"/>
+<echo message="usedPaths: {}"/>
+<echo message="parameters: {outputFolderName=testoutput}"/>
+<echo message="File(source): C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_0\_comp\src"/>
+<echo message="File(compile_pp): C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel\_comp\gen\default\public\default"/>
+<echo message="File(compile_pp): C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_sc\_comp\gen\default\public\default"/>
+<PdefGeneratorTask packdir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_pack01" tempdir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_temp01">
+<sdir sdir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_0\_comp\src"/>
+<cdir cdir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel\_comp\gen\default\public\default"/>
+<cdir cdir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL_SC\htwberlin.de.tr119\bpm_beispiel_sc\_comp\gen\default\public\default"/>
+</PdefGeneratorTask>
+<!-- end generator id 'sap.com~sl.pdef_chain/pdef', type 'sap.com~sl.pdef.task.generator' -->
+<!-- end generator chain id 'sap.com~sl.pdef_chain', type 'sap.com~sl.pdef_chain' -->
+</target>
+
+<target name="createPublicParts" depends="translate">
+<timer/>
+<pppacker ppname="default">
+</pppacker>
+<timer message="Packing of public part 'default' finished in "/>
+</target>
+
+<target name="createDeployArchive" depends="createPublicParts">
+<cda type="sap.com~SDA" deployfile="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\309A156491C0B34FF1625C8F467A130B\default\deploy/htwberlin.de.tr119~bpm_beispiel_0.sda">
+<descriptor type="sda-deployment-descriptor" file="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_temp01\sda-dd.xml"/>
+<option key="software-type" value="CONTENT"/>
+<option key="software-subtype" value="SL-SDA"/>
+<fileset dir="C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\309A156491C0B34FF1625C8F467A130B\sld_pack01"/>
+</cda>
+</target>
+
+<target name="build" depends="translate,createPublicParts,createDeployArchive">
+
+</target>
+</project>

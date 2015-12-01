@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://htwberlin.de.tr119/auftragserfuellung/" name="auftragserfuellung" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://htwberlin.de.tr119/auftragserfuellung/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://htwberlin.de.tr119/auftragserfuellung/">
+      <xsd:complexType name="KundenTyp">
+        <xsd:sequence>
+          <xsd:element name="vorname" type="xsd:string"></xsd:element>
+          <xsd:element name="nachname" type="xsd:string"></xsd:element>
+          <xsd:element name="telefon" type="xsd:string"></xsd:element>
+          <xsd:element name="email" type="xsd:string"></xsd:element>
+          <xsd:element name="anschrift" type="tns:AnschriftTyp"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AnschriftTyp">
+        <xsd:sequence>
+          <xsd:element name="straße" type="xsd:string"></xsd:element>
+          <xsd:element name="hausnummer" type="xsd:int"></xsd:element>
+          <xsd:element name="postleitzahl" type="xsd:int"></xsd:element>
+          <xsd:element name="stadt" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="auftrag">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="artikelnummer" type="xsd:string"></xsd:element>
+            <xsd:element name="menge" type="xsd:int"></xsd:element>
+            <xsd:element name="kunde" type="tns:KundenTyp"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="auftragsAnfrage">
+    <wsdl:part name="parameter" element="tns:auftrag"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="auftragsAnfrage">
+    <wsdl:operation name="auftragErfuellen">
+      <wsdl:input message="tns:auftragsAnfrage"></wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="auftragserfuellungSOAP" type="tns:auftragsAnfrage">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="auftragErfuellen">
+      <soap:operation soapAction="http://htwberlin.de.tr119/auftragserfuellung/auftragErfuellen"></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+    </wsdl:operation>
+    <ns1:PolicyReference xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy" URI="#GLX_POLICY"></ns1:PolicyReference>
+  </wsdl:binding>
+  <wsdl:service name="auftragserfuellung">
+    <wsdl:port name="auftragserfuellungSOAP" binding="tns:auftragserfuellungSOAP">
+      <soap:address location="http://www.example.org/bpm/htwberlindetr119/bpmbeispiel0/pr/pm/BestellauslC3B6ser"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+  <ns2:Policy xmlns:ns2="http://schemas.xmlsoap.org/ws/2004/09/policy" ns3:Id="GLX_POLICY" xmlns:ns3="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns2:ExactlyOne>
+      <ns2:All>
+        <ns2:ExactlyOne>
+          <ns2:All>
+            <ns4:TransportBinding xmlns:ns4="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+              <ns2:Policy>
+                <ns4:TransportToken>
+                  <ns2:Policy>
+                    <ns4:HttpsToken>
+                      <ns2:Policy>
+                        <ns4:HttpBasicAuthentication></ns4:HttpBasicAuthentication>
+                      </ns2:Policy>
+                    </ns4:HttpsToken>
+                  </ns2:Policy>
+                </ns4:TransportToken>
+                <ns4:AlgorithmSuite>
+                  <ns2:Policy>
+                    <ns4:TripleDesRsa15></ns4:TripleDesRsa15>
+                  </ns2:Policy>
+                </ns4:AlgorithmSuite>
+                <ns4:Layout>
+                  <ns2:Policy>
+                    <ns4:Strict></ns4:Strict>
+                  </ns2:Policy>
+                </ns4:Layout>
+              </ns2:Policy>
+            </ns4:TransportBinding>
+          </ns2:All>
+          <ns2:All>
+            <ns5:TransportBinding xmlns:ns5="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+              <ns2:Policy>
+                <ns5:TransportToken>
+                  <ns2:Policy>
+                    <ns5:HttpsToken>
+                      <ns2:Policy>
+                        <ns6:HTTPSSO2 xmlns:ns6="http://www.sap.com/webas/630/soap/features/security/policy"></ns6:HTTPSSO2>
+                      </ns2:Policy>
+                    </ns5:HttpsToken>
+                  </ns2:Policy>
+                </ns5:TransportToken>
+                <ns5:AlgorithmSuite>
+                  <ns2:Policy>
+                    <ns5:TripleDesRsa15></ns5:TripleDesRsa15>
+                  </ns2:Policy>
+                </ns5:AlgorithmSuite>
+                <ns5:Layout>
+                  <ns2:Policy>
+                    <ns5:Strict></ns5:Strict>
+                  </ns2:Policy>
+                </ns5:Layout>
+              </ns2:Policy>
+            </ns5:TransportBinding>
+          </ns2:All>
+        </ns2:ExactlyOne>
+      </ns2:All>
+    </ns2:ExactlyOne>
+  </ns2:Policy>
+  <ns7:UsingPolicy xmlns:ns7="http://schemas.xmlsoap.org/ws/2004/09/policy"></ns7:UsingPolicy>
+</wsdl:definitions>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapping version="1.0">
+<development-component component-type="Web Dynpro" name="bpm_beispiel_0/ui/wd" src-archive="htwberlin.de.tr119~bpm_beispiel_0~ui~wd~WebDynpro Application_srcarchive.zip" type-vendor="sap.com" vendor="htwberlin.de.tr119">
+<sourcefolder srcfolderpath="src/packages">
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponent.wdcomponent"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponent.wdcontroller"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterface.wdcontroller"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterface.wdlocalcompintfdef"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterfaceView.wdcontroller"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterfaceView.wdinterfaceview"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentMessagePool.wdmessagepool"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.wdcontroller"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.wdcontroller.xlf"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.wdview"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.wdview.xlf"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.wdcontroller"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.wdnavigation"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.wdwindow"/>
+</sourcefolder>
+<sourcefolder srcfolderpath="gen_wdp/packages">
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponent.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentInterface.wdcontroller"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentView.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/MengeangebenComponentWindow.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IConstantMengeangebenComponent.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IExternalMengeangebenComponentInterface.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IMessageMengeangebenComponent.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponent.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponentView.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPrivateMengeangebenComponentWindow.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPublicMengeangebenComponent.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/IPublicMengeangebenComponentWindow.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponent.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponentView.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/InternalMengeangebenComponentWindow.java"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/ResourceMengeangebenComponent.properties"/>
+<sourceelement path="com/htwberlin/de/tr119/glx/wdcomp/mengeangebencomponent/wdp/ResourceMengeangebenComponent_en.properties"/>
+</sourcefolder>
+</development-component>
+</mapping>

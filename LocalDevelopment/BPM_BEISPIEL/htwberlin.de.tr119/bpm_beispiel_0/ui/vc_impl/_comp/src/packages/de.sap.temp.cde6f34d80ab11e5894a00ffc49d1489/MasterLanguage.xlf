@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?><xliff version="1.1"><file datatype="javaPropertyResourceBundle" source-language="en"><header>         <skl/>
+         <phase-group/>
+<s2x xmlns="http://www.sap.com"><dtr>               <sc/></dtr>
+<giltDirectives>               <develContact>sapuser@sap.com</develContact>
+               <domain>Cross Applications</domain>
+               <originalLocale xml:lang="en"/>
+               <maxLength>255</maxLength></giltDirectives></s2x></header>
+<body><group restype="label"><trans-unit id="34don6o43o86dk6agilfk" maxwidth="255" resname="34don6o43o86dk6agilfk" translate="yes">               <source>AusgabegenehmigenComponent</source></trans-unit>
+<trans-unit id="2d19l554n1ph2532l2in" maxwidth="255" resname="2d19l554n1ph2532l2in" translate="yes">               <source>Form</source></trans-unit>
+<trans-unit id="3k7p1936gc3b2i3c01p21" maxwidth="255" resname="3k7p1936gc3b2i3c01p21" translate="yes">               <source>Genehmigen</source></trans-unit>
+<trans-unit id="2p93fpi5d8lgdp4df5h4f" maxwidth="255" resname="2p93fpi5d8lgdp4df5h4f" translate="yes">               <source>Abbrechen</source></trans-unit>
+<trans-unit id="54nakkp1n2hgfo6kodfhn" maxwidth="255" resname="54nakkp1n2hgfo6kodfhn" translate="yes">               <source>Gesamtsumme</source></trans-unit>
+<trans-unit id="60jp9ag67mjm051c4ddch" maxwidth="255" resname="60jp9ag67mjm051c4ddch" translate="yes">               <source>preis</source></trans-unit>
+<trans-unit id="27dpag63nm53i958b3jpp" maxwidth="255" resname="27dpag63nm53i958b3jpp" translate="yes">               <source>Menge</source></trans-unit>
+<trans-unit id="4njlkph66ghc152m1d68" maxwidth="255" resname="4njlkph66ghc152m1d68" translate="yes">               <source>waehrung</source></trans-unit>
+<trans-unit id="50fh9ip6jlod6e1kei6kn" maxwidth="255" resname="50fh9ip6jlod6e1kei6kn" translate="yes">               <source>Artikelnummer</source></trans-unit>
+<trans-unit id="502dfkomfe0kn43cpf73" maxwidth="255" resname="502dfkomfe0kn43cpf73" translate="yes">               <source>Genehmigung</source></trans-unit></group></body></file></xliff>
