@@ -1,5 +1,0 @@
-ROOT_0,TARGET_NAMESPACE=http://distanz.services.com.sap.demo/
-ROOT_0,SCHEMA_LOCATION=http://distanz.services.com.sap.demo/
-ROOT_0,ROOTID=0
-ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://distanz.services.com.sap.demo/" xmlns:tns="http://distanz.services.com.sap.demo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="IOException" type="tns:IOException" sdox:aliasName="$http://distanz.services.com.sap.demo/:IOException" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="IOException" sdox:aliasName="#IOException" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="message" type="xsd:string" minOccurs="0" sdox:aliasName="$message"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
-

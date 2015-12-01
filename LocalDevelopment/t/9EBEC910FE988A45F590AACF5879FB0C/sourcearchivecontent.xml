@@ -2,6 +2,7 @@
 <mapping version="1.0">
 <development-component component-type="J2EE" name="bpm_beispiel_0/bl/ejb" src-archive="htwberlin.de.tr119~bpm_beispiel_0~bl~ejb~ejbjar_srcarchive.zip" sub-type="EJBModule" type-vendor="sap.com" vendor="htwberlin.de.tr119">
 <sourcefolder srcfolderpath="ejbModule">
+<sourceelement path="demo/sap/com/services/distanz/DistanzServicetr119.java"/>
 <sourceelement path="demo/sap/com/services/distanz/TestCalloutTR119.java"/>
 <sourceelement path="demo/sap/com/services/haendler/ArtikelVerfuegbarkeittr119.java"/>
 <sourceelement path="demo/sap/com/services/haendler/HaendlerServicetr119.java"/>

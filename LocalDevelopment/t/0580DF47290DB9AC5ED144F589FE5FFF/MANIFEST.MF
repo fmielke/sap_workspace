@@ -4,15 +4,15 @@ DC-Type: Process Composer
 DC-Vendor: htwberlin.de.tr119
 Implementation-Title: bpm_beispiel_0/pr/pm
 Implementation-Vendor: htwberlin.de.tr119
-Implementation-Version: localDevelopment 20151201114357
+Implementation-Version: localDevelopment 20151201141445
 SC-Name: BPM_BEISPIEL
 SC-Vendor: htwberlin.de.tr119
 
 Name: build-information
-Build-Counter: 20151201114357
+Build-Counter: 20151201141445
 Build-Date: 2015-12-01
 Build-Location: localDevelopment
-Build-Time: 12:43:57 GMT+01:00 (CET)
+Build-Time: 15:14:45 GMT+01:00 (CET)
 Created-By: DC BuildTool
 Source-Location: marcus@CE06863
 

@@ -34,6 +34,10 @@
 <interface.wsdl interface="http://htwberlin.de.tr119/beschaffung#wsdl.interface(beschaffungsAuftrag)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/beschaffung.wsdl"/>
 <binding.ws/>
 </reference>
+<reference name="6bbf97d5-f633-4d4e-894e-9b3e65fc2c0e" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="local">
+<interface.wsdl interface="http://distanz.services.com.sap.demo/#wsdl.interface(DistanzServicetr119)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/rootwsdl_importedwsdl_1_DistanzServicetr119Service_DistanzServicetr119.wsdl"/>
+<binding.ws/>
+</reference>
 <reference name="fb30f7a7-cd1b-4e45-a56d-61bebca63212" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="dummy">
 <interface.wsdl interface="http://htwberlin.de.tr119/auftragserfuellung/#wsdl.interface(auftragsAnfrage)" sapinterfacewsdlloc:location="htwberlin.de.tr119~bpm_beispiel_0~pr~pm.bpem#wsdls/htwberlin.de.tr119~bpm_beispiel_0~pr~pm/auftragserfuellung.wsdl"/>
 <binding.ws/>

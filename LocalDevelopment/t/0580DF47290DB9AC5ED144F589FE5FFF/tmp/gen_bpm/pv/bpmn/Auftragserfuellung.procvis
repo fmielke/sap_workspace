@@ -35,7 +35,7 @@
 <Position x="480" y="73" />
 <Size x="95" y="55" />
 <Service>
-<ServiceInterface namespace="http://distanz.services.com.sap.demo/" name="TestCalloutTR119"/>
+<ServiceInterface namespace="http://distanz.services.com.sap.demo/" name="DistanzServicetr119"/>
 <Operation>sendTestData</Operation>
 <ServiceGroup>local</ServiceGroup>
 </Service>

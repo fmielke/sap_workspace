@@ -1,4 +1,4 @@
-Development Component Build (2015-12-01 12:43:23 GMT+01:00 (CET))
+Development Component Build (2015-12-01 16:38:30 GMT+01:00 (CET))
   Component name: bpm_beispiel_0/bl/ear
   Component vendor: htwberlin.de.tr119
   SC compartment: BPM_BEISPIEL
@@ -32,7 +32,7 @@ Build Plugin 'EnterpriseApplicationPlugin', Version 7.30 SP 10 (NW731CORE_10_REL
          source location:  marcus@CE06863
          output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\9EBEC910FE988A45F590AACF5879FB0C\default
        generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\9EBEC910FE988A45F590AACF5879FB0C
-       plugin start time:  2015-12-01 12:43:23 GMT+01:00 (CET)
+       plugin start time:  2015-12-01 16:38:30 GMT+01:00 (CET)
                  Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
 
 
@@ -52,7 +52,7 @@ Creating Ant build file..
   Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\9EBEC910FE988A45F590AACF5879FB0C\default\logs\build.xml
   Using Java class:     com.sap.tc.buildplugin.BuildEnterpriseApplication
 Target "createDeployArchive" has a dependency on "compile" but no such target exists. Dependency will be ignored.
-Build file creation finished in 0.029 seconds
+Build file creation finished in 0.032 seconds
  
 Starting Ant..
   Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\9EBEC910FE988A45F590AACF5879FB0C\default\logs\build.xml
@@ -74,31 +74,31 @@ createDeployArchive:
  
        [cdu] Collecting modules ...
        [cdu] Adding module 'htwberlin.de.tr119~bpm_beispiel_0~bl~ejb.jar' from DC 'bpm_beispiel_0/bl/ejb' (vendor 'htwberlin.de.tr119'), public part 'ejbjar'
-       [cdu] Ant build file creation finished in 0.045 seconds
+       [cdu] Ant build file creation finished in 0.048 seconds
  
 packDeployArchive:
  [srcpacker] Creating source archive
  [srcpacker] Adding source archive from htwberlin.de.tr119~bpm_beispiel_0/bl/ejb
-     [timer] Source archive creation finished in 0.026 seconds
+     [timer] Source archive creation finished in 0.024 seconds
  
     [jarsap] Info: JarSAP version 20090803.1000
     [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
     [jarsap] Building: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\9EBEC910FE988A45F590AACF5879FB0C\default\deploy\htwberlin.de.tr119~bpm_beispiel_0~bl~ear.ear with compression
-     [timer] JarSAP finished in 0.017 seconds
+     [timer] JarSAP finished in 0.018 seconds
  
  
 build:
  
-Ant runtime 0.119 seconds
+Ant runtime 0.12 seconds
  
 Ant build finished OK
  
-Build plugin finished at 2015-12-01 12:43:24 GMT+01:00 (CET)
-Total build plugin runtime: 0.293 seconds
+Build plugin finished at 2015-12-01 16:38:30 GMT+01:00 (CET)
+Total build plugin runtime: 0.296 seconds
  
 Build finished OK
 
-==== Post-Processing ====   started at 2015-12-01 12:43:24.193 CET
+==== Post-Processing ====   started at 2015-12-01 16:38:30.461 CET
 Comparison of previous and actual build results took: 0 seconds
 
 Copy the build results 

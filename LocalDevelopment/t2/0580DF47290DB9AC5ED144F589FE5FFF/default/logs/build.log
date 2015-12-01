@@ -1,4 +1,4 @@
-Development Component Build (2015-12-01 12:43:55 GMT+01:00 (CET))
+Development Component Build (2015-12-01 15:14:44 GMT+01:00 (CET))
   Component name: bpm_beispiel_0/pr/pm
   Component vendor: htwberlin.de.tr119
   SC compartment: BPM_BEISPIEL
@@ -53,7 +53,7 @@ Build Plugin 'sap.com/tc/bpem/bi/bp/buildtool', Version 7.30 SP 10 (NW731CORE_10
          source location:  marcus@CE06863
          output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\0580DF47290DB9AC5ED144F589FE5FFF\default
        generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\0580DF47290DB9AC5ED144F589FE5FFF
-       plugin start time:  2015-12-01 12:43:56 GMT+01:00 (CET)
+       plugin start time:  2015-12-01 15:14:44 GMT+01:00 (CET)
                  Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
 
 
@@ -64,10 +64,10 @@ General options:
 
 
 Checking path lengths for sources
-Path length checks finished in 0.014 seconds
+Path length checks finished in 0.015 seconds
  
 Preparing data context..
-Data context preparation finished in 0.02 seconds
+Data context preparation finished in 0.023 seconds
  
 Creating Ant build file..
   Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\0580DF47290DB9AC5ED144F589FE5FFF\default\logs\build.xml
@@ -88,7 +88,7 @@ Metamodels found.
 Output folder found.
 Target "Xlf2PropBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
 Target "ScdlBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
-Build file creation finished in 0.406 seconds
+Build file creation finished in 0.21 seconds
  
 Starting Ant..
   Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\0580DF47290DB9AC5ED144F589FE5FFF\default\logs\build.xml
@@ -108,7 +108,7 @@ ScdlBase:
   [MOINInit] WARNING: [System.err] [Invoked from com.sap.bc.krn.perf.PerfTimes.internal_TRC(PerfTimes.java:103)]
   [MOINInit] WARNING: [System.err] PerfTimes : loadNativeLayer: loading jperflib failed. no jperflib in java.library.path
   [MOINInit] DataArea name: DefaultDataArea
-  [MOINInit] Moin initialized in 7083 milliseconds.
+  [MOINInit] Moin initialized in 5346 milliseconds.
       [echo] Registering folder: gensrc/extcfg for path: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\0580DF47290DB9AC5ED144F589FE5FFF\gensrc\extcfg/
       [echo] Starting Extension Configuration generator...
   [gen_scdl] 		[SCDL_GEN] Initializing Scdl Generation...
@@ -127,15 +127,15 @@ ScdlBase:
   [gen_scdl] 			[SCDL-EXPORT] Scdl file output location: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\0580DF47290DB9AC5ED144F589FE5FFF/scdl_output\META-INF\bpm_beispiel_0~pr~pm.composite
   [gen_scdl] 			[SCDL-EXPORT] sca contribution XML output location: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\0580DF47290DB9AC5ED144F589FE5FFF/scdl_output\META-INF\sca-contribution.xml
   [gen_scdl] 		[SCDL_GEN] Conversion successfully completed!
-     [timer] Extension Configuration generator finished in 5.585 seconds
+     [timer] Extension Configuration generator finished in 4.828 seconds
  
 [MOINShutdown] About to shutdown MOIN...
-[MOINShutdown] MOIN shut down in 78 milliseconds.
+[MOINShutdown] MOIN shut down in 79 milliseconds.
  
 Xlf2PropBase:
       [echo] Start XLF conversion
   [xlf2prop] Found 9 XLF files to convert in folder "mc"
-     [timer] XLF conversion finished in 0.423 seconds
+     [timer] XLF conversion finished in 0.537 seconds
  
       [copy] Copying 9 files to C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\0580DF47290DB9AC5ED144F589FE5FFF\xlf_out
  
@@ -150,7 +150,7 @@ Bpem:
   [MOINInit] Referenced meta-model: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
   [MOINInit] Referenced meta-model: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
   [MOINInit] DataArea name: DefaultDataArea
-  [MOINInit] Moin initialized in 1375 milliseconds.
+  [MOINInit] Moin initialized in 1486 milliseconds.
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Metamodel version validation...
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Sanity check is enabled, com.glx.sanity.check system property isn't false.
   [BpemTask] WSDL Location:src/wsdl/auftragserfuellung.wsdl
@@ -164,6 +164,8 @@ Bpem:
   [BpemTask] WSDL Location:src/wsdl/rootwsdl_MaterialAvailability.wsdl
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm
   [BpemTask] WSDL Location:src/wsdl/rootwsdl_importedwsdl_1_VersandServiceTR119Service_VersandServiceTR119.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm
+  [BpemTask] WSDL Location:src/wsdl/rootwsdl_importedwsdl_1_DistanzServicetr119Service_DistanzServicetr119.wsdl
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm
   [BpemTask] [System.out] [Invoked from com.sap.tc.esmp.tools.wsdlexport.core.SdoWsdlExporter.addSchemaDoc(SdoWsdlExporter.java:453)]
   [BpemTask] [System.out] inline
@@ -199,9 +201,6 @@ Bpem:
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating event definition constraint check.
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Constraint check for event definitions is done.
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating event definition compilation.
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Event def: com.sap.glx.ide.model.galaxy.workflow.ErrorEventDefinition (Java Type)
-  [BpemTask] Galaxy.Workflow.ErrorEventDefinition (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E012BF1E0CA0B057942C11E5CEBE00FFC49D1489 (MRI)
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Event def: com.sap.glx.ide.model.galaxy.processsupplements.ReportingDefinition (Java Type)
   [BpemTask] Galaxy.ProcessSupplements.ReportingDefinition (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/reporting/artikel_menge.eventdef#E0C851173043493380C811E599AC00FFC49D1489 (MRI)
@@ -307,12 +306,6 @@ Bpem:
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Event def: com.sap.glx.ide.model.galaxy.workflow.ErrorEventDefinition (Java Type)
   [BpemTask] Galaxy.Workflow.ErrorEventDefinition (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/triggers/verstpätete lieferung.eventdef#E0A5ADB5A36660EA7E2711E5988000FFC49D1489 (MRI)
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/distanz.services.com.sap.demo.types#E0E1B8C6444C4B5C942A11E5B72D00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling com.sap.glx.ide.model.galaxy.workflow.ErrorEventDefinition (Java Type)
-  [BpemTask] Galaxy.Workflow.ErrorEventDefinition (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E012BF1E0CA0B057942C11E5CEBE00FFC49D1489 (MRI), CompilerType: EXCEPTIONCOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/reporting/artikel_menge.eventdef#E0C851173048221180C811E5CA3C00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
@@ -634,39 +627,6 @@ Bpem:
   [BpemTask] PV file generation done.
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E016575C4FE0A96C7E2911E5AA7F00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/concat.function#481F3B3295C3B9881AC311DDAEFA0018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/concat.function#481F3B3295C148851AC311DDB0480018717335EB (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/distanz.services.com.sap.demo.types#E0E1B8C6C11D237B942B11E5A1B200FFC49D1489 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/distanz.services.com.sap.demo.types#E0E1B8C6C11D7B87942B11E5938F00FFC49D1489 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/distanz.services.com.sap.demo.types#E0E1B8C6444C4B5C942A11E5B72D00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E012BF1EFFFD12BD942811E5B0B800FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B7B6D46E789F11E5B00B00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/distanz.services.com.sap.demo.types#E0E1B8C6444C4B5C942A11E5B72D00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E016575C59C215277E2911E5B8DB00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E016575C33E9D35D7E2911E5872800FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/reporting/artikel_menge.eventdef#E0C851173048221180C811E5CA3C00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
-  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
-  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B76417D6789F11E5959900FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
@@ -681,10 +641,26 @@ Bpem:
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/triggers/verstpätete lieferung.eventdef#E0A5ADB5A36660EE7E2711E5C21400FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/concat.function#481F3B3295C3B9881AC311DDAEFA0018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/concat.function#481F3B3295C148851AC311DDB0480018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E016575C4FE0A96C7E2911E5AA7F00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/distanz.services.com.sap.demo.types#E0E1B8C6C11D237B942B11E5A1B200FFC49D1489 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/distanz.services.com.sap.demo.types#E0E1B8C6C11D7B87942B11E5938F00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B7DADC4C789F11E5A6EF00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E016575C5A424F907E2A11E596BF00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E012BF1EFFFD12BD942811E5B0B800FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/katalog.services.com.sap.demo.types#E0E1B8C61E8F9E2C7E1711E5B4EB00FFC49D1489 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
@@ -696,15 +672,24 @@ Bpem:
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/katalog.services.com.sap.demo.types#E0E1B8C61E8D4C537E1711E58AA800FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B7B6D46E789F11E5B00B00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E016575C59C215277E2911E5B8DB00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E016575C33E9D35D7E2911E5872800FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E02C978BABE1482F78A311E5BB1200FFC49D1489 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E02C978BABFA0EC978A311E5B26D00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B75F0A39789F11E59A4100FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B7557912789F11E5CCB700FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
-  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B7557912789F11E5CCB700FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B75F0A39789F11E59A4100FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/default/_comp/src/functions/sap.com/tc/bpem/content/predefs/default/getexternaluser.function#4926AB3EFC745ED1B7C811DDA1CB001742235CDE (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
@@ -715,6 +700,9 @@ Bpem:
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/sap-com&cldocument&clsap&clsoap&clfunctions&clmc-style.types#E0C4897F9A3558EF885811E5BA0500FFC49D1489 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
   [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/rep/wsdl/sap-com&cldocument&clsap&clsoap&clfunctions&clmc-style.types#E0C4897F9A39DAAB885811E5AAB200FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/reporting/artikel_menge.eventdef#E0C851173048221180C811E5CA3C00FFC49D1489 (MRI)], CompilerType: TYPECOMPILER
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling com.sap.glx.ide.model.galaxy.workflow.Collaboration (Java Type)
   [BpemTask] Galaxy.Workflow.Collaboration (MOF Type)
   [BpemTask] PF.DefaultDataArea:DCs/htwberlin.de.tr119/bpm_beispiel_0/pr/pm/_comp/src/bpmn/auftragserfuellung.bpmn#E00EA3B7B73C3395789F11E5C58C00FFC49D1489 (MRI), CompilerType: BPMN2CSVCOMPILER
@@ -942,25 +930,25 @@ createPublicParts:
   [pppacker] Checking path: mc
   [pppacker] Checking path: rep
   [pppacker] Checking path: src
-  [pppacker] Packed  62 files for entity src (Model Folder Tree)
+  [pppacker] Packed  64 files for entity src (Model Folder Tree)
   [pppacker] Packed 3 entities for public part 'def_cmp'
-     [timer] Packing of public part 'def_cmp' finished in 0.307 seconds
+     [timer] Packing of public part 'def_cmp' finished in 0.354 seconds
  
  
 build:
  
-Ant runtime 45.131 seconds
+Ant runtime 42.299 seconds
  
 Ant build finished OK
 MOIN forced shutdown initiated.
  
-Build plugin finished at 2015-12-01 12:44:43 GMT+01:00 (CET)
-Total build plugin runtime: 46.788 seconds
+Build plugin finished at 2015-12-01 15:15:28 GMT+01:00 (CET)
+Total build plugin runtime: 43.486 seconds
  
 Build finished with WARNING
 
-==== Post-Processing ====   started at 2015-12-01 12:44:43.438 CET
-Comparison of previous and actual build results took: 0.044 seconds
+==== Post-Processing ====   started at 2015-12-01 15:15:28.284 CET
+Comparison of previous and actual build results took: 0.049 seconds
 
 Copy the build results 
   from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\0580DF47290DB9AC5ED144F589FE5FFF\default\

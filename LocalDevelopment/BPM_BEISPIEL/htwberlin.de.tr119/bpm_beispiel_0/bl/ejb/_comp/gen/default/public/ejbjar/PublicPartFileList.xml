@@ -47,6 +47,7 @@
 <file path="META-INF/ejb-j2ee-engine.xml"/>
 </fileset>
 <fileset location="javalib" source-location="gen" source-path="classes">
+<file path="demo/sap/com/services/distanz/DistanzServicetr119.class"/>
 <file path="demo/sap/com/services/distanz/TestCalloutTR119.class"/>
 <file path="demo/sap/com/services/haendler/ArtikelVerfuegbarkeittr119.class"/>
 <file path="demo/sap/com/services/haendler/HaendlerServicetr119.class"/>
@@ -54,6 +55,7 @@
 <file path="demo/sap/com/services/versand/VersandServiceTR119.class"/>
 </fileset>
 <fileset location="srcarchive" source-location="DC" source-path="ejbModule">
+<file path="demo/sap/com/services/distanz/DistanzServicetr119.java"/>
 <file path="demo/sap/com/services/distanz/TestCalloutTR119.java"/>
 <file path="demo/sap/com/services/haendler/ArtikelVerfuegbarkeittr119.java"/>
 <file path="demo/sap/com/services/haendler/HaendlerServicetr119.java"/>

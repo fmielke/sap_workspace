@@ -1,4 +1,4 @@
-Development Component Build (2015-12-01 12:43:17 GMT+01:00 (CET))
+Development Component Build (2015-12-01 16:38:24 GMT+01:00 (CET))
   Component name: bpm_beispiel_0/bl/ejb
   Component vendor: htwberlin.de.tr119
   SC compartment: BPM_BEISPIEL
@@ -32,7 +32,7 @@ Build Plugin 'EJBModulePlugin', Version 7.30 SP 10 (NW731CORE_10_REL, built on 2
          source location:  marcus@CE06863
          output location:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\03367B961C0E629D4A63CF9492AC2DDC\default
        generation folder:  C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\03367B961C0E629D4A63CF9492AC2DDC
-       plugin start time:  2015-12-01 12:43:17 GMT+01:00 (CET)
+       plugin start time:  2015-12-01 16:38:24 GMT+01:00 (CET)
                  Java VM:  SAP Java Server VM, 6.1.007 (1.6, SAP AG)
 
 
@@ -48,12 +48,12 @@ Path length checks finished in 0.003 seconds
  
 Preparing data context..
 Using custom manifest file "ejbModule/META-INF/MANIFEST.MF"
-Data context preparation finished in 0.016 seconds
+Data context preparation finished in 0.015 seconds
  
 Creating Ant build file..
   Creating output file: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\03367B961C0E629D4A63CF9492AC2DDC\default\logs\build.xml
   Using Java class:     com.sap.tc.buildplugin.BuildEJBModule
-Build file creation finished in 0.03 seconds
+Build file creation finished in 0.036 seconds
  
 Starting Ant..
   Using build file:     C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\03367B961C0E629D4A63CF9492AC2DDC\default\logs\build.xml
@@ -75,12 +75,12 @@ compile:
       [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\engine.jee5.facade.jar
       [echo]       C:\SAP\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\jee5.facade.jar
       [echo]    output dir: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\03367B961C0E629D4A63CF9492AC2DDC\classes
-     [javac] Compiling 5 source files to C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\03367B961C0E629D4A63CF9492AC2DDC\classes
-     [timer] Java compilation finished in 0.13 seconds
+     [javac] Compiling 6 source files to C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t\03367B961C0E629D4A63CF9492AC2DDC\classes
+     [timer] Java compilation finished in 0.135 seconds
  
       [echo] Start XLF conversion
   [xlf2prop] Found 0 XLF files to convert in folder "ejbModule"
-     [timer] XLF conversion finished in 0 seconds
+     [timer] XLF conversion finished in 0.001 seconds
  
  
 createPublicParts:
@@ -89,24 +89,24 @@ createPublicParts:
      [timer] Packing of public part 'client' finished in 0.019 seconds
  
   [pppacker] Packing public part 'ejbjar'
-  [pppacker] Packed  12 files for entity htwberlin.de.tr119~bpm_beispiel_0~bl~ejb (EJB-JAR)
+  [pppacker] Packed  14 files for entity htwberlin.de.tr119~bpm_beispiel_0~bl~ejb (EJB-JAR)
   [pppacker] Packed 1 entity for public part 'ejbjar'
-     [timer] Packing of public part 'ejbjar' finished in 0.052 seconds
+     [timer] Packing of public part 'ejbjar' finished in 0.061 seconds
  
  
 build:
  
-Ant runtime 0.224 seconds
+Ant runtime 0.24 seconds
  
 Ant build finished OK
  
-Build plugin finished at 2015-12-01 12:43:18 GMT+01:00 (CET)
-Total build plugin runtime: 0.408 seconds
+Build plugin finished at 2015-12-01 16:38:24 GMT+01:00 (CET)
+Total build plugin runtime: 0.435 seconds
  
 Build finished with WARNING
 
-==== Post-Processing ====   started at 2015-12-01 12:43:18.224 CET
-Comparison of previous and actual build results took: 0.012 seconds
+==== Post-Processing ====   started at 2015-12-01 16:38:24.782 CET
+Comparison of previous and actual build results took: 0.011 seconds
 
 Copy the build results 
   from: C:\SAP\eclipse\workspace.jdi\LocalDevelopment\t2\03367B961C0E629D4A63CF9492AC2DDC\default\

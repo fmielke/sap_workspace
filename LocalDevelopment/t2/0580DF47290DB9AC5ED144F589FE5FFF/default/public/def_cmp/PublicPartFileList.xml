@@ -442,12 +442,14 @@
 <file path="src/wsdl/TR_119_Order_Async.wsdl"/>
 <file path="src/wsdl/auftragserfuellung.wsdl"/>
 <file path="src/wsdl/beschaffung.wsdl"/>
+<file path="src/wsdl/rootwsdl_DistanzServicetr119Service_DistanzServicetr119.wsdl"/>
 <file path="src/wsdl/rootwsdl_HaendlerServiceTR119Service_HaendlerServiceTR119.wsdl"/>
 <file path="src/wsdl/rootwsdl_KatalogServiceTR119Service_KatalogServiceTR119.wsdl"/>
 <file path="src/wsdl/rootwsdl_MaterialAvailability.wsdl"/>
 <file path="src/wsdl/rootwsdl_TestCallout119Service_TestCallout119.wsdl"/>
 <file path="src/wsdl/rootwsdl_TestCalloutTR119Service_TestCalloutTR119.wsdl"/>
 <file path="src/wsdl/rootwsdl_VersandServiceTR119Service_VersandServiceTR119.wsdl"/>
+<file path="src/wsdl/rootwsdl_importedwsdl_1_DistanzServicetr119Service_DistanzServicetr119.wsdl"/>
 <file path="src/wsdl/rootwsdl_importedwsdl_1_HaendlerServiceTR119Service_HaendlerServiceTR119.wsdl"/>
 <file path="src/wsdl/rootwsdl_importedwsdl_1_KatalogServiceTR119Service_KatalogServiceTR119.wsdl"/>
 <file path="src/wsdl/rootwsdl_importedwsdl_1_TestCallout119Service_TestCallout119.wsdl"/>
