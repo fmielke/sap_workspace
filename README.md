@@ -1,7 +1,9 @@
 # sap_workspace
-workspace.idj
+RELEVANT FILES
 --------------
-NOTES:
-save .gitignore to ignore all folders in repo, except backup
-RELEVANT FILES:
 Backup directory
+
+# Changelog
+date  | author | change
+------------- | ------------- | -------------
+17.12.2015 | msmacco | added decision table "AufschlagBerechnen"
