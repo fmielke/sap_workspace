@@ -4,6 +4,6 @@ RELEVANT FILES
 Backup directory
 
 # Changelog
-date  | author | change
-------------- | ------------- | -------------
-17.12.2015 | msmacco | added decision table "AufschlagBerechnen"
+no | date  | author | change
+------------- | ------------- | ------------- | -------------
+1 | 17.12.2015 | msmacco | added decision table "AufschlagBerechnen"
