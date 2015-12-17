@@ -1,2 +1,0 @@
-C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel_0\ui\wd\_comp\src\packages\com\htwberlin\de\tr119\glx\wdcomp\mengeangebencomponent\MengeangebenComponentView.wdcontroller.xlf
-C:\SAP\eclipse\workspace.jdi\LocalDevelopment\BPM_BEISPIEL\htwberlin.de.tr119\bpm_beispiel_0\ui\wd\_comp\src\packages\com\htwberlin\de\tr119\glx\wdcomp\mengeangebencomponent\MengeangebenComponentView.wdview.xlf

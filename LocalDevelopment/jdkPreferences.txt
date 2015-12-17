@@ -1,3 +1,0 @@
-#JDK Properties for Configuration LocalDevelopment
-#Tue Dec 01 16:38:30 CET 2015
-jdk_path_heuristic=C\:\\Program Files (x86)\\SAP\\SAP JVM 6 (61_REL i486 opt)

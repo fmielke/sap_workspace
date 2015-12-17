@@ -1,5 +1,0 @@
-ROOT_0,TARGET_NAMESPACE=sap.com/glx/
-ROOT_0,SCHEMA_LOCATION=sap.com/glx/
-ROOT_0,ROOTID=0
-ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="sap.com/glx/" xmlns:tns="sap.com/glx/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="Artikel_Menge" type="tns:Artikel_Menge" sdox:aliasName="$sap.com/glx/:Artikel_Menge" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="Artikel_Menge" ns1:hiddenInTree="" xmlns:ns1="http://sap.com/esm/ui/ext" sdox:aliasName="#Artikel_Menge" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="artikelnummer" type="xsd:string" sdox:aliasName="$artikelnummer"></xsd:element>       <xsd:element name="menge" type="xsd:long" sdox:aliasName="$menge"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
-

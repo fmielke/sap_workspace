@@ -1,9 +1,0 @@
-# Message event definition TR_119_ICP_TRG (MOFId: E000054C03F3D782832D11E5806700FFC49D1489)
-NETWORK,831be45255521d691f288ef9a3882363,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/TR_119_ICP_TRG
-REVISIONID,4,4,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
--- CONFIG --
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/TR_119_ICP_TRG,TR_119_Order_Async,SCOPE=A79E3B4AA356E896FF4DE92124C58366
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/TR_119_ICP_TRG,TR_119_Order_Async,ELEMENT,NAME=$http://tr.demo.sap.com/tr_119:TR_119_Order_MT
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/TR_119_ICP_TRG,TR_119_Order_Async,ELEMENT,NAMESPACE=http://tr.demo.sap.com/tr_119
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/TR_119_ICP_TRG,TR_119_Order_Async,TYPE,NAME=#23#TR_119_Order
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/TR_119_ICP_TRG,TR_119_Order_Async,TYPE,NAMESPACE=http://tr.demo.sap.com/tr_119

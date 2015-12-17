@@ -1,9 +1,0 @@
-# Message event definition Bestellauslöser (MOFId: E02C978B674EEA9C7D6D11E58B6700FFC49D1489)
-NETWORK,e697bc072f424cd64aad3e57efbde0f3,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Bestellauslöser
-REVISIONID,4,4,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
--- CONFIG --
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Bestellauslöser,auftragErfuellen,SCOPE=10A52BB002078B076B9BD6DEB10E5D55
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Bestellauslöser,auftragErfuellen,ELEMENT,NAME=$http://htwberlin.de.tr119/auftragserfuellung/:auftrag
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Bestellauslöser,auftragErfuellen,ELEMENT,NAMESPACE=http://htwberlin.de.tr119/auftragserfuellung/
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Bestellauslöser,auftragErfuellen,TYPE,NAME=E0E1B8C615B7EFE07D6611E5A2D100FFC49D1489
-CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,htwberlin.de.tr119/bpm_beispiel_0/pr/pm/Bestellauslöser,auftragErfuellen,TYPE,NAMESPACE=http://htwberlin.de.tr119/auftragserfuellung/
