@@ -1,5 +1,0 @@
-ROOT_0,TARGET_NAMESPACE=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/BeschaffungSub/Beschaffung_Ersatzteile
-ROOT_0,SCHEMA_LOCATION=htwberlin.de.tr119/bpm_beispiel_0/pr/pm/BeschaffungSub/Beschaffung_Ersatzteile
-ROOT_0,ROOTID=0
-ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/BeschaffungSub/Beschaffung_Ersatzteile" xmlns:tns="htwberlin.de.tr119/bpm_beispiel_0/pr/pm/BeschaffungSub/Beschaffung_Ersatzteile" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="Menge" type="xsd:int" sdox:aliasName="$htwberlin.de.tr119/bpm_beispiel_0/pr/pm/BeschaffungSub/Beschaffung_Ersatzteile:Menge" xmlns:sdox="commonj.sdo/xml"></xsd:element> </xsd:schema> 
-

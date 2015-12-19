@@ -1,5 +1,0 @@
-ROOT_0,TARGET_NAMESPACE=http://htwberlin.de.tr119/beschaffung
-ROOT_0,SCHEMA_LOCATION=http://htwberlin.de.tr119/beschaffung
-ROOT_0,ROOTID=0
-ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://htwberlin.de.tr119/beschaffung" xmlns:tns="http://htwberlin.de.tr119/beschaffung" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="nichtLieferbarFehler" sdox:aliasName="$http://htwberlin.de.tr119/beschaffung:nichtLieferbarFehler" xmlns:sdox="commonj.sdo/xml">     <xsd:complexType sdox:aliasName="E0E1B8C62213521B7D6611E5A65400FFC49D1489">       <xsd:sequence>         <xsd:element name="nichtLieferbarFehler" type="xsd:string" sdox:aliasName="$nichtLieferbarFehler"></xsd:element>       </xsd:sequence>     </xsd:complexType>   </xsd:element> </xsd:schema> 
-

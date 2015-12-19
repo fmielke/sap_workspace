@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- MetaDataAPI generated on: Thursday, October 17, 2013 3:18:53 PM CEST -->
-<MessagePool xmlns="http://xml.sap.com/2002/10/metamodel/webdynpro" xmlns:IDX="urn:sap.com:WebDynpro.MessagePool:3.0" mmRelease="7.00" mmVersion="3.0" mmTimestamp="1382015933067" version="10" name="MengeangebenComponentMessagePool" package="com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent" masterLanguage="en">
-	<MessagePool.Parent>
-		<Core.Reference package="com.htwberlin.de.tr119.glx.wdcomp.mengeangebencomponent" name="MengeangebenComponent" type="Component"/>
-	</MessagePool.Parent>
-</MessagePool>
